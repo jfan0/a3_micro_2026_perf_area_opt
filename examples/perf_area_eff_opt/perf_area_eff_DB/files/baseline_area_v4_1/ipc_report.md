@@ -1,0 +1,37 @@
+# Parent design: measured performance, area and timing
+
+## Headline
+
+- mean embench IPC : 1.446213
+- total cell area  : 6,547,595 um2 (Yosys, includes the CACTI SRAM macros)
+- SRAM macro area  : 1,515,490 um2
+- standard cells   : 5,032,105 um2
+- fmax             : 47.88 MHz (tt_025C_1v80, OpenSTA)
+- ipc_area_eff     : 0.220877 IPC/mm2
+
+## Per-benchmark IPC
+
+Sorted by IPC. The objective is built from the cycle counts, not this
+column, so every benchmark counts equally regardless of its length.
+
+| benchmark | IPC | ROI cycles | ROI instret |
+|---|---|---|---|
+| matmult-int | 1.965053 | 1,372,347 | 2,696,735 |
+| nettle-aes | 1.964131 | 2,369,172 | 4,653,364 |
+| nettle-sha256 | 1.945905 | 2,369,723 | 4,611,257 |
+| md5sum | 1.870725 | 1,407,427 | 2,632,909 |
+| edn | 1.846950 | 1,711,910 | 3,161,813 |
+| depthconv | 1.800272 | 1,808,105 | 3,255,081 |
+| picojpeg | 1.715496 | 1,655,618 | 2,840,206 |
+| slre | 1.597964 | 1,713,130 | 2,737,520 |
+| aha-mont64 | 1.561747 | 1,366,087 | 2,133,482 |
+| crc32 | 1.552964 | 2,467,546 | 3,832,011 |
+| wikisort | 1.472480 | 937,466 | 1,380,400 |
+| tarfind | 1.382401 | 753,321 | 1,041,392 |
+| huffbench | 1.110506 | 1,935,547 | 2,149,437 |
+| sglib-combined | 1.098138 | 2,344,290 | 2,574,355 |
+| statemate | 1.094068 | 1,485,350 | 1,625,074 |
+| qrduino | 1.062959 | 2,672,789 | 2,841,066 |
+| ud | 1.000684 | 2,791,650 | 2,793,559 |
+| xgboost | 0.777366 | 2,259,613 | 1,756,547 |
+| nsichneu | 0.658229 | 3,415,869 | 2,248,423 |

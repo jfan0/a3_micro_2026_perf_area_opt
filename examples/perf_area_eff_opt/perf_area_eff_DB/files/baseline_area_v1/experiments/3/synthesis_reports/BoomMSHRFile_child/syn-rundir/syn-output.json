@@ -1,0 +1,37 @@
+{
+    "vlsi.builtins.is_complete": false,
+    "synthesis.outputs.output_files": [
+        "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/syn-rundir/BoomMSHRFile.mapped.v"
+    ],
+    "synthesis.inputs.input_files": [
+        "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/input_src/ALUExeUnit_1.sv",
+        "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/input_src/Arbiter1_Bool.sv",
+        "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/input_src/Arbiter2_BoomDCacheReqInternal.sv",
+        "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/input_src/Arbiter2_L1DataWriteReq.sv",
+        "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/input_src/Arbiter2_L1MetaReadReq.sv",
+        "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/input_src/Arbiter2_L1MetaWriteReq.sv",
+        "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/input_src/Arbiter2_LineBufferReadReq.sv",
+        "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/input_src/Arbiter2_LineBufferWriteReq.sv",
+        "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/input_src/Arbiter2_WritebackReq.sv",
+        "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/input_src/Arbiter3_BoomDCacheResp.sv",
+        "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/input_src/BoomIOMSHR.sv",
+        "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/input_src/BoomMSHR.sv",
+        "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/input_src/BoomMSHRFile.sv",
+        "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/input_src/BoomNonBlockingDCache.sv",
+        "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/input_src/BranchKillableQueue.sv",
+        "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/input_src/BranchKillableQueue_2.sv",
+        "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/input_src/BranchKillableQueue_3.sv",
+        "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/input_src/BranchKillableQueue_4.sv",
+        "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/input_src/BranchKillableQueue_5.sv",
+        "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/input_src/FPUExeUnit.sv",
+        "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/input_src/lb_16x64.sv",
+        "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/input_src/ram_16x46.sv",
+        "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/input_src/ram_4x65.sv",
+        "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/input_src/sdq_17x64.sv"
+    ],
+    "synthesis.inputs.top_module": "BoomMSHRFile",
+    "synthesis.outputs.sdc": "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/syn-rundir/BoomMSHRFile.mapped.sdc",
+    "synthesis.outputs.seq_cells": "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/syn-rundir/find_regs_cells.json",
+    "synthesis.outputs.all_regs": "/scratch/perf_area_eff/experiment_8e4e29a1/syn_obj/syn-rundir/find_regs_paths.json",
+    "synthesis.outputs.sdf_file": ""
+}

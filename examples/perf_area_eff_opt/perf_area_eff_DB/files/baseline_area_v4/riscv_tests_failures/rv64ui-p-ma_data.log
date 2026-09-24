@@ -1,0 +1,20 @@
+=== outcome: assert_failed (wrote 668 to tohost; for riscv-tests that is the number of the failing assertion, findable in the test's .S source) ===
+=== returncode: 255 ===
+=== stdout (.log) ===
+[UART] UART0 is here (stdin/stdout).
+[4625000] %Error: TestHarness.sv:100: Assertion failed in TOP.TestDriver.testHarness: Assertion failed: *** FAILED *** (exit code =        668)
+
+    at SimTSI.scala:21 assert(!error, "*** FAILED *** (exit code = %%d)\n", exit >> 1.U)
+
+%Error: /home/ray/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.MediumBoomV3Config/gen-collateral/TestHarness.sv:100: Verilog $stop
+Aborting...
+
+=== stderr (.out, tail) ===
+testing $random e23cbb39
+== Loading device model file '/home/ray/verilator/942b0b68/dramsim_ini/DDR3_micron_64M_8B_x4_sg15.ini' == 
+== Loading system model file '/home/ray/verilator/942b0b68/dramsim_ini/system.ini' == 
+===== MemorySystem 0 =====
+CH. 0 TOTAL_STORAGE : 4096MB | 1 Ranks | 16 Devices per rank
+DRAMSim2 Clock Frequency =666666666Hz, CPU Clock Frequency=500000000Hz
+*** FAILED *** (tohost = 668)
+

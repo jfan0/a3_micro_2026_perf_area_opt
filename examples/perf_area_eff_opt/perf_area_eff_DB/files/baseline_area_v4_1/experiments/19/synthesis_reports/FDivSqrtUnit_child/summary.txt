@@ -1,0 +1,6 @@
+module: FDivSqrtUnit
+success: True
+returncode: 0
+area: 34110.21
+elapsed: 45.0s
+reports: 8

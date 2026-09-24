@@ -1,0 +1,36 @@
+{
+    "vlsi.builtins.is_complete": false,
+    "synthesis.outputs.output_files": [
+        "/scratch/perf_area_eff/experiment_02427cd5/syn_obj/syn-rundir/BTBBranchPredictorBank.mapped.v"
+    ],
+    "synthesis.inputs.input_files": [
+        "/scratch/perf_area_eff/experiment_02427cd5/syn_obj/input_src/Arbiter2_BranchPredictionUpdate.sv",
+        "/scratch/perf_area_eff/experiment_02427cd5/syn_obj/input_src/BTBBranchPredictorBank.sv",
+        "/scratch/perf_area_eff/experiment_02427cd5/syn_obj/input_src/BoomFrontend.sv",
+        "/scratch/perf_area_eff/experiment_02427cd5/syn_obj/input_src/BoomNonBlockingDCache.sv",
+        "/scratch/perf_area_eff/experiment_02427cd5/syn_obj/input_src/BranchPredictor.sv",
+        "/scratch/perf_area_eff/experiment_02427cd5/syn_obj/input_src/ComposedBranchPredictorBank.sv",
+        "/scratch/perf_area_eff/experiment_02427cd5/syn_obj/input_src/FAMicroBTBBranchPredictorBank.sv",
+        "/scratch/perf_area_eff/experiment_02427cd5/syn_obj/input_src/FetchTargetQueue.sv",
+        "/scratch/perf_area_eff/experiment_02427cd5/syn_obj/input_src/Queue1_BranchPredictionBundle.sv",
+        "/scratch/perf_area_eff/experiment_02427cd5/syn_obj/input_src/Queue1_FetchBundle.sv",
+        "/scratch/perf_area_eff/experiment_02427cd5/syn_obj/input_src/Queue2_BranchPredictionUpdate.sv",
+        "/scratch/perf_area_eff/experiment_02427cd5/syn_obj/input_src/btb_0.sv",
+        "/scratch/perf_area_eff/experiment_02427cd5/syn_obj/input_src/btb_1.sv",
+        "/scratch/perf_area_eff/experiment_02427cd5/syn_obj/input_src/cacti_btb_0_ext.v",
+        "/scratch/perf_area_eff/experiment_02427cd5/syn_obj/input_src/cacti_ebtb_ext.v",
+        "/scratch/perf_area_eff/experiment_02427cd5/syn_obj/input_src/cacti_meta_0_0_ext.v",
+        "/scratch/perf_area_eff/experiment_02427cd5/syn_obj/input_src/cacti_meta_0_ext.v",
+        "/scratch/perf_area_eff/experiment_02427cd5/syn_obj/input_src/chipyard.harness.TestHarness.MediumBoomV3Config.top.mems.v",
+        "/scratch/perf_area_eff/experiment_02427cd5/syn_obj/input_src/ebtb.sv",
+        "/scratch/perf_area_eff/experiment_02427cd5/syn_obj/input_src/extern_modules.sv",
+        "/scratch/perf_area_eff/experiment_02427cd5/syn_obj/input_src/meta_0.sv",
+        "/scratch/perf_area_eff/experiment_02427cd5/syn_obj/input_src/meta_0_0.sv",
+        "/scratch/perf_area_eff/experiment_02427cd5/syn_obj/input_src/meta_1.sv"
+    ],
+    "synthesis.inputs.top_module": "BTBBranchPredictorBank",
+    "synthesis.outputs.sdc": "/scratch/perf_area_eff/experiment_02427cd5/syn_obj/syn-rundir/BTBBranchPredictorBank.mapped.sdc",
+    "synthesis.outputs.seq_cells": "/scratch/perf_area_eff/experiment_02427cd5/syn_obj/syn-rundir/find_regs_cells.json",
+    "synthesis.outputs.all_regs": "/scratch/perf_area_eff/experiment_02427cd5/syn_obj/syn-rundir/find_regs_paths.json",
+    "synthesis.outputs.sdf_file": ""
+}

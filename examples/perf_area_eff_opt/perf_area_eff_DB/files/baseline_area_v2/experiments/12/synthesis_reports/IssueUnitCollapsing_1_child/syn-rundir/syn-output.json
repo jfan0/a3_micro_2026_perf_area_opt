@@ -1,0 +1,17 @@
+{
+    "vlsi.builtins.is_complete": false,
+    "synthesis.outputs.output_files": [
+        "/scratch/perf_area_eff/experiment_d5b45113/syn_obj/syn-rundir/IssueUnitCollapsing_1.mapped.v"
+    ],
+    "synthesis.inputs.input_files": [
+        "/scratch/perf_area_eff/experiment_d5b45113/syn_obj/input_src/BoomCore.sv",
+        "/scratch/perf_area_eff/experiment_d5b45113/syn_obj/input_src/IssueSlot_16.sv",
+        "/scratch/perf_area_eff/experiment_d5b45113/syn_obj/input_src/IssueUnitCollapsing_1.sv",
+        "/scratch/perf_area_eff/experiment_d5b45113/syn_obj/input_src/IssueUnitCollapsing_2.sv"
+    ],
+    "synthesis.inputs.top_module": "IssueUnitCollapsing_1",
+    "synthesis.outputs.sdc": "/scratch/perf_area_eff/experiment_d5b45113/syn_obj/syn-rundir/IssueUnitCollapsing_1.mapped.sdc",
+    "synthesis.outputs.seq_cells": "/scratch/perf_area_eff/experiment_d5b45113/syn_obj/syn-rundir/find_regs_cells.json",
+    "synthesis.outputs.all_regs": "/scratch/perf_area_eff/experiment_d5b45113/syn_obj/syn-rundir/find_regs_paths.json",
+    "synthesis.outputs.sdf_file": ""
+}

@@ -1,0 +1,6 @@
+module: PipelinedMulUnit
+success: True
+returncode: 0
+area: 167525.67
+elapsed: 52.7s
+reports: 8

@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/tmp/ray/session_2026-09-20_13-28-54_214491_3763754/runtime_resources/py_modules_files/_ray_pkg_b7923697a7f9dace/sky130_vlsi/hammer_driver_open.py", line 103, in <module>
+    main()
+  File "/tmp/ray/session_2026-09-20_13-28-54_214491_3763754/runtime_resources/py_modules_files/_ray_pkg_b7923697a7f9dace/sky130_vlsi/hammer_driver_open.py", line 99, in main
+    ChiaOpenCLIDriver().main()
+  File "/home/ray/hammer-venv/lib/python3.10/site-packages/hammer/vlsi/cli_driver.py", line 1725, in main
+    sys.exit(self.run_main_parsed(vars(parser.parse_args(args))))
+  File "/home/ray/hammer-venv/lib/python3.10/site-packages/hammer/vlsi/cli_driver.py", line 1630, in run_main_parsed
+    output_config = action_func(driver, errors.append)  # type: Optional[dict]
+  File "/home/ray/hammer-venv/lib/python3.10/site-packages/hammer/vlsi/cli_driver.py", line 592, in action
+    success, output = driver.run_synthesis(
+  File "/home/ray/hammer-venv/lib/python3.10/site-packages/hammer/vlsi/driver.py", line 930, in run_synthesis
+    run_succeeded = self.syn_tool.run(hooks_to_use)
+  File "/home/ray/hammer-venv/lib/python3.10/site-packages/hammer/vlsi/hammer_tool.py", line 118, in run
+    return self.fill_outputs()
+  File "/home/ray/hammer-venv/lib/python3.10/site-packages/hammer/synthesis/yosys/__init__.py", line 91, in fill_outputs
+    raise ValueError("Output mapped verilog %s not found" % (mapped_v)) # better error?
+ValueError: Output mapped verilog /scratch/perf_area_eff/experiment_668df294/syn_obj/syn-rundir/TageBranchPredictorBank.mapped.v not found

@@ -1,0 +1,15 @@
+{
+    "vlsi.builtins.is_complete": false,
+    "synthesis.outputs.output_files": [
+        "/scratch/perf_area_eff/experiment_e09a87ef/syn_obj/syn-rundir/FAMicroBTBBranchPredictorBank.mapped.v"
+    ],
+    "synthesis.inputs.input_files": [
+        "/scratch/perf_area_eff/experiment_e09a87ef/syn_obj/input_src/ComposedBranchPredictorBank.sv",
+        "/scratch/perf_area_eff/experiment_e09a87ef/syn_obj/input_src/FAMicroBTBBranchPredictorBank.sv"
+    ],
+    "synthesis.inputs.top_module": "FAMicroBTBBranchPredictorBank",
+    "synthesis.outputs.sdc": "/scratch/perf_area_eff/experiment_e09a87ef/syn_obj/syn-rundir/FAMicroBTBBranchPredictorBank.mapped.sdc",
+    "synthesis.outputs.seq_cells": "/scratch/perf_area_eff/experiment_e09a87ef/syn_obj/syn-rundir/find_regs_cells.json",
+    "synthesis.outputs.all_regs": "/scratch/perf_area_eff/experiment_e09a87ef/syn_obj/syn-rundir/find_regs_paths.json",
+    "synthesis.outputs.sdf_file": ""
+}

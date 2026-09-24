@@ -1,0 +1,1223 @@
+[96m[<global>] Loading hammer-vlsi libraries and reading settings[0m
+[96m[<global>] Loading technology 'hammer.technology.sky130'[0m
+[33m[<global>] Key technology.sky130.sky130_nda has a type str is not yet implemented[0m
+[33m[<global>] Key technology.sky130.sky130_cds has a type str is not yet implemented[0m
+[33m[<global>] Key technology.sky130.openram_lib has a type str is not yet implemented[0m
+[33m[<global>] Key technology.sky130.dffram_lib has a type Optional[str] is not yet implemented[0m
+[33m[<global>] Key technology.sky130.pdk_home has a type Optional[str] is not yet implemented[0m
+[33m[<global>] Key technology.sky130.lvs_deck_sources has a type Optional[list[str]] is not yet implemented[0m
+[33m[<global>] Key technology.sky130.io_file has a type str is not yet implemented[0m
+[33m[tech] The install path: /path/to/skywater-src-nda does not exist, looked at key technology.sky130.sky130_nda[0m
+[96m[tech] Modifying Verilog netlist: /home/ray/conda-sky130/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v -> /scratch/perf_area_eff/experiment_668df294/syn_obj/tech-sky130-cache/sky130_fd_sc_hd.v[0m
+[96m[tech] Removing incorrectly formed specify block.[0m
+[96m[tech] Fixing broken net references with select specify blocks.[0m
+[96m[tech] Modifying Verilog netlist: /home/ray/conda-sky130/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/verilog/primitives.v -> /scratch/perf_area_eff/experiment_668df294/syn_obj/tech-sky130-cache/primitives.v[0m
+[96m[tech] Modifying Technology LEF: /home/ray/conda-sky130/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef -> /scratch/perf_area_eff/experiment_668df294/syn_obj/tech-sky130-cache/sky130_fd_sc_hd__nom.tlef[0m
+[96m[tech] Modifying IO LEF: /home/ray/conda-sky130/share/pdk/sky130A/libs.ref/sky130_fd_io/lef/sky130_ef_io.lef -> /scratch/perf_area_eff/experiment_668df294/syn_obj/tech-sky130-cache/sky130_ef_io.lef[0m
+[96m[tech] Fixing broken sky130_ef_io__analog_esd_pad LEF definition.[0m
+[96m[tech] Loaded Sky130 Tech[0m
+[33m[<global>] Key synthesis.yosys.version has a type str is not yet implemented[0m
+[33m[<global>] Key synthesis.yosys.generate_only has a type bool is not yet implemented[0m
+[96m[<global>] Starting synthesis with tool 'yosys'[0m
+[37m[synthesis] Running sub-step 'init_environment'[0m
+[37m[synthesis] Running sub-step '_syn_generic_mapped_flops'[0m
+[96m[synthesis] Skipping dfflibmap for /home/ray/conda-sky130/share/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_tt_tt_025C_1v80_3v30.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /home/ray/conda-sky130/share/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_tt_tt_025C_1v80_3v30.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /home/ray/conda-sky130/share/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_tt_025C_1v80_3v30_3v30.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /home/ray/conda-sky130/share/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /home/ray/conda-sky130/share/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vdda_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /home/ray/conda-sky130/share/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vddio_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /home/ray/conda-sky130/share/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssa_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /home/ray/conda-sky130/share/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped3_pad_tt_025C_1v80_3v30.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /home/ray/conda-sky130/share/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped_pad_tt_025C_1v80_3v30.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /home/ray/conda-sky130/share/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssio_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /home/ray/conda-sky130/share/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_gpiov2_tt_tt_025C_1v80_3v30.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /home/ray/conda-sky130/share/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_hvc_wpad_tt_025C_1v80_3v30_3v30.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /home/ray/conda-sky130/share/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_lvc_wpad_tt_025C_1v80_3v30.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /home/ray/conda-sky130/share/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_hvc_wpad_tt_025C_1v80_3v30_3v30.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /home/ray/conda-sky130/share/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_lvc_wpad_tt_025C_1v80_3v30_3v30.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /home/ray/conda-sky130/share/pdk/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_xres4v2_tt_tt_025C_1v80_3v30.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /tmp/hammer_sky130_open_qbpaa31i/cacti_libs/cc_dir_ext_tt_025C_1v80.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /tmp/hammer_sky130_open_qbpaa31i/cacti_libs/cc_banks_0_ext_tt_025C_1v80.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /tmp/hammer_sky130_open_qbpaa31i/cacti_libs/tag_array_ext_tt_025C_1v80.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /tmp/hammer_sky130_open_qbpaa31i/cacti_libs/array_0_0_0_ext_tt_025C_1v80.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /tmp/hammer_sky130_open_qbpaa31i/cacti_libs/tag_array_0_ext_tt_025C_1v80.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /tmp/hammer_sky130_open_qbpaa31i/cacti_libs/dataArrayWay_0_ext_tt_025C_1v80.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /tmp/hammer_sky130_open_qbpaa31i/cacti_libs/us_ext_tt_025C_1v80.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /tmp/hammer_sky130_open_qbpaa31i/cacti_libs/table_ext_tt_025C_1v80.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /tmp/hammer_sky130_open_qbpaa31i/cacti_libs/us_0_ext_tt_025C_1v80.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /tmp/hammer_sky130_open_qbpaa31i/cacti_libs/table_0_ext_tt_025C_1v80.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /tmp/hammer_sky130_open_qbpaa31i/cacti_libs/table_1_ext_tt_025C_1v80.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /tmp/hammer_sky130_open_qbpaa31i/cacti_libs/btb_0_ext_tt_025C_1v80.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /tmp/hammer_sky130_open_qbpaa31i/cacti_libs/ebtb_ext_tt_025C_1v80.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /tmp/hammer_sky130_open_qbpaa31i/cacti_libs/data_ext_tt_025C_1v80.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /tmp/hammer_sky130_open_qbpaa31i/cacti_libs/meta_0_ext_tt_025C_1v80.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /tmp/hammer_sky130_open_qbpaa31i/cacti_libs/ghist_0_ext_tt_025C_1v80.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /tmp/hammer_sky130_open_qbpaa31i/cacti_libs/rob_debug_inst_mem_ext_tt_025C_1v80.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /tmp/hammer_sky130_open_qbpaa31i/cacti_libs/l2_tlb_ram_0_ext_tt_025C_1v80.lib: no sequential cells[0m
+[96m[synthesis] Skipping dfflibmap for /tmp/hammer_sky130_open_qbpaa31i/cacti_libs/mem_ext_tt_025C_1v80.lib: no sequential cells[0m
+[37m[synthesis] Running sub-step 'syn_map'[0m
+[37m[synthesis] Running sub-step 'add_tieoffs'[0m
+[37m[synthesis] Running sub-step 'write_regs'[0m
+[37m[synthesis] Running sub-step '_generate_reports_all_liberties'[0m
+[37m[synthesis] Running sub-step 'write_outputs'[0m
+Executing subprocess: /home/ray/conda-yosys/bin/yosys -c /scratch/perf_area_eff/experiment_668df294/syn_obj/syn-rundir/syn.tcl
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.27+3 (git sha1 b58664d44, x86_64-conda-linux-gnu-cc 11.2.0 -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -fdebug-prefix-map=/root/conda-eda/conda-eda/workdir/conda-env/conda-bld/yosys_1678231239250/work=/usr/local/src/conda/yosys-0.27_4_gb58664d44 -fdebug-prefix-map=/home/ray/conda-yosys=/usr/local/src/conda-prefix -fPIC -Os -fno-merge-constants)
+
+[TCL: yosys -import] Command name collision: found pre-existing command `cd' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `eval' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
+
+1. Executing SETUNDEF pass (replace undef values with defined constants).
+
+2. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ALUExeUnit.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ALUExeUnit.sv' to AST representation.
+Generating RTLIL representation for module `\ALUExeUnit'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ALUExeUnit_1.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ALUExeUnit_1.sv' to AST representation.
+Generating RTLIL representation for module `\ALUExeUnit_1'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ALUExeUnit_2.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ALUExeUnit_2.sv' to AST representation.
+Generating RTLIL representation for module `\ALUExeUnit_2'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ALUUnit.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ALUUnit.sv' to AST representation.
+Generating RTLIL representation for module `\ALUUnit'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ALUUnit_1.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ALUUnit_1.sv' to AST representation.
+Generating RTLIL representation for module `\ALUUnit_1'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AXI4UserYanker.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AXI4UserYanker.sv' to AST representation.
+Generating RTLIL representation for module `\AXI4UserYanker'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Arbiter2_BoomDCacheReqInternal.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Arbiter2_BoomDCacheReqInternal.sv' to AST representation.
+Generating RTLIL representation for module `\Arbiter2_BoomDCacheReqInternal'.
+Successfully finished Verilog frontend.
+
+9. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Arbiter2_ExeUnitResp.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Arbiter2_ExeUnitResp.sv' to AST representation.
+Generating RTLIL representation for module `\Arbiter2_ExeUnitResp'.
+Successfully finished Verilog frontend.
+
+10. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Arbiter2_ExeUnitResp_2.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Arbiter2_ExeUnitResp_2.sv' to AST representation.
+Generating RTLIL representation for module `\Arbiter2_ExeUnitResp_2'.
+Successfully finished Verilog frontend.
+
+11. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Arbiter3_BoomDCacheResp.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Arbiter3_BoomDCacheResp.sv' to AST representation.
+Generating RTLIL representation for module `\Arbiter3_BoomDCacheResp'.
+Successfully finished Verilog frontend.
+
+12. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncQueueSink_DebugInternalBundle.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncQueueSink_DebugInternalBundle.sv' to AST representation.
+Generating RTLIL representation for module `\AsyncQueueSink_DebugInternalBundle'.
+Successfully finished Verilog frontend.
+
+13. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncQueueSink_Phit.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncQueueSink_Phit.sv' to AST representation.
+Generating RTLIL representation for module `\AsyncQueueSink_Phit'.
+Successfully finished Verilog frontend.
+
+14. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncQueueSink_Phit_TestHarness_UNIQUIFIED.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncQueueSink_Phit_TestHarness_UNIQUIFIED.sv' to AST representation.
+Generating RTLIL representation for module `\AsyncQueueSink_Phit_TestHarness_UNIQUIFIED'.
+Successfully finished Verilog frontend.
+
+15. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncQueueSink_TLBundleA_a9d32s1k1z2u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncQueueSink_TLBundleA_a9d32s1k1z2u.sv' to AST representation.
+Generating RTLIL representation for module `\AsyncQueueSink_TLBundleA_a9d32s1k1z2u'.
+Successfully finished Verilog frontend.
+
+16. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncQueueSink_TLBundleD_a9d32s1k1z2u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncQueueSink_TLBundleD_a9d32s1k1z2u.sv' to AST representation.
+Generating RTLIL representation for module `\AsyncQueueSink_TLBundleD_a9d32s1k1z2u'.
+Successfully finished Verilog frontend.
+
+17. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncQueueSource_DebugInternalBundle.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncQueueSource_DebugInternalBundle.sv' to AST representation.
+Generating RTLIL representation for module `\AsyncQueueSource_DebugInternalBundle'.
+Successfully finished Verilog frontend.
+
+18. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncQueueSource_Phit.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncQueueSource_Phit.sv' to AST representation.
+Generating RTLIL representation for module `\AsyncQueueSource_Phit'.
+Successfully finished Verilog frontend.
+
+19. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncQueueSource_Phit_TestHarness_UNIQUIFIED.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncQueueSource_Phit_TestHarness_UNIQUIFIED.sv' to AST representation.
+Generating RTLIL representation for module `\AsyncQueueSource_Phit_TestHarness_UNIQUIFIED'.
+Successfully finished Verilog frontend.
+
+20. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncQueueSource_TLBundleA_a9d32s1k1z2u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncQueueSource_TLBundleA_a9d32s1k1z2u.sv' to AST representation.
+Generating RTLIL representation for module `\AsyncQueueSource_TLBundleA_a9d32s1k1z2u'.
+Successfully finished Verilog frontend.
+
+21. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncQueueSource_TLBundleD_a9d32s1k1z2u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncQueueSource_TLBundleD_a9d32s1k1z2u.sv' to AST representation.
+Generating RTLIL representation for module `\AsyncQueueSource_TLBundleD_a9d32s1k1z2u'.
+Successfully finished Verilog frontend.
+
+22. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncResetRegVec_w1_i0.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncResetRegVec_w1_i0.sv' to AST representation.
+Generating RTLIL representation for module `\AsyncResetRegVec_w1_i0'.
+Successfully finished Verilog frontend.
+
+23. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncResetRegVec_w1_i1.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncResetRegVec_w1_i1.sv' to AST representation.
+Generating RTLIL representation for module `\AsyncResetRegVec_w1_i1'.
+Successfully finished Verilog frontend.
+
+24. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncResetRegVec_w2_i0.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncResetRegVec_w2_i0.sv' to AST representation.
+Generating RTLIL representation for module `\AsyncResetRegVec_w2_i0'.
+Successfully finished Verilog frontend.
+
+25. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncResetSynchronizerPrimitiveShiftReg_d3_i0.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncResetSynchronizerPrimitiveShiftReg_d3_i0.sv' to AST representation.
+Generating RTLIL representation for module `\AsyncResetSynchronizerPrimitiveShiftReg_d3_i0'.
+Successfully finished Verilog frontend.
+
+26. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncResetSynchronizerPrimitiveShiftReg_d3_i0_TestHarness_UNIQUIFIED.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/AsyncResetSynchronizerPrimitiveShiftReg_d3_i0_TestHarness_UNIQUIFIED.sv' to AST representation.
+Generating RTLIL representation for module `\AsyncResetSynchronizerPrimitiveShiftReg_d3_i0_TestHarness_UNIQUIFIED'.
+Successfully finished Verilog frontend.
+
+27. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BIMBranchPredictorBank.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BIMBranchPredictorBank.sv' to AST representation.
+Generating RTLIL representation for module `\BIMBranchPredictorBank'.
+Successfully finished Verilog frontend.
+
+28. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BTBBranchPredictorBank.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BTBBranchPredictorBank.sv' to AST representation.
+Generating RTLIL representation for module `\BTBBranchPredictorBank'.
+Successfully finished Verilog frontend.
+
+29. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BankedStore.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BankedStore.sv' to AST representation.
+Generating RTLIL representation for module `\BankedStore'.
+Successfully finished Verilog frontend.
+
+30. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BasicDispatcher.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BasicDispatcher.sv' to AST representation.
+Generating RTLIL representation for module `\BasicDispatcher'.
+Successfully finished Verilog frontend.
+
+31. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BoomCore.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BoomCore.sv' to AST representation.
+Generating RTLIL representation for module `\BoomCore'.
+Successfully finished Verilog frontend.
+
+32. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BoomDuplicatedDataArray.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BoomDuplicatedDataArray.sv' to AST representation.
+Generating RTLIL representation for module `\BoomDuplicatedDataArray'.
+Successfully finished Verilog frontend.
+
+33. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BoomFrontend.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BoomFrontend.sv' to AST representation.
+Generating RTLIL representation for module `\BoomFrontend'.
+Successfully finished Verilog frontend.
+
+34. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BoomIOMSHR.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BoomIOMSHR.sv' to AST representation.
+Generating RTLIL representation for module `\BoomIOMSHR'.
+Successfully finished Verilog frontend.
+
+35. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BoomMSHR.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BoomMSHR.sv' to AST representation.
+Generating RTLIL representation for module `\BoomMSHR'.
+Successfully finished Verilog frontend.
+
+36. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BoomMSHRFile.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BoomMSHRFile.sv' to AST representation.
+Generating RTLIL representation for module `\BoomMSHRFile'.
+Successfully finished Verilog frontend.
+
+37. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BoomNonBlockingDCache.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BoomNonBlockingDCache.sv' to AST representation.
+Generating RTLIL representation for module `\BoomNonBlockingDCache'.
+Successfully finished Verilog frontend.
+
+38. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BoomProbeUnit.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BoomProbeUnit.sv' to AST representation.
+Generating RTLIL representation for module `\BoomProbeUnit'.
+Successfully finished Verilog frontend.
+
+39. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BoomRAS.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BoomRAS.sv' to AST representation.
+Generating RTLIL representation for module `\BoomRAS'.
+Successfully finished Verilog frontend.
+
+40. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BoomTile.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BoomTile.sv' to AST representation.
+Generating RTLIL representation for module `\BoomTile'.
+Successfully finished Verilog frontend.
+
+41. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BoomWritebackUnit.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BoomWritebackUnit.sv' to AST representation.
+Generating RTLIL representation for module `\BoomWritebackUnit'.
+Successfully finished Verilog frontend.
+
+42. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BranchKillableQueue.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BranchKillableQueue.sv' to AST representation.
+Generating RTLIL representation for module `\BranchKillableQueue'.
+Successfully finished Verilog frontend.
+
+43. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BranchKillableQueue_2.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BranchKillableQueue_2.sv' to AST representation.
+Generating RTLIL representation for module `\BranchKillableQueue_2'.
+Successfully finished Verilog frontend.
+
+44. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BranchKillableQueue_3.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BranchKillableQueue_3.sv' to AST representation.
+Generating RTLIL representation for module `\BranchKillableQueue_3'.
+Successfully finished Verilog frontend.
+
+45. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BranchKillableQueue_4.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BranchKillableQueue_4.sv' to AST representation.
+Generating RTLIL representation for module `\BranchKillableQueue_4'.
+Successfully finished Verilog frontend.
+
+46. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BranchKillableQueue_5.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BranchKillableQueue_5.sv' to AST representation.
+Generating RTLIL representation for module `\BranchKillableQueue_5'.
+Successfully finished Verilog frontend.
+
+47. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BranchMaskGenerationLogic.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BranchMaskGenerationLogic.sv' to AST representation.
+Generating RTLIL representation for module `\BranchMaskGenerationLogic'.
+Successfully finished Verilog frontend.
+
+48. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BranchPredictor.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BranchPredictor.sv' to AST representation.
+Generating RTLIL representation for module `\BranchPredictor'.
+Successfully finished Verilog frontend.
+
+49. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BundleBridgeNexus_UInt1_1.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/BundleBridgeNexus_UInt1_1.sv' to AST representation.
+Generating RTLIL representation for module `\BundleBridgeNexus_UInt1_1'.
+Successfully finished Verilog frontend.
+
+50. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/CLINT.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/CLINT.sv' to AST representation.
+Generating RTLIL representation for module `\CLINT'.
+Successfully finished Verilog frontend.
+
+51. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/CSRFile.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/CSRFile.sv' to AST representation.
+Generating RTLIL representation for module `\CSRFile'.
+Successfully finished Verilog frontend.
+
+52. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/CaptureChain_JTAGIdcodeBundle.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/CaptureChain_JTAGIdcodeBundle.sv' to AST representation.
+Generating RTLIL representation for module `\CaptureChain_JTAGIdcodeBundle'.
+Successfully finished Verilog frontend.
+
+53. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/CaptureUpdateChain_DMIAccessCapture_To_DMIAccessUpdate.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/CaptureUpdateChain_DMIAccessCapture_To_DMIAccessUpdate.sv' to AST representation.
+Generating RTLIL representation for module `\CaptureUpdateChain_DMIAccessCapture_To_DMIAccessUpdate'.
+Successfully finished Verilog frontend.
+
+54. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/CaptureUpdateChain_DTMInfo_To_DTMInfo.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/CaptureUpdateChain_DTMInfo_To_DTMInfo.sv' to AST representation.
+Generating RTLIL representation for module `\CaptureUpdateChain_DTMInfo_To_DTMInfo'.
+Successfully finished Verilog frontend.
+
+55. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/CaptureUpdateChain_UInt5_To_UInt5.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/CaptureUpdateChain_UInt5_To_UInt5.sv' to AST representation.
+Generating RTLIL representation for module `\CaptureUpdateChain_UInt5_To_UInt5'.
+Successfully finished Verilog frontend.
+
+56. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ChipTop.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ChipTop.sv' to AST representation.
+Generating RTLIL representation for module `\ChipTop'.
+Successfully finished Verilog frontend.
+
+57. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ChipyardPRCICtrlClockSinkDomain.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ChipyardPRCICtrlClockSinkDomain.sv' to AST representation.
+Generating RTLIL representation for module `\ChipyardPRCICtrlClockSinkDomain'.
+Successfully finished Verilog frontend.
+
+58. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ClockCrossingReg_w15.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ClockCrossingReg_w15.sv' to AST representation.
+Generating RTLIL representation for module `\ClockCrossingReg_w15'.
+Successfully finished Verilog frontend.
+
+59. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ClockCrossingReg_w32.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ClockCrossingReg_w32.sv' to AST representation.
+Generating RTLIL representation for module `\ClockCrossingReg_w32'.
+Successfully finished Verilog frontend.
+
+60. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ClockCrossingReg_w32_TestHarness_UNIQUIFIED.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ClockCrossingReg_w32_TestHarness_UNIQUIFIED.sv' to AST representation.
+Generating RTLIL representation for module `\ClockCrossingReg_w32_TestHarness_UNIQUIFIED'.
+Successfully finished Verilog frontend.
+
+61. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ClockCrossingReg_w43.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ClockCrossingReg_w43.sv' to AST representation.
+Generating RTLIL representation for module `\ClockCrossingReg_w43'.
+Successfully finished Verilog frontend.
+
+62. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ClockCrossingReg_w55.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ClockCrossingReg_w55.sv' to AST representation.
+Generating RTLIL representation for module `\ClockCrossingReg_w55'.
+Successfully finished Verilog frontend.
+
+63. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ClockGroupAggregator_allClocks.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ClockGroupAggregator_allClocks.sv' to AST representation.
+Generating RTLIL representation for module `\ClockGroupAggregator_allClocks'.
+Successfully finished Verilog frontend.
+
+64. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ClockGroupCombiner.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ClockGroupCombiner.sv' to AST representation.
+Generating RTLIL representation for module `\ClockGroupCombiner'.
+Successfully finished Verilog frontend.
+
+65. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/CoherenceManagerWrapper.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/CoherenceManagerWrapper.sv' to AST representation.
+Generating RTLIL representation for module `\CoherenceManagerWrapper'.
+Successfully finished Verilog frontend.
+
+66. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ComposedBranchPredictorBank.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ComposedBranchPredictorBank.sv' to AST representation.
+Generating RTLIL representation for module `\ComposedBranchPredictorBank'.
+Successfully finished Verilog frontend.
+
+67. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/DebugTransportModuleJTAG.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/DebugTransportModuleJTAG.sv' to AST representation.
+Generating RTLIL representation for module `\DebugTransportModuleJTAG'.
+Successfully finished Verilog frontend.
+
+68. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/DecodeUnit.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/DecodeUnit.sv' to AST representation.
+Generating RTLIL representation for module `\DecodeUnit'.
+Successfully finished Verilog frontend.
+
+69. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/DecoupledSerialPhy.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/DecoupledSerialPhy.sv' to AST representation.
+Generating RTLIL representation for module `\DecoupledSerialPhy'.
+Successfully finished Verilog frontend.
+
+70. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/DecoupledSerialPhy_TestHarness_UNIQUIFIED.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/DecoupledSerialPhy_TestHarness_UNIQUIFIED.sv' to AST representation.
+Generating RTLIL representation for module `\DecoupledSerialPhy_TestHarness_UNIQUIFIED'.
+Successfully finished Verilog frontend.
+
+71. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/DigitalTop.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/DigitalTop.sv' to AST representation.
+Generating RTLIL representation for module `\DigitalTop'.
+Successfully finished Verilog frontend.
+
+72. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Directory.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Directory.sv' to AST representation.
+Generating RTLIL representation for module `\Directory'.
+Successfully finished Verilog frontend.
+
+73. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/DivSqrtRawFN_small_e11_s53.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/DivSqrtRawFN_small_e11_s53.sv' to AST representation.
+Generating RTLIL representation for module `\DivSqrtRawFN_small_e11_s53'.
+Successfully finished Verilog frontend.
+
+74. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/DivUnit.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/DivUnit.sv' to AST representation.
+Generating RTLIL representation for module `\DivUnit'.
+Successfully finished Verilog frontend.
+
+75. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/FAMicroBTBBranchPredictorBank.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/FAMicroBTBBranchPredictorBank.sv' to AST representation.
+Generating RTLIL representation for module `\FAMicroBTBBranchPredictorBank'.
+Successfully finished Verilog frontend.
+
+76. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/FDivSqrtUnit.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/FDivSqrtUnit.sv' to AST representation.
+Generating RTLIL representation for module `\FDivSqrtUnit'.
+Successfully finished Verilog frontend.
+
+77. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/FPToFP.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/FPToFP.sv' to AST representation.
+Generating RTLIL representation for module `\FPToFP'.
+Successfully finished Verilog frontend.
+
+78. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/FPToInt.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/FPToInt.sv' to AST representation.
+Generating RTLIL representation for module `\FPToInt'.
+Successfully finished Verilog frontend.
+
+79. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/FPU.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/FPU.sv' to AST representation.
+Generating RTLIL representation for module `\FPU'.
+Successfully finished Verilog frontend.
+
+80. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/FPUExeUnit.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/FPUExeUnit.sv' to AST representation.
+Generating RTLIL representation for module `\FPUExeUnit'.
+Successfully finished Verilog frontend.
+
+81. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/FPUFMAPipe_l4_f32.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/FPUFMAPipe_l4_f32.sv' to AST representation.
+Generating RTLIL representation for module `\FPUFMAPipe_l4_f32'.
+Successfully finished Verilog frontend.
+
+82. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/FPUFMAPipe_l4_f64.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/FPUFMAPipe_l4_f64.sv' to AST representation.
+Generating RTLIL representation for module `\FPUFMAPipe_l4_f64'.
+Successfully finished Verilog frontend.
+
+83. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/FPUUnit.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/FPUUnit.sv' to AST representation.
+Generating RTLIL representation for module `\FPUUnit'.
+Successfully finished Verilog frontend.
+
+84. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/FetchBuffer.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/FetchBuffer.sv' to AST representation.
+Generating RTLIL representation for module `\FetchBuffer'.
+Successfully finished Verilog frontend.
+
+85. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/FetchTargetQueue.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/FetchTargetQueue.sv' to AST representation.
+Generating RTLIL representation for module `\FetchTargetQueue'.
+Successfully finished Verilog frontend.
+
+86. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/FpPipeline.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/FpPipeline.sv' to AST representation.
+Generating RTLIL representation for module `\FpPipeline'.
+Successfully finished Verilog frontend.
+
+87. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/FrontBus.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/FrontBus.sv' to AST representation.
+Generating RTLIL representation for module `\FrontBus'.
+Successfully finished Verilog frontend.
+
+88. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/GenericDeserializer_TLBeatw67_f32.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/GenericDeserializer_TLBeatw67_f32.sv' to AST representation.
+Generating RTLIL representation for module `\GenericDeserializer_TLBeatw67_f32'.
+Successfully finished Verilog frontend.
+
+89. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/GenericDeserializer_TLBeatw67_f32_TestHarness_UNIQUIFIED.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/GenericDeserializer_TLBeatw67_f32_TestHarness_UNIQUIFIED.sv' to AST representation.
+Generating RTLIL representation for module `\GenericDeserializer_TLBeatw67_f32_TestHarness_UNIQUIFIED'.
+Successfully finished Verilog frontend.
+
+90. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/GenericDeserializer_TLBeatw87_f32.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/GenericDeserializer_TLBeatw87_f32.sv' to AST representation.
+Generating RTLIL representation for module `\GenericDeserializer_TLBeatw87_f32'.
+Successfully finished Verilog frontend.
+
+91. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/GenericDeserializer_TLBeatw87_f32_TestHarness_UNIQUIFIED.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/GenericDeserializer_TLBeatw87_f32_TestHarness_UNIQUIFIED.sv' to AST representation.
+Generating RTLIL representation for module `\GenericDeserializer_TLBeatw87_f32_TestHarness_UNIQUIFIED'.
+Successfully finished Verilog frontend.
+
+92. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/GenericDeserializer_TLBeatw88_f32.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/GenericDeserializer_TLBeatw88_f32.sv' to AST representation.
+Generating RTLIL representation for module `\GenericDeserializer_TLBeatw88_f32'.
+Successfully finished Verilog frontend.
+
+93. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/GenericDeserializer_TLBeatw88_f32_TestHarness_UNIQUIFIED.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/GenericDeserializer_TLBeatw88_f32_TestHarness_UNIQUIFIED.sv' to AST representation.
+Generating RTLIL representation for module `\GenericDeserializer_TLBeatw88_f32_TestHarness_UNIQUIFIED'.
+Successfully finished Verilog frontend.
+
+94. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/GenericSerializer_TLBeatw67_f32.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/GenericSerializer_TLBeatw67_f32.sv' to AST representation.
+Generating RTLIL representation for module `\GenericSerializer_TLBeatw67_f32'.
+Successfully finished Verilog frontend.
+
+95. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/GenericSerializer_TLBeatw87_f32.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/GenericSerializer_TLBeatw87_f32.sv' to AST representation.
+Generating RTLIL representation for module `\GenericSerializer_TLBeatw87_f32'.
+Successfully finished Verilog frontend.
+
+96. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/GenericSerializer_TLBeatw88_f32.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/GenericSerializer_TLBeatw88_f32.sv' to AST representation.
+Generating RTLIL representation for module `\GenericSerializer_TLBeatw88_f32'.
+Successfully finished Verilog frontend.
+
+97. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ICache.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ICache.sv' to AST representation.
+Generating RTLIL representation for module `\ICache'.
+Successfully finished Verilog frontend.
+
+98. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/IDPool.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/IDPool.sv' to AST representation.
+Generating RTLIL representation for module `\IDPool'.
+Successfully finished Verilog frontend.
+
+99. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/INToRecFN_i64_e11_s53.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/INToRecFN_i64_e11_s53.sv' to AST representation.
+Generating RTLIL representation for module `\INToRecFN_i64_e11_s53'.
+Successfully finished Verilog frontend.
+
+100. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/INToRecFN_i64_e8_s24.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/INToRecFN_i64_e8_s24.sv' to AST representation.
+Generating RTLIL representation for module `\INToRecFN_i64_e8_s24'.
+Successfully finished Verilog frontend.
+
+101. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ITLB.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ITLB.sv' to AST representation.
+Generating RTLIL representation for module `\ITLB'.
+Successfully finished Verilog frontend.
+
+102. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/InclusiveCache.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/InclusiveCache.sv' to AST representation.
+Generating RTLIL representation for module `\InclusiveCache'.
+Successfully finished Verilog frontend.
+
+103. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/InclusiveCacheBankScheduler.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/InclusiveCacheBankScheduler.sv' to AST representation.
+Generating RTLIL representation for module `\InclusiveCacheBankScheduler'.
+Successfully finished Verilog frontend.
+
+104. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/InclusiveCacheControl.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/InclusiveCacheControl.sv' to AST representation.
+Generating RTLIL representation for module `\InclusiveCacheControl'.
+Successfully finished Verilog frontend.
+
+105. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/InferredResetSynchronizerPrimitiveShiftReg_d3_i0.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/InferredResetSynchronizerPrimitiveShiftReg_d3_i0.sv' to AST representation.
+Generating RTLIL representation for module `\InferredResetSynchronizerPrimitiveShiftReg_d3_i0'.
+Successfully finished Verilog frontend.
+
+106. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/IntToFP.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/IntToFP.sv' to AST representation.
+Generating RTLIL representation for module `\IntToFP'.
+Successfully finished Verilog frontend.
+
+107. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/IntToFPUnit.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/IntToFPUnit.sv' to AST representation.
+Generating RTLIL representation for module `\IntToFPUnit'.
+Successfully finished Verilog frontend.
+
+108. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/IssueSlot.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/IssueSlot.sv' to AST representation.
+Generating RTLIL representation for module `\IssueSlot'.
+Successfully finished Verilog frontend.
+
+109. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/IssueSlot_16.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/IssueSlot_16.sv' to AST representation.
+Generating RTLIL representation for module `\IssueSlot_16'.
+Successfully finished Verilog frontend.
+
+110. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/IssueUnitCollapsing.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/IssueUnitCollapsing.sv' to AST representation.
+Generating RTLIL representation for module `\IssueUnitCollapsing'.
+Successfully finished Verilog frontend.
+
+111. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/IssueUnitCollapsing_1.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/IssueUnitCollapsing_1.sv' to AST representation.
+Generating RTLIL representation for module `\IssueUnitCollapsing_1'.
+Successfully finished Verilog frontend.
+
+112. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/IssueUnitCollapsing_2.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/IssueUnitCollapsing_2.sv' to AST representation.
+Generating RTLIL representation for module `\IssueUnitCollapsing_2'.
+Successfully finished Verilog frontend.
+
+113. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/JtagBypassChain.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/JtagBypassChain.sv' to AST representation.
+Generating RTLIL representation for module `\JtagBypassChain'.
+Successfully finished Verilog frontend.
+
+114. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/JtagStateMachine.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/JtagStateMachine.sv' to AST representation.
+Generating RTLIL representation for module `\JtagStateMachine'.
+Successfully finished Verilog frontend.
+
+115. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/JtagTapController.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/JtagTapController.sv' to AST representation.
+Generating RTLIL representation for module `\JtagTapController'.
+Successfully finished Verilog frontend.
+
+116. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/L1MetadataArray.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/L1MetadataArray.sv' to AST representation.
+Generating RTLIL representation for module `\L1MetadataArray'.
+Successfully finished Verilog frontend.
+
+117. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/LSU.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/LSU.sv' to AST representation.
+Generating RTLIL representation for module `\LSU'.
+Successfully finished Verilog frontend.
+
+118. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/LevelGateway.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/LevelGateway.sv' to AST representation.
+Generating RTLIL representation for module `\LevelGateway'.
+Successfully finished Verilog frontend.
+
+119. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ListBuffer_PutBufferAEntry_q40_e40.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ListBuffer_PutBufferAEntry_q40_e40.sv' to AST representation.
+Generating RTLIL representation for module `\ListBuffer_PutBufferAEntry_q40_e40'.
+Successfully finished Verilog frontend.
+
+120. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ListBuffer_PutBufferCEntry_q2_e16.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ListBuffer_PutBufferCEntry_q2_e16.sv' to AST representation.
+Generating RTLIL representation for module `\ListBuffer_PutBufferCEntry_q2_e16'.
+Successfully finished Verilog frontend.
+
+121. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ListBuffer_QueuedRequest_q21_e33.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/ListBuffer_QueuedRequest_q21_e33.sv' to AST representation.
+Generating RTLIL representation for module `\ListBuffer_QueuedRequest_q21_e33'.
+Successfully finished Verilog frontend.
+
+122. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/LoopBranchPredictorBank.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/LoopBranchPredictorBank.sv' to AST representation.
+Generating RTLIL representation for module `\LoopBranchPredictorBank'.
+Successfully finished Verilog frontend.
+
+123. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/LoopBranchPredictorColumn.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/LoopBranchPredictorColumn.sv' to AST representation.
+Generating RTLIL representation for module `\LoopBranchPredictorColumn'.
+Successfully finished Verilog frontend.
+
+124. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/MSHR.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/MSHR.sv' to AST representation.
+Generating RTLIL representation for module `\MSHR'.
+Successfully finished Verilog frontend.
+
+125. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/MaxPeriodFibonacciLFSR.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/MaxPeriodFibonacciLFSR.sv' to AST representation.
+Generating RTLIL representation for module `\MaxPeriodFibonacciLFSR'.
+Successfully finished Verilog frontend.
+
+126. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/MaxPeriodFibonacciLFSR_3.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/MaxPeriodFibonacciLFSR_3.sv' to AST representation.
+Generating RTLIL representation for module `\MaxPeriodFibonacciLFSR_3'.
+Successfully finished Verilog frontend.
+
+127. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/MemAddrCalcUnit.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/MemAddrCalcUnit.sv' to AST representation.
+Generating RTLIL representation for module `\MemAddrCalcUnit'.
+Successfully finished Verilog frontend.
+
+128. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/MemoryBus.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/MemoryBus.sv' to AST representation.
+Generating RTLIL representation for module `\MemoryBus'.
+Successfully finished Verilog frontend.
+
+129. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/MulAddRecFNPipe_l2_e11_s53.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/MulAddRecFNPipe_l2_e11_s53.sv' to AST representation.
+Generating RTLIL representation for module `\MulAddRecFNPipe_l2_e11_s53'.
+Successfully finished Verilog frontend.
+
+130. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/MulAddRecFNPipe_l2_e8_s24.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/MulAddRecFNPipe_l2_e8_s24.sv' to AST representation.
+Generating RTLIL representation for module `\MulAddRecFNPipe_l2_e8_s24'.
+Successfully finished Verilog frontend.
+
+131. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/MulDiv.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/MulDiv.sv' to AST representation.
+Generating RTLIL representation for module `\MulDiv'.
+Successfully finished Verilog frontend.
+
+132. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/NBDTLB.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/NBDTLB.sv' to AST representation.
+Generating RTLIL representation for module `\NBDTLB'.
+Successfully finished Verilog frontend.
+
+133. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/NonSyncResetSynchronizerPrimitiveShiftReg_d3.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/NonSyncResetSynchronizerPrimitiveShiftReg_d3.sv' to AST representation.
+Generating RTLIL representation for module `\NonSyncResetSynchronizerPrimitiveShiftReg_d3'.
+Successfully finished Verilog frontend.
+
+134. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/PTW.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/PTW.sv' to AST representation.
+Generating RTLIL representation for module `\PTW'.
+Successfully finished Verilog frontend.
+
+135. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/PeripheryBus_cbus.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/PeripheryBus_cbus.sv' to AST representation.
+Generating RTLIL representation for module `\PeripheryBus_cbus'.
+Successfully finished Verilog frontend.
+
+136. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/PeripheryBus_pbus.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/PeripheryBus_pbus.sv' to AST representation.
+Generating RTLIL representation for module `\PeripheryBus_pbus'.
+Successfully finished Verilog frontend.
+
+137. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/PhitArbiter_p32_f32_n5.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/PhitArbiter_p32_f32_n5.sv' to AST representation.
+Generating RTLIL representation for module `\PhitArbiter_p32_f32_n5'.
+Successfully finished Verilog frontend.
+
+138. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/PhitArbiter_p32_f32_n5_TestHarness_UNIQUIFIED.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/PhitArbiter_p32_f32_n5_TestHarness_UNIQUIFIED.sv' to AST representation.
+Generating RTLIL representation for module `\PhitArbiter_p32_f32_n5_TestHarness_UNIQUIFIED'.
+Successfully finished Verilog frontend.
+
+139. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/PhitDemux_p32_f32_n5.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/PhitDemux_p32_f32_n5.sv' to AST representation.
+Generating RTLIL representation for module `\PhitDemux_p32_f32_n5'.
+Successfully finished Verilog frontend.
+
+140. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/PhitDemux_p32_f32_n5_TestHarness_UNIQUIFIED.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/PhitDemux_p32_f32_n5_TestHarness_UNIQUIFIED.sv' to AST representation.
+Generating RTLIL representation for module `\PhitDemux_p32_f32_n5_TestHarness_UNIQUIFIED'.
+Successfully finished Verilog frontend.
+
+141. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/PipelinedMulUnit.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/PipelinedMulUnit.sv' to AST representation.
+Generating RTLIL representation for module `\PipelinedMulUnit'.
+Successfully finished Verilog frontend.
+
+142. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/PipelinedMultiplier.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/PipelinedMultiplier.sv' to AST representation.
+Generating RTLIL representation for module `\PipelinedMultiplier'.
+Successfully finished Verilog frontend.
+
+143. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue12_TLBundleC_a32d64s3k3z3c.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue12_TLBundleC_a32d64s3k3z3c.sv' to AST representation.
+Generating RTLIL representation for module `\Queue12_TLBundleC_a32d64s3k3z3c'.
+Successfully finished Verilog frontend.
+
+144. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_AXI4BundleARW.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_AXI4BundleARW.sv' to AST representation.
+Generating RTLIL representation for module `\Queue1_AXI4BundleARW'.
+Successfully finished Verilog frontend.
+
+145. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_AXI4BundleW.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_AXI4BundleW.sv' to AST representation.
+Generating RTLIL representation for module `\Queue1_AXI4BundleW'.
+Successfully finished Verilog frontend.
+
+146. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_BankedStoreInnerAddress.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_BankedStoreInnerAddress.sv' to AST representation.
+Generating RTLIL representation for module `\Queue1_BankedStoreInnerAddress'.
+Successfully finished Verilog frontend.
+
+147. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_BranchPredictionBundle.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_BranchPredictionBundle.sv' to AST representation.
+Generating RTLIL representation for module `\Queue1_BranchPredictionBundle'.
+Successfully finished Verilog frontend.
+
+148. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_BundleMap.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_BundleMap.sv' to AST representation.
+Generating RTLIL representation for module `\Queue1_BundleMap'.
+Successfully finished Verilog frontend.
+
+149. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_DirectoryWrite.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_DirectoryWrite.sv' to AST representation.
+Generating RTLIL representation for module `\Queue1_DirectoryWrite'.
+Successfully finished Verilog frontend.
+
+150. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_FetchBundle.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_FetchBundle.sv' to AST representation.
+Generating RTLIL representation for module `\Queue1_FetchBundle'.
+Successfully finished Verilog frontend.
+
+151. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_FrontendResp.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_FrontendResp.sv' to AST representation.
+Generating RTLIL representation for module `\Queue1_FrontendResp'.
+Successfully finished Verilog frontend.
+
+152. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_RegMapperInput_i23_m8.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_RegMapperInput_i23_m8.sv' to AST representation.
+Generating RTLIL representation for module `\Queue1_RegMapperInput_i23_m8'.
+Successfully finished Verilog frontend.
+
+153. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_RegMapperInput_i9_m8.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_RegMapperInput_i9_m8.sv' to AST representation.
+Generating RTLIL representation for module `\Queue1_RegMapperInput_i9_m8'.
+Successfully finished Verilog frontend.
+
+154. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_SinkXRequest.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_SinkXRequest.sv' to AST representation.
+Generating RTLIL representation for module `\Queue1_SinkXRequest'.
+Successfully finished Verilog frontend.
+
+155. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_SourceXRequest.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_SourceXRequest.sv' to AST representation.
+Generating RTLIL representation for module `\Queue1_SourceXRequest'.
+Successfully finished Verilog frontend.
+
+156. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_TLBundleA_a14d64s7k1z4u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_TLBundleA_a14d64s7k1z4u.sv' to AST representation.
+Generating RTLIL representation for module `\Queue1_TLBundleA_a14d64s7k1z4u'.
+Successfully finished Verilog frontend.
+
+157. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_TLBundleA_a26d64s11k1z2u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_TLBundleA_a26d64s11k1z2u.sv' to AST representation.
+Generating RTLIL representation for module `\Queue1_TLBundleA_a26d64s11k1z2u'.
+Successfully finished Verilog frontend.
+
+158. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_TLBundleA_a32d64s6k3z3c.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_TLBundleA_a32d64s6k3z3c.sv' to AST representation.
+Generating RTLIL representation for module `\Queue1_TLBundleA_a32d64s6k3z3c'.
+Successfully finished Verilog frontend.
+
+159. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_TLBundleA_a64d64s8k8z8c.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_TLBundleA_a64d64s8k8z8c.sv' to AST representation.
+Generating RTLIL representation for module `\Queue1_TLBundleA_a64d64s8k8z8c'.
+Successfully finished Verilog frontend.
+
+160. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_TLBundleD_a26d64s11k1z2u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_TLBundleD_a26d64s11k1z2u.sv' to AST representation.
+Generating RTLIL representation for module `\Queue1_TLBundleD_a26d64s11k1z2u'.
+Successfully finished Verilog frontend.
+
+161. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_TLBundleD_a32d64s6k3z3c.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_TLBundleD_a32d64s6k3z3c.sv' to AST representation.
+Generating RTLIL representation for module `\Queue1_TLBundleD_a32d64s6k3z3c'.
+Successfully finished Verilog frontend.
+
+162. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_TLBundleD_a64d64s8k8z8c.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue1_TLBundleD_a64d64s8k8z8c.sv' to AST representation.
+Generating RTLIL representation for module `\Queue1_TLBundleD_a64d64s8k8z8c'.
+Successfully finished Verilog frontend.
+
+163. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_BranchPredictionUpdate.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_BranchPredictionUpdate.sv' to AST representation.
+Generating RTLIL representation for module `\Queue2_BranchPredictionUpdate'.
+Successfully finished Verilog frontend.
+
+164. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleA_a14d64s7k1z4u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleA_a14d64s7k1z4u.sv' to AST representation.
+Generating RTLIL representation for module `\Queue2_TLBundleA_a14d64s7k1z4u'.
+Successfully finished Verilog frontend.
+
+165. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleA_a21d64s7k1z3u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleA_a21d64s7k1z3u.sv' to AST representation.
+Generating RTLIL representation for module `\Queue2_TLBundleA_a21d64s7k1z3u'.
+Successfully finished Verilog frontend.
+
+166. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleA_a28d64s4k1z3u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleA_a28d64s4k1z3u.sv' to AST representation.
+Generating RTLIL representation for module `\Queue2_TLBundleA_a28d64s4k1z3u'.
+Successfully finished Verilog frontend.
+
+167. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleA_a29d64s7k1z3u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleA_a29d64s7k1z3u.sv' to AST representation.
+Generating RTLIL representation for module `\Queue2_TLBundleA_a29d64s7k1z3u'.
+Successfully finished Verilog frontend.
+
+168. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleA_a29d64s7k1z4u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleA_a29d64s7k1z4u.sv' to AST representation.
+Generating RTLIL representation for module `\Queue2_TLBundleA_a29d64s7k1z4u'.
+Successfully finished Verilog frontend.
+
+169. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleA_a32d64s1k3z4u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleA_a32d64s1k3z4u.sv' to AST representation.
+Generating RTLIL representation for module `\Queue2_TLBundleA_a32d64s1k3z4u'.
+Successfully finished Verilog frontend.
+
+170. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleA_a32d64s3k3z3c.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleA_a32d64s3k3z3c.sv' to AST representation.
+Generating RTLIL representation for module `\Queue2_TLBundleA_a32d64s3k3z3c'.
+Successfully finished Verilog frontend.
+
+171. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleA_a32d64s3k3z4c.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleA_a32d64s3k3z4c.sv' to AST representation.
+Generating RTLIL representation for module `\Queue2_TLBundleA_a32d64s3k3z4c'.
+Successfully finished Verilog frontend.
+
+172. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleA_a32d64s4k3z4u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleA_a32d64s4k3z4u.sv' to AST representation.
+Generating RTLIL representation for module `\Queue2_TLBundleA_a32d64s4k3z4u'.
+Successfully finished Verilog frontend.
+
+173. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleA_a32d64s5k3z4u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleA_a32d64s5k3z4u.sv' to AST representation.
+Generating RTLIL representation for module `\Queue2_TLBundleA_a32d64s5k3z4u'.
+Successfully finished Verilog frontend.
+
+174. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleB_a32d64s3k3z4c.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleB_a32d64s3k3z4c.sv' to AST representation.
+Generating RTLIL representation for module `\Queue2_TLBundleB_a32d64s3k3z4c'.
+Successfully finished Verilog frontend.
+
+175. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleC_a32d64s3k3z4c.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleC_a32d64s3k3z4c.sv' to AST representation.
+Generating RTLIL representation for module `\Queue2_TLBundleC_a32d64s3k3z4c'.
+Successfully finished Verilog frontend.
+
+176. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleC_a32d64s6k3z3c.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleC_a32d64s6k3z3c.sv' to AST representation.
+Generating RTLIL representation for module `\Queue2_TLBundleC_a32d64s6k3z3c'.
+Successfully finished Verilog frontend.
+
+177. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleD_a14d64s7k1z4u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleD_a14d64s7k1z4u.sv' to AST representation.
+Generating RTLIL representation for module `\Queue2_TLBundleD_a14d64s7k1z4u'.
+Successfully finished Verilog frontend.
+
+178. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleD_a21d64s7k1z3u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleD_a21d64s7k1z3u.sv' to AST representation.
+Generating RTLIL representation for module `\Queue2_TLBundleD_a21d64s7k1z3u'.
+Successfully finished Verilog frontend.
+
+179. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleD_a28d64s4k1z3u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleD_a28d64s4k1z3u.sv' to AST representation.
+Generating RTLIL representation for module `\Queue2_TLBundleD_a28d64s4k1z3u'.
+Successfully finished Verilog frontend.
+
+180. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleD_a29d64s7k1z3u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleD_a29d64s7k1z3u.sv' to AST representation.
+Generating RTLIL representation for module `\Queue2_TLBundleD_a29d64s7k1z3u'.
+Successfully finished Verilog frontend.
+
+181. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleD_a29d64s7k1z4u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleD_a29d64s7k1z4u.sv' to AST representation.
+Generating RTLIL representation for module `\Queue2_TLBundleD_a29d64s7k1z4u'.
+Successfully finished Verilog frontend.
+
+182. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleD_a32d64s1k3z4u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleD_a32d64s1k3z4u.sv' to AST representation.
+Generating RTLIL representation for module `\Queue2_TLBundleD_a32d64s1k3z4u'.
+Successfully finished Verilog frontend.
+
+183. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleD_a32d64s3k3z3c.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleD_a32d64s3k3z3c.sv' to AST representation.
+Generating RTLIL representation for module `\Queue2_TLBundleD_a32d64s3k3z3c'.
+Successfully finished Verilog frontend.
+
+184. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleD_a32d64s3k3z4c.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleD_a32d64s3k3z4c.sv' to AST representation.
+Generating RTLIL representation for module `\Queue2_TLBundleD_a32d64s3k3z4c'.
+Successfully finished Verilog frontend.
+
+185. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleD_a32d64s4k3z4u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleD_a32d64s4k3z4u.sv' to AST representation.
+Generating RTLIL representation for module `\Queue2_TLBundleD_a32d64s4k3z4u'.
+Successfully finished Verilog frontend.
+
+186. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleD_a32d64s5k3z4u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleD_a32d64s5k3z4u.sv' to AST representation.
+Generating RTLIL representation for module `\Queue2_TLBundleD_a32d64s5k3z4u'.
+Successfully finished Verilog frontend.
+
+187. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleD_a32d8s1k3z4u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleD_a32d8s1k3z4u.sv' to AST representation.
+Generating RTLIL representation for module `\Queue2_TLBundleD_a32d8s1k3z4u'.
+Successfully finished Verilog frontend.
+
+188. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleE_a32d64s3k3z3c.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleE_a32d64s3k3z3c.sv' to AST representation.
+Generating RTLIL representation for module `\Queue2_TLBundleE_a32d64s3k3z3c'.
+Successfully finished Verilog frontend.
+
+189. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleE_a32d64s3k3z4c.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue2_TLBundleE_a32d64s3k3z4c.sv' to AST representation.
+Generating RTLIL representation for module `\Queue2_TLBundleE_a32d64s3k3z4c'.
+Successfully finished Verilog frontend.
+
+190. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue3_BankedStoreInnerDecoded.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue3_BankedStoreInnerDecoded.sv' to AST representation.
+Generating RTLIL representation for module `\Queue3_BankedStoreInnerDecoded'.
+Successfully finished Verilog frontend.
+
+191. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue8_Flit.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue8_Flit.sv' to AST representation.
+Generating RTLIL representation for module `\Queue8_Flit'.
+Successfully finished Verilog frontend.
+
+192. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue8_Flit_TestHarness_UNIQUIFIED.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue8_Flit_TestHarness_UNIQUIFIED.sv' to AST representation.
+Generating RTLIL representation for module `\Queue8_Flit_TestHarness_UNIQUIFIED'.
+Successfully finished Verilog frontend.
+
+193. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue8_UInt8.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue8_UInt8.sv' to AST representation.
+Generating RTLIL representation for module `\Queue8_UInt8'.
+Successfully finished Verilog frontend.
+
+194. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue8_UInt8_TestHarness_UNIQUIFIED.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Queue8_UInt8_TestHarness_UNIQUIFIED.sv' to AST representation.
+Generating RTLIL representation for module `\Queue8_UInt8_TestHarness_UNIQUIFIED'.
+Successfully finished Verilog frontend.
+
+195. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RecFNToIN_e11_s53_i32.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RecFNToIN_e11_s53_i32.sv' to AST representation.
+Generating RTLIL representation for module `\RecFNToIN_e11_s53_i32'.
+Successfully finished Verilog frontend.
+
+196. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RecFNToIN_e11_s53_i64.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RecFNToIN_e11_s53_i64.sv' to AST representation.
+Generating RTLIL representation for module `\RecFNToIN_e11_s53_i64'.
+Successfully finished Verilog frontend.
+
+197. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RegisterFileSynthesizable.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RegisterFileSynthesizable.sv' to AST representation.
+Generating RTLIL representation for module `\RegisterFileSynthesizable'.
+Successfully finished Verilog frontend.
+
+198. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RegisterFileSynthesizable_1.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RegisterFileSynthesizable_1.sv' to AST representation.
+Generating RTLIL representation for module `\RegisterFileSynthesizable_1'.
+Successfully finished Verilog frontend.
+
+199. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RegisterRead.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RegisterRead.sv' to AST representation.
+Generating RTLIL representation for module `\RegisterRead'.
+Successfully finished Verilog frontend.
+
+200. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RegisterReadDecode.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RegisterReadDecode.sv' to AST representation.
+Generating RTLIL representation for module `\RegisterReadDecode'.
+Successfully finished Verilog frontend.
+
+201. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RegisterReadDecode_1.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RegisterReadDecode_1.sv' to AST representation.
+Generating RTLIL representation for module `\RegisterReadDecode_1'.
+Successfully finished Verilog frontend.
+
+202. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RegisterReadDecode_2.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RegisterReadDecode_2.sv' to AST representation.
+Generating RTLIL representation for module `\RegisterReadDecode_2'.
+Successfully finished Verilog frontend.
+
+203. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RegisterReadDecode_3.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RegisterReadDecode_3.sv' to AST representation.
+Generating RTLIL representation for module `\RegisterReadDecode_3'.
+Successfully finished Verilog frontend.
+
+204. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RegisterRead_1.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RegisterRead_1.sv' to AST representation.
+Generating RTLIL representation for module `\RegisterRead_1'.
+Successfully finished Verilog frontend.
+
+205. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RenameBusyTable.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RenameBusyTable.sv' to AST representation.
+Generating RTLIL representation for module `\RenameBusyTable'.
+Successfully finished Verilog frontend.
+
+206. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RenameBusyTable_1.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RenameBusyTable_1.sv' to AST representation.
+Generating RTLIL representation for module `\RenameBusyTable_1'.
+Successfully finished Verilog frontend.
+
+207. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RenameFreeList.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RenameFreeList.sv' to AST representation.
+Generating RTLIL representation for module `\RenameFreeList'.
+Successfully finished Verilog frontend.
+
+208. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RenameFreeList_1.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RenameFreeList_1.sv' to AST representation.
+Generating RTLIL representation for module `\RenameFreeList_1'.
+Successfully finished Verilog frontend.
+
+209. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RenameMapTable.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RenameMapTable.sv' to AST representation.
+Generating RTLIL representation for module `\RenameMapTable'.
+Successfully finished Verilog frontend.
+
+210. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RenameMapTable_1.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RenameMapTable_1.sv' to AST representation.
+Generating RTLIL representation for module `\RenameMapTable_1'.
+Successfully finished Verilog frontend.
+
+211. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RenameStage.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RenameStage.sv' to AST representation.
+Generating RTLIL representation for module `\RenameStage'.
+Successfully finished Verilog frontend.
+
+212. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RenameStage_1.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RenameStage_1.sv' to AST representation.
+Generating RTLIL representation for module `\RenameStage_1'.
+Successfully finished Verilog frontend.
+
+213. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Repeater_TLBundleA_a12d64s7k1z3u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Repeater_TLBundleA_a12d64s7k1z3u.sv' to AST representation.
+Generating RTLIL representation for module `\Repeater_TLBundleA_a12d64s7k1z3u'.
+Successfully finished Verilog frontend.
+
+214. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Repeater_TLBundleA_a13d64s7k1z3u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Repeater_TLBundleA_a13d64s7k1z3u.sv' to AST representation.
+Generating RTLIL representation for module `\Repeater_TLBundleA_a13d64s7k1z3u'.
+Successfully finished Verilog frontend.
+
+215. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Repeater_TLBundleA_a17d64s7k1z3u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Repeater_TLBundleA_a17d64s7k1z3u.sv' to AST representation.
+Generating RTLIL representation for module `\Repeater_TLBundleA_a17d64s7k1z3u'.
+Successfully finished Verilog frontend.
+
+216. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Repeater_TLBundleA_a21d64s7k1z3u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Repeater_TLBundleA_a21d64s7k1z3u.sv' to AST representation.
+Generating RTLIL representation for module `\Repeater_TLBundleA_a21d64s7k1z3u'.
+Successfully finished Verilog frontend.
+
+217. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Repeater_TLBundleA_a26d64s7k1z3u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Repeater_TLBundleA_a26d64s7k1z3u.sv' to AST representation.
+Generating RTLIL representation for module `\Repeater_TLBundleA_a26d64s7k1z3u'.
+Successfully finished Verilog frontend.
+
+218. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Repeater_TLBundleA_a28d64s4k1z3u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Repeater_TLBundleA_a28d64s4k1z3u.sv' to AST representation.
+Generating RTLIL representation for module `\Repeater_TLBundleA_a28d64s4k1z3u'.
+Successfully finished Verilog frontend.
+
+219. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Repeater_TLBundleA_a28d64s7k1z3u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Repeater_TLBundleA_a28d64s7k1z3u.sv' to AST representation.
+Generating RTLIL representation for module `\Repeater_TLBundleA_a28d64s7k1z3u'.
+Successfully finished Verilog frontend.
+
+220. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Repeater_TLBundleA_a29d64s7k1z3u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Repeater_TLBundleA_a29d64s7k1z3u.sv' to AST representation.
+Generating RTLIL representation for module `\Repeater_TLBundleA_a29d64s7k1z3u'.
+Successfully finished Verilog frontend.
+
+221. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Repeater_TLBundleD_a32d64s1k3z4u.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Repeater_TLBundleD_a32d64s1k3z4u.sv' to AST representation.
+Generating RTLIL representation for module `\Repeater_TLBundleD_a32d64s1k3z4u'.
+Successfully finished Verilog frontend.
+
+222. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Rob.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/Rob.sv' to AST representation.
+Generating RTLIL representation for module `\Rob'.
+Successfully finished Verilog frontend.
+
+223. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RoundAnyRawFNToRecFN_ie11_is53_oe8_os24.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/RoundAnyRawFNToRecFN_ie11_is53_oe8_os24.sv' to AST representation.
+Generating RTLIL representation for module `\RoundAnyRawFNToRecFN_ie11_is53_oe8_os24'.
+Successfully finished Verilog frontend.
+
+224. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/SBToTL.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/SBToTL.sv' to AST representation.
+Generating RTLIL representation for module `\SBToTL'.
+Successfully finished Verilog frontend.
+
+225. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/SerialRAM.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/SerialRAM.sv' to AST representation.
+Generating RTLIL representation for module `\SerialRAM'.
+Successfully finished Verilog frontend.
+
+226. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/SerialTL0ClockSinkDomain.sv
+Parsing SystemVerilog input from `/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/SerialTL0ClockSinkDomain.sv' to AST representation.
+Generating RTLIL representation for module `\SerialTL0ClockSinkDomain'.
+Successfully finished Verilog frontend.
+
+227. Executing Verilog-2005 frontend: /scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/SimUART.v
+/scratch/perf_area_eff/experiment_668df294/syn_obj/input_src/SimUART.v:4: ERROR: syntax error, unexpected TOK_ID, expecting ',' or ')'
+[96m[synthesis] Did not run write_regs[0m

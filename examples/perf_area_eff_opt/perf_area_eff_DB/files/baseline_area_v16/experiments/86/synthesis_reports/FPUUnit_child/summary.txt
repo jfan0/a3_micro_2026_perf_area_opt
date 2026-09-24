@@ -1,0 +1,6 @@
+module: FPUUnit
+success: True
+returncode: 0
+area: 266320.42
+elapsed: 128.1s
+reports: 8

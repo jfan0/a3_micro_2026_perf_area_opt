@@ -1,0 +1,132 @@
+
+746. Printing statistics.
+
+=== BoomTile ===
+
+   Number of wires:             420317
+   Number of wire bits:         420651
+   Number of public wires:       62899
+   Number of public wire bits:   63233
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:             419020
+     $assert                         5
+     cacti_array_0_0_ext             4
+     cacti_btb_0_ext                 2
+     cacti_dataArrayWay_0_ext        4
+     cacti_data_ext                  1
+     cacti_ebtb_ext                  1
+     cacti_ghist_0_ext               2
+     cacti_meta_0_ext                1
+     cacti_table_0_ext               2
+     cacti_table_1_ext               2
+     cacti_table_ext                 4
+     cacti_tag_array_0_ext           1
+     cacti_tag_array_ext             1
+     cacti_tage_us_0_ext             2
+     cacti_tage_us_ext               4
+     sky130_fd_sc_hd__a2111o_1      28
+     sky130_fd_sc_hd__a2111oi_0   1144
+     sky130_fd_sc_hd__a211o_1      261
+     sky130_fd_sc_hd__a211oi_1    3019
+     sky130_fd_sc_hd__a21bo_2       15
+     sky130_fd_sc_hd__a21boi_0     350
+     sky130_fd_sc_hd__a21boi_1      14
+     sky130_fd_sc_hd__a21o_1       961
+     sky130_fd_sc_hd__a21oi_1    39254
+     sky130_fd_sc_hd__a221o_1     1887
+     sky130_fd_sc_hd__a221oi_1    4924
+     sky130_fd_sc_hd__a222oi_1   11506
+     sky130_fd_sc_hd__a22o_1      1981
+     sky130_fd_sc_hd__a22oi_1    12868
+     sky130_fd_sc_hd__a2bb2o_1       5
+     sky130_fd_sc_hd__a2bb2oi_1     81
+     sky130_fd_sc_hd__a311o_1       32
+     sky130_fd_sc_hd__a311oi_1     374
+     sky130_fd_sc_hd__a31o_2        88
+     sky130_fd_sc_hd__a31oi_1     6297
+     sky130_fd_sc_hd__a32o_1       196
+     sky130_fd_sc_hd__a32oi_1      315
+     sky130_fd_sc_hd__a41o_1        27
+     sky130_fd_sc_hd__a41oi_1      124
+     sky130_fd_sc_hd__and2_0        94
+     sky130_fd_sc_hd__and2_1         7
+     sky130_fd_sc_hd__and3_1      1499
+     sky130_fd_sc_hd__and3b_1       20
+     sky130_fd_sc_hd__and4_1       281
+     sky130_fd_sc_hd__and4b_1       32
+     sky130_fd_sc_hd__buf_1        906
+     sky130_fd_sc_hd__buf_2        271
+     sky130_fd_sc_hd__buf_4         40
+     sky130_fd_sc_hd__clkbuf_1   16208
+     sky130_fd_sc_hd__clkinv_1       5
+     sky130_fd_sc_hd__conb_1         2
+     sky130_fd_sc_hd__dfxtp_1    57368
+     sky130_fd_sc_hd__dlygate4sd1_1      1
+     sky130_fd_sc_hd__inv_1       5182
+     sky130_fd_sc_hd__inv_2         35
+     sky130_fd_sc_hd__lpflow_clkbufkapwr_1  24075
+     sky130_fd_sc_hd__lpflow_clkbufkapwr_4      1
+     sky130_fd_sc_hd__lpflow_clkinvkapwr_1    102
+     sky130_fd_sc_hd__lpflow_inputiso0n_1   1893
+     sky130_fd_sc_hd__lpflow_inputiso1p_1      2
+     sky130_fd_sc_hd__lpflow_isobufsrc_1   2961
+     sky130_fd_sc_hd__maj3_1      3216
+     sky130_fd_sc_hd__maj3_2        41
+     sky130_fd_sc_hd__mux2_2      7069
+     sky130_fd_sc_hd__mux2i_1     5406
+     sky130_fd_sc_hd__mux4_2      9926
+     sky130_fd_sc_hd__nand2_1    57768
+     sky130_fd_sc_hd__nand2b_1    1987
+     sky130_fd_sc_hd__nand3_1     7272
+     sky130_fd_sc_hd__nand3b_1     249
+     sky130_fd_sc_hd__nand4_1     3562
+     sky130_fd_sc_hd__nand4b_1     138
+     sky130_fd_sc_hd__nand4bb_1      8
+     sky130_fd_sc_hd__nor2_1     40416
+     sky130_fd_sc_hd__nor2b_1      403
+     sky130_fd_sc_hd__nor3_1      6333
+     sky130_fd_sc_hd__nor3b_1      222
+     sky130_fd_sc_hd__nor4_1      1649
+     sky130_fd_sc_hd__nor4b_1      132
+     sky130_fd_sc_hd__nor4bb_1      23
+     sky130_fd_sc_hd__o2111a_1      27
+     sky130_fd_sc_hd__o2111ai_1    577
+     sky130_fd_sc_hd__o211a_1      111
+     sky130_fd_sc_hd__o211ai_1    1784
+     sky130_fd_sc_hd__o21a_1       920
+     sky130_fd_sc_hd__o21ai_0    39599
+     sky130_fd_sc_hd__o21ai_1      297
+     sky130_fd_sc_hd__o21ai_2        1
+     sky130_fd_sc_hd__o21ba_2       13
+     sky130_fd_sc_hd__o21bai_1     221
+     sky130_fd_sc_hd__o221a_2      174
+     sky130_fd_sc_hd__o221ai_1    1014
+     sky130_fd_sc_hd__o22a_1       570
+     sky130_fd_sc_hd__o22ai_1     5163
+     sky130_fd_sc_hd__o2bb2a_1       3
+     sky130_fd_sc_hd__o2bb2ai_1    218
+     sky130_fd_sc_hd__o311a_1       44
+     sky130_fd_sc_hd__o311ai_0     141
+     sky130_fd_sc_hd__o311ai_1       2
+     sky130_fd_sc_hd__o31a_1       103
+     sky130_fd_sc_hd__o31ai_1      519
+     sky130_fd_sc_hd__o32a_1        98
+     sky130_fd_sc_hd__o32ai_1      180
+     sky130_fd_sc_hd__o41a_1         5
+     sky130_fd_sc_hd__o41ai_1      104
+     sky130_fd_sc_hd__or2_2       1106
+     sky130_fd_sc_hd__or3_1       1037
+     sky130_fd_sc_hd__or3b_2        52
+     sky130_fd_sc_hd__or4_1        302
+     sky130_fd_sc_hd__or4b_2        46
+     sky130_fd_sc_hd__xnor2_1    14664
+     sky130_fd_sc_hd__xnor3_1      120
+     sky130_fd_sc_hd__xor2_1      7094
+     sky130_fd_sc_hd__xor3_1       119
+
+   Area for cell type $assert is unknown!
+
+   Chip area for module '\BoomTile': 4500479.364800
+

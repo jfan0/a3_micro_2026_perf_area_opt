@@ -1,0 +1,16 @@
+{
+    "vlsi.builtins.is_complete": false,
+    "synthesis.outputs.output_files": [
+        "/scratch/perf_area_eff/experiment_a79a8440/syn_obj/syn-rundir/PipelinedMulUnit.mapped.v"
+    ],
+    "synthesis.inputs.input_files": [
+        "/scratch/perf_area_eff/experiment_a79a8440/syn_obj/input_src/ALUExeUnit_1.sv",
+        "/scratch/perf_area_eff/experiment_a79a8440/syn_obj/input_src/PipelinedMulUnit.sv",
+        "/scratch/perf_area_eff/experiment_a79a8440/syn_obj/input_src/PipelinedMultiplier.sv"
+    ],
+    "synthesis.inputs.top_module": "PipelinedMulUnit",
+    "synthesis.outputs.sdc": "/scratch/perf_area_eff/experiment_a79a8440/syn_obj/syn-rundir/PipelinedMulUnit.mapped.sdc",
+    "synthesis.outputs.seq_cells": "/scratch/perf_area_eff/experiment_a79a8440/syn_obj/syn-rundir/find_regs_cells.json",
+    "synthesis.outputs.all_regs": "/scratch/perf_area_eff/experiment_a79a8440/syn_obj/syn-rundir/find_regs_paths.json",
+    "synthesis.outputs.sdf_file": ""
+}

@@ -1,0 +1,6 @@
+module: BoomNonBlockingDCache
+success: True
+returncode: 0
+area: 929251.03
+elapsed: 85.6s
+reports: 8

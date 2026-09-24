@@ -1,0 +1,24 @@
+{
+    "vlsi.builtins.is_complete": false,
+    "synthesis.outputs.output_files": [
+        "/scratch/perf_area_eff/experiment_e238001f/syn_obj/syn-rundir/PTW.mapped.v"
+    ],
+    "synthesis.inputs.input_files": [
+        "/scratch/perf_area_eff/experiment_e238001f/syn_obj/input_src/Arbiter3_Valid_PTWReq.sv",
+        "/scratch/perf_area_eff/experiment_e238001f/syn_obj/input_src/BoomTile.sv",
+        "/scratch/perf_area_eff/experiment_e238001f/syn_obj/input_src/ITLB.sv",
+        "/scratch/perf_area_eff/experiment_e238001f/syn_obj/input_src/NBDTLB.sv",
+        "/scratch/perf_area_eff/experiment_e238001f/syn_obj/input_src/OptimizationBarrier_PTE.sv",
+        "/scratch/perf_area_eff/experiment_e238001f/syn_obj/input_src/OptimizationBarrier_UInt.sv",
+        "/scratch/perf_area_eff/experiment_e238001f/syn_obj/input_src/PTW.sv",
+        "/scratch/perf_area_eff/experiment_e238001f/syn_obj/input_src/cacti_l2_tlb_ram_0_ext.v",
+        "/scratch/perf_area_eff/experiment_e238001f/syn_obj/input_src/chipyard.harness.TestHarness.MediumBoomV3Config.top.mems.v",
+        "/scratch/perf_area_eff/experiment_e238001f/syn_obj/input_src/extern_modules.sv",
+        "/scratch/perf_area_eff/experiment_e238001f/syn_obj/input_src/l2_tlb_ram_0.sv"
+    ],
+    "synthesis.inputs.top_module": "PTW",
+    "synthesis.outputs.sdc": "/scratch/perf_area_eff/experiment_e238001f/syn_obj/syn-rundir/PTW.mapped.sdc",
+    "synthesis.outputs.seq_cells": "/scratch/perf_area_eff/experiment_e238001f/syn_obj/syn-rundir/find_regs_cells.json",
+    "synthesis.outputs.all_regs": "/scratch/perf_area_eff/experiment_e238001f/syn_obj/syn-rundir/find_regs_paths.json",
+    "synthesis.outputs.sdf_file": ""
+}

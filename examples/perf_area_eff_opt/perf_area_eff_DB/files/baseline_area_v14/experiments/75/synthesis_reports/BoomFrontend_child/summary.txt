@@ -1,0 +1,6 @@
+module: BoomFrontend
+success: True
+returncode: 0
+area: 1601455.91
+elapsed: 160.5s
+reports: 8

@@ -1,0 +1,1011 @@
+{
+  "config": "MediumBoomV3Config",
+  "riscv_tests_passed": 237,
+  "riscv_tests_total": 239,
+  "by_suite": {
+    "rv64mi": {
+      "passed": 16,
+      "total": 16
+    },
+    "rv64si": {
+      "passed": 7,
+      "total": 7
+    },
+    "rv64ua": {
+      "passed": 38,
+      "total": 38
+    },
+    "rv64uc": {
+      "passed": 2,
+      "total": 2
+    },
+    "rv64ud": {
+      "passed": 24,
+      "total": 24
+    },
+    "rv64uf": {
+      "passed": 22,
+      "total": 22
+    },
+    "rv64ui": {
+      "passed": 102,
+      "total": 104
+    },
+    "rv64um": {
+      "passed": 26,
+      "total": 26
+    }
+  },
+  "failures": {
+    "rv64ui-p-ma_data": {
+      "outcome": "assert_failed",
+      "returncode": 255,
+      "detail": "wrote 668 to tohost; for riscv-tests that is the number of the failing assertion, findable in the test's .S source"
+    },
+    "rv64ui-v-ma_data": {
+      "outcome": "timeout",
+      "returncode": 255,
+      "detail": "reached the cycle budget after 2000001 cycles"
+    }
+  },
+  "per_test": {
+    "rv64mi-p-access": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64mi-p-breakpoint": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64mi-p-csr": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64mi-p-illegal": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64mi-p-ld-misaligned": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64mi-p-lh-misaligned": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64mi-p-lw-misaligned": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64mi-p-ma_addr": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64mi-p-ma_fetch": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64mi-p-mcsr": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64mi-p-sbreak": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64mi-p-scall": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64mi-p-sd-misaligned": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64mi-p-sh-misaligned": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64mi-p-sw-misaligned": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64mi-p-zicntr": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64si-p-csr": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64si-p-dirty": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64si-p-icache-alias": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64si-p-ma_fetch": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64si-p-sbreak": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64si-p-scall": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64si-p-wfi": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-p-amoadd_d": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-p-amoadd_w": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-p-amoand_d": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-p-amoand_w": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-p-amomax_d": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-p-amomax_w": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-p-amomaxu_d": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-p-amomaxu_w": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-p-amomin_d": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-p-amomin_w": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-p-amominu_d": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-p-amominu_w": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-p-amoor_d": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-p-amoor_w": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-p-amoswap_d": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-p-amoswap_w": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-p-amoxor_d": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-p-amoxor_w": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-p-lrsc": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-v-amoadd_d": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-v-amoadd_w": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-v-amoand_d": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-v-amoand_w": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-v-amomax_d": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-v-amomax_w": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-v-amomaxu_d": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-v-amomaxu_w": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-v-amomin_d": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-v-amomin_w": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-v-amominu_d": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-v-amominu_w": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-v-amoor_d": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-v-amoor_w": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-v-amoswap_d": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-v-amoswap_w": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-v-amoxor_d": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-v-amoxor_w": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ua-v-lrsc": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64uc-p-rvc": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64uc-v-rvc": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ud-p-fadd": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ud-p-fclass": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ud-p-fcmp": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ud-p-fcvt": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ud-p-fcvt_w": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ud-p-fdiv": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ud-p-fmadd": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ud-p-fmin": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ud-p-ldst": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ud-p-move": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ud-p-recoding": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ud-p-structural": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ud-v-fadd": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ud-v-fclass": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ud-v-fcmp": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ud-v-fcvt": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ud-v-fcvt_w": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ud-v-fdiv": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ud-v-fmadd": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ud-v-fmin": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ud-v-ldst": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ud-v-move": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ud-v-recoding": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ud-v-structural": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64uf-p-fadd": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64uf-p-fclass": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64uf-p-fcmp": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64uf-p-fcvt": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64uf-p-fcvt_w": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64uf-p-fdiv": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64uf-p-fmadd": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64uf-p-fmin": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64uf-p-ldst": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64uf-p-move": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64uf-p-recoding": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64uf-v-fadd": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64uf-v-fclass": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64uf-v-fcmp": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64uf-v-fcvt": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64uf-v-fcvt_w": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64uf-v-fdiv": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64uf-v-fmadd": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64uf-v-fmin": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64uf-v-ldst": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64uf-v-move": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64uf-v-recoding": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-add": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-addi": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-addiw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-addw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-and": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-andi": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-auipc": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-beq": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-bge": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-bgeu": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-blt": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-bltu": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-bne": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-fence_i": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-jal": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-jalr": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-lb": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-lbu": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-ld": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-lh": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-lhu": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-lui": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-lw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-lwu": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-ma_data": {
+      "outcome": "assert_failed",
+      "returncode": 255,
+      "detail": "wrote 668 to tohost; for riscv-tests that is the number of the failing assertion, findable in the test's .S source"
+    },
+    "rv64ui-p-or": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-ori": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-sb": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-sd": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-sh": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-simple": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-sll": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-slli": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-slliw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-sllw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-slt": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-slti": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-sltiu": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-sltu": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-sra": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-srai": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-sraiw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-sraw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-srl": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-srli": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-srliw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-srlw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-sub": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-subw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-sw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-xor": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-p-xori": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-add": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-addi": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-addiw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-addw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-and": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-andi": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-auipc": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-beq": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-bge": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-bgeu": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-blt": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-bltu": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-bne": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-fence_i": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-jal": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-jalr": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-lb": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-lbu": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-ld": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-lh": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-lhu": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-lui": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-lw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-lwu": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-ma_data": {
+      "outcome": "timeout",
+      "returncode": 255,
+      "detail": "reached the cycle budget after 2000001 cycles"
+    },
+    "rv64ui-v-or": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-ori": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-sb": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-sd": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-sh": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-simple": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-sll": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-slli": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-slliw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-sllw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-slt": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-slti": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-sltiu": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-sltu": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-sra": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-srai": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-sraiw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-sraw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-srl": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-srli": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-srliw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-srlw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-sub": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-subw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-sw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-xor": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64ui-v-xori": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64um-p-div": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64um-p-divu": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64um-p-divuw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64um-p-divw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64um-p-mul": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64um-p-mulh": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64um-p-mulhsu": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64um-p-mulhu": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64um-p-mulw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64um-p-rem": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64um-p-remu": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64um-p-remuw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64um-p-remw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64um-v-div": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64um-v-divu": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64um-v-divuw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64um-v-divw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64um-v-mul": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64um-v-mulh": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64um-v-mulhsu": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64um-v-mulhu": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64um-v-mulw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64um-v-rem": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64um-v-remu": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64um-v-remuw": {
+      "outcome": "pass",
+      "returncode": 0
+    },
+    "rv64um-v-remw": {
+      "outcome": "pass",
+      "returncode": 0
+    }
+  }
+}

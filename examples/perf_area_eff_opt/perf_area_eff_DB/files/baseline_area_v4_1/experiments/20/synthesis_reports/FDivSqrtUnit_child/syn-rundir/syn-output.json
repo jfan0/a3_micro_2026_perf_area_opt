@@ -1,0 +1,27 @@
+{
+    "vlsi.builtins.is_complete": false,
+    "synthesis.outputs.output_files": [
+        "/scratch/perf_area_eff/experiment_94d1f650/syn_obj/syn-rundir/FDivSqrtUnit.mapped.v"
+    ],
+    "synthesis.inputs.input_files": [
+        "/scratch/perf_area_eff/experiment_94d1f650/syn_obj/input_src/DivSqrtRecF64.sv",
+        "/scratch/perf_area_eff/experiment_94d1f650/syn_obj/input_src/DivSqrtRecF64ToRaw_mulAddZ31.sv",
+        "/scratch/perf_area_eff/experiment_94d1f650/syn_obj/input_src/DivSqrtRecF64_mulAddZ31.sv",
+        "/scratch/perf_area_eff/experiment_94d1f650/syn_obj/input_src/FDivSqrtUnit.sv",
+        "/scratch/perf_area_eff/experiment_94d1f650/syn_obj/input_src/FPToFP.sv",
+        "/scratch/perf_area_eff/experiment_94d1f650/syn_obj/input_src/FPUExeUnit.sv",
+        "/scratch/perf_area_eff/experiment_94d1f650/syn_obj/input_src/Mul54.sv",
+        "/scratch/perf_area_eff/experiment_94d1f650/syn_obj/input_src/RecFNToRecFN.sv",
+        "/scratch/perf_area_eff/experiment_94d1f650/syn_obj/input_src/RecFNToRecFN_1.sv",
+        "/scratch/perf_area_eff/experiment_94d1f650/syn_obj/input_src/RoundAnyRawFNToRecFN_ie11_is53_oe8_os24.sv",
+        "/scratch/perf_area_eff/experiment_94d1f650/syn_obj/input_src/RoundAnyRawFNToRecFN_ie11_is55_oe11_os53_1.sv",
+        "/scratch/perf_area_eff/experiment_94d1f650/syn_obj/input_src/RoundAnyRawFNToRecFN_ie8_is24_oe11_os53.sv",
+        "/scratch/perf_area_eff/experiment_94d1f650/syn_obj/input_src/RoundRawFNToRecFN_e11_s53_1.sv",
+        "/scratch/perf_area_eff/experiment_94d1f650/syn_obj/input_src/UOPCodeFDivDecoder.sv"
+    ],
+    "synthesis.inputs.top_module": "FDivSqrtUnit",
+    "synthesis.outputs.sdc": "/scratch/perf_area_eff/experiment_94d1f650/syn_obj/syn-rundir/FDivSqrtUnit.mapped.sdc",
+    "synthesis.outputs.seq_cells": "/scratch/perf_area_eff/experiment_94d1f650/syn_obj/syn-rundir/find_regs_cells.json",
+    "synthesis.outputs.all_regs": "/scratch/perf_area_eff/experiment_94d1f650/syn_obj/syn-rundir/find_regs_paths.json",
+    "synthesis.outputs.sdf_file": ""
+}

@@ -1,0 +1,6 @@
+module: TageBranchPredictorBank
+success: True
+returncode: 0
+area: 710369.77
+elapsed: 47.1s
+reports: 8

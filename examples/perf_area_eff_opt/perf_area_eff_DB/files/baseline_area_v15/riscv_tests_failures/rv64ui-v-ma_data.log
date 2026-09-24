@@ -1,0 +1,17 @@
+=== outcome: timeout (reached the cycle budget after 2000001 cycles) ===
+=== returncode: 255 ===
+=== stdout (.log) ===
+[UART] UART0 is here (stdin/stdout).
+[2000001000] %Fatal: TestDriver.v:168: Assertion failed in TOP.TestDriver
+%Error: /home/ray/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.MediumBoomV3Config/gen-collateral/TestDriver.v:168: Verilog $stop
+Aborting...
+
+=== stderr (.out, tail) ===
+testing $random e23cbb39
+== Loading device model file '/home/ray/verilator/a84b97e6/dramsim_ini/DDR3_micron_64M_8B_x4_sg15.ini' == 
+== Loading system model file '/home/ray/verilator/a84b97e6/dramsim_ini/system.ini' == 
+===== MemorySystem 0 =====
+CH. 0 TOTAL_STORAGE : 4096MB | 1 Ranks | 16 Devices per rank
+DRAMSim2 Clock Frequency =666666666Hz, CPU Clock Frequency=500000000Hz
+*** FAILED ***                       (timeout) after              2000001 simulation cycles
+

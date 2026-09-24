@@ -1,0 +1,307 @@
+
+172. Printing statistics.
+
+=== BTBBranchPredictorBank ===
+
+   Number of wires:               2933
+   Number of wire bits:           4231
+   Number of public wires:         966
+   Number of public wire bits:    2264
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               3210
+     btb_0                           1
+     btb_1                           1
+     ebtb                            1
+     meta_0                          1
+     meta_1                          1
+     sky130_fd_sc_hd__a2111oi_0      1
+     sky130_fd_sc_hd__a211o_1        4
+     sky130_fd_sc_hd__a211oi_1      18
+     sky130_fd_sc_hd__a21bo_2        1
+     sky130_fd_sc_hd__a21boi_0       1
+     sky130_fd_sc_hd__a21o_1        20
+     sky130_fd_sc_hd__a21oi_1      235
+     sky130_fd_sc_hd__a221o_1        2
+     sky130_fd_sc_hd__a221oi_1       3
+     sky130_fd_sc_hd__a222oi_1       3
+     sky130_fd_sc_hd__a22oi_1        3
+     sky130_fd_sc_hd__a2bb2oi_1      1
+     sky130_fd_sc_hd__a311o_1        2
+     sky130_fd_sc_hd__a31o_2         6
+     sky130_fd_sc_hd__a31oi_1        4
+     sky130_fd_sc_hd__a41oi_1        1
+     sky130_fd_sc_hd__and3_1         9
+     sky130_fd_sc_hd__and4_1         2
+     sky130_fd_sc_hd__buf_1          3
+     sky130_fd_sc_hd__buf_2          1
+     sky130_fd_sc_hd__buf_4        296
+     sky130_fd_sc_hd__clkbuf_1      51
+     sky130_fd_sc_hd__conb_1         1
+     sky130_fd_sc_hd__dfxtp_1      503
+     sky130_fd_sc_hd__inv_1         72
+     sky130_fd_sc_hd__lpflow_clkbufkapwr_1     87
+     sky130_fd_sc_hd__lpflow_clkinvkapwr_1      5
+     sky130_fd_sc_hd__lpflow_inputiso0n_1     58
+     sky130_fd_sc_hd__lpflow_isobufsrc_1     63
+     sky130_fd_sc_hd__maj3_1        23
+     sky130_fd_sc_hd__mux2_2       364
+     sky130_fd_sc_hd__mux2i_1       57
+     sky130_fd_sc_hd__nand2_1      105
+     sky130_fd_sc_hd__nand2b_1      29
+     sky130_fd_sc_hd__nand3_1       44
+     sky130_fd_sc_hd__nand3b_1       2
+     sky130_fd_sc_hd__nand4_1       13
+     sky130_fd_sc_hd__nand4b_1       1
+     sky130_fd_sc_hd__nand4bb_1      1
+     sky130_fd_sc_hd__nor2_1       337
+     sky130_fd_sc_hd__nor2b_1        1
+     sky130_fd_sc_hd__nor3_1        37
+     sky130_fd_sc_hd__nor3b_1        4
+     sky130_fd_sc_hd__nor4_1        11
+     sky130_fd_sc_hd__o2111ai_1      8
+     sky130_fd_sc_hd__o211ai_1      11
+     sky130_fd_sc_hd__o21a_1        12
+     sky130_fd_sc_hd__o21ai_0       69
+     sky130_fd_sc_hd__o21ba_2        3
+     sky130_fd_sc_hd__o21bai_1      11
+     sky130_fd_sc_hd__o221a_2        1
+     sky130_fd_sc_hd__o221ai_1       6
+     sky130_fd_sc_hd__o22a_1         5
+     sky130_fd_sc_hd__o22ai_1       31
+     sky130_fd_sc_hd__o2bb2ai_1      3
+     sky130_fd_sc_hd__o311a_1        1
+     sky130_fd_sc_hd__o311ai_0       1
+     sky130_fd_sc_hd__o31a_1         2
+     sky130_fd_sc_hd__o31ai_1        3
+     sky130_fd_sc_hd__o32a_1         1
+     sky130_fd_sc_hd__o32ai_1        2
+     sky130_fd_sc_hd__o41ai_1        4
+     sky130_fd_sc_hd__or2_2         27
+     sky130_fd_sc_hd__or3_1         11
+     sky130_fd_sc_hd__or3b_2         2
+     sky130_fd_sc_hd__or4_1          9
+     sky130_fd_sc_hd__or4b_2         3
+     sky130_fd_sc_hd__xnor2_1      363
+     sky130_fd_sc_hd__xor2_1       130
+     sky130_fd_sc_hd__xor3_1         1
+
+   Area for cell type \meta_0 is unknown!
+   Area for cell type \meta_1 is unknown!
+   Area for cell type \btb_0 is unknown!
+   Area for cell type \btb_1 is unknown!
+   Area for cell type \ebtb is unknown!
+
+   Chip area for module '\BTBBranchPredictorBank': 28897.715200
+
+=== btb_0 ===
+
+   Number of wires:                  9
+   Number of wire bits:            134
+   Number of public wires:           9
+   Number of public wire bits:     134
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     btb_0_ext                       1
+
+   Area for cell type \btb_0_ext is unknown!
+
+=== btb_0_ext ===
+
+   Number of wires:                  9
+   Number of wire bits:            134
+   Number of public wires:           9
+   Number of public wire bits:     134
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     cacti_btb_0_ext                 1
+
+   Chip area for module '\btb_0_ext': 39022.039000
+
+=== btb_1 ===
+
+   Number of wires:                  9
+   Number of wire bits:            134
+   Number of public wires:           9
+   Number of public wire bits:     134
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     btb_0_ext                       1
+
+   Area for cell type \btb_0_ext is unknown!
+
+=== ebtb ===
+
+   Number of wires:                  8
+   Number of wire bits:             98
+   Number of public wires:           8
+   Number of public wire bits:      98
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     ebtb_ext                        1
+
+   Area for cell type \ebtb_ext is unknown!
+
+=== ebtb_ext ===
+
+   Number of wires:                  8
+   Number of wire bits:             98
+   Number of public wires:           8
+   Number of public wire bits:      98
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     cacti_ebtb_ext                  1
+
+   Chip area for module '\ebtb_ext': 28737.972000
+
+=== meta_0 ===
+
+   Number of wires:                  9
+   Number of wire bits:            110
+   Number of public wires:           9
+   Number of public wire bits:     110
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     table_ext                       1
+
+   Area for cell type \table_ext is unknown!
+
+=== meta_1 ===
+
+   Number of wires:                  9
+   Number of wire bits:            110
+   Number of public wires:           9
+   Number of public wire bits:     110
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     table_ext                       1
+
+   Area for cell type \table_ext is unknown!
+
+=== table_ext ===
+
+   Number of wires:                  9
+   Number of wire bits:            110
+   Number of public wires:           9
+   Number of public wire bits:     110
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     cacti_table_ext                 1
+
+   Chip area for module '\table_ext': 33361.875000
+
+=== design hierarchy ===
+
+   BTBBranchPredictorBank            1
+     btb_0                           1
+       btb_0_ext                     1
+     btb_1                           1
+       btb_0_ext                     1
+     ebtb                            1
+       ebtb_ext                      1
+     meta_0                          1
+       table_ext                     1
+     meta_1                          1
+       table_ext                     1
+
+   Number of wires:               3021
+   Number of wire bits:           5403
+   Number of public wires:        1054
+   Number of public wire bits:    3436
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               3210
+     cacti_btb_0_ext                 2
+     cacti_ebtb_ext                  1
+     cacti_table_ext                 2
+     sky130_fd_sc_hd__a2111oi_0      1
+     sky130_fd_sc_hd__a211o_1        4
+     sky130_fd_sc_hd__a211oi_1      18
+     sky130_fd_sc_hd__a21bo_2        1
+     sky130_fd_sc_hd__a21boi_0       1
+     sky130_fd_sc_hd__a21o_1        20
+     sky130_fd_sc_hd__a21oi_1      235
+     sky130_fd_sc_hd__a221o_1        2
+     sky130_fd_sc_hd__a221oi_1       3
+     sky130_fd_sc_hd__a222oi_1       3
+     sky130_fd_sc_hd__a22oi_1        3
+     sky130_fd_sc_hd__a2bb2oi_1      1
+     sky130_fd_sc_hd__a311o_1        2
+     sky130_fd_sc_hd__a31o_2         6
+     sky130_fd_sc_hd__a31oi_1        4
+     sky130_fd_sc_hd__a41oi_1        1
+     sky130_fd_sc_hd__and3_1         9
+     sky130_fd_sc_hd__and4_1         2
+     sky130_fd_sc_hd__buf_1          3
+     sky130_fd_sc_hd__buf_2          1
+     sky130_fd_sc_hd__buf_4        296
+     sky130_fd_sc_hd__clkbuf_1      51
+     sky130_fd_sc_hd__conb_1         1
+     sky130_fd_sc_hd__dfxtp_1      503
+     sky130_fd_sc_hd__inv_1         72
+     sky130_fd_sc_hd__lpflow_clkbufkapwr_1     87
+     sky130_fd_sc_hd__lpflow_clkinvkapwr_1      5
+     sky130_fd_sc_hd__lpflow_inputiso0n_1     58
+     sky130_fd_sc_hd__lpflow_isobufsrc_1     63
+     sky130_fd_sc_hd__maj3_1        23
+     sky130_fd_sc_hd__mux2_2       364
+     sky130_fd_sc_hd__mux2i_1       57
+     sky130_fd_sc_hd__nand2_1      105
+     sky130_fd_sc_hd__nand2b_1      29
+     sky130_fd_sc_hd__nand3_1       44
+     sky130_fd_sc_hd__nand3b_1       2
+     sky130_fd_sc_hd__nand4_1       13
+     sky130_fd_sc_hd__nand4b_1       1
+     sky130_fd_sc_hd__nand4bb_1      1
+     sky130_fd_sc_hd__nor2_1       337
+     sky130_fd_sc_hd__nor2b_1        1
+     sky130_fd_sc_hd__nor3_1        37
+     sky130_fd_sc_hd__nor3b_1        4
+     sky130_fd_sc_hd__nor4_1        11
+     sky130_fd_sc_hd__o2111ai_1      8
+     sky130_fd_sc_hd__o211ai_1      11
+     sky130_fd_sc_hd__o21a_1        12
+     sky130_fd_sc_hd__o21ai_0       69
+     sky130_fd_sc_hd__o21ba_2        3
+     sky130_fd_sc_hd__o21bai_1      11
+     sky130_fd_sc_hd__o221a_2        1
+     sky130_fd_sc_hd__o221ai_1       6
+     sky130_fd_sc_hd__o22a_1         5
+     sky130_fd_sc_hd__o22ai_1       31
+     sky130_fd_sc_hd__o2bb2ai_1      3
+     sky130_fd_sc_hd__o311a_1        1
+     sky130_fd_sc_hd__o311ai_0       1
+     sky130_fd_sc_hd__o31a_1         2
+     sky130_fd_sc_hd__o31ai_1        3
+     sky130_fd_sc_hd__o32a_1         1
+     sky130_fd_sc_hd__o32ai_1        2
+     sky130_fd_sc_hd__o41ai_1        4
+     sky130_fd_sc_hd__or2_2         27
+     sky130_fd_sc_hd__or3_1         11
+     sky130_fd_sc_hd__or3b_2         2
+     sky130_fd_sc_hd__or4_1          9
+     sky130_fd_sc_hd__or4b_2         3
+     sky130_fd_sc_hd__xnor2_1      363
+     sky130_fd_sc_hd__xor2_1       130
+     sky130_fd_sc_hd__xor3_1         1
+
+   Chip area for top module '\BTBBranchPredictorBank': 202403.515200
+

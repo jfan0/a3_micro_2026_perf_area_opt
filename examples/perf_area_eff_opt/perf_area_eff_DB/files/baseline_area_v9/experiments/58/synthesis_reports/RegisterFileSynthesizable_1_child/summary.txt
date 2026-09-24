@@ -1,0 +1,6 @@
+module: RegisterFileSynthesizable_1
+success: True
+returncode: 0
+area: 520599.30
+elapsed: 88.7s
+reports: 8

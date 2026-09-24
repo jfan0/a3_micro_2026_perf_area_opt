@@ -1,0 +1,143 @@
+
+155. Printing statistics.
+
+=== RegisterFileSynthesizable ===
+
+   Number of wires:                 33
+   Number of wire bits:            383
+   Number of public wires:          32
+   Number of public wire bits:     382
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 20
+     regfile_40x65                   1
+     sky130_fd_sc_hd__conb_1         1
+     sky130_fd_sc_hd__dfxtp_1       18
+
+   Area for cell type \regfile_40x65 is unknown!
+
+   Chip area for module '\RegisterFileSynthesizable': 364.099200
+
+=== regfile_40x65 ===
+
+   Number of wires:              18687
+   Number of wire bits:          19032
+   Number of public wires:        2620
+   Number of public wire bits:    2965
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              18862
+     sky130_fd_sc_hd__a211o_1        8
+     sky130_fd_sc_hd__a21oi_1      202
+     sky130_fd_sc_hd__a221o_1        9
+     sky130_fd_sc_hd__a221oi_1       6
+     sky130_fd_sc_hd__a22oi_1       22
+     sky130_fd_sc_hd__a311oi_1      30
+     sky130_fd_sc_hd__a31oi_1     1717
+     sky130_fd_sc_hd__a32oi_1        6
+     sky130_fd_sc_hd__and3_1         1
+     sky130_fd_sc_hd__and3b_1        8
+     sky130_fd_sc_hd__and4_1         3
+     sky130_fd_sc_hd__and4b_1        3
+     sky130_fd_sc_hd__buf_1         35
+     sky130_fd_sc_hd__buf_2         14
+     sky130_fd_sc_hd__buf_4          2
+     sky130_fd_sc_hd__clkbuf_1     523
+     sky130_fd_sc_hd__dfxtp_1     2600
+     sky130_fd_sc_hd__inv_1         21
+     sky130_fd_sc_hd__inv_2          5
+     sky130_fd_sc_hd__lpflow_clkbufkapwr_1   1800
+     sky130_fd_sc_hd__lpflow_inputiso0n_1      6
+     sky130_fd_sc_hd__lpflow_isobufsrc_1      8
+     sky130_fd_sc_hd__mux2i_1      218
+     sky130_fd_sc_hd__mux4_2      2050
+     sky130_fd_sc_hd__nand2_1     3763
+     sky130_fd_sc_hd__nand2b_1      12
+     sky130_fd_sc_hd__nand3_1       22
+     sky130_fd_sc_hd__nand3b_1       1
+     sky130_fd_sc_hd__nand4_1        4
+     sky130_fd_sc_hd__nor2_1      3213
+     sky130_fd_sc_hd__nor3_1       720
+     sky130_fd_sc_hd__nor3b_1        8
+     sky130_fd_sc_hd__nor4b_1        2
+     sky130_fd_sc_hd__nor4bb_1       7
+     sky130_fd_sc_hd__o211a_1        1
+     sky130_fd_sc_hd__o211ai_1      41
+     sky130_fd_sc_hd__o21a_1        46
+     sky130_fd_sc_hd__o21ai_0      516
+     sky130_fd_sc_hd__o221a_2       27
+     sky130_fd_sc_hd__o221ai_1     150
+     sky130_fd_sc_hd__o22ai_1      939
+     sky130_fd_sc_hd__o31ai_1       38
+     sky130_fd_sc_hd__o32ai_1       33
+     sky130_fd_sc_hd__or2_2         20
+     sky130_fd_sc_hd__or3_1          1
+     sky130_fd_sc_hd__or3b_2         1
+
+   Chip area for module '\regfile_40x65': 163707.008000
+
+=== design hierarchy ===
+
+   RegisterFileSynthesizable         1
+     regfile_40x65                   1
+
+   Number of wires:              18720
+   Number of wire bits:          19415
+   Number of public wires:        2652
+   Number of public wire bits:    3347
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              18881
+     sky130_fd_sc_hd__a211o_1        8
+     sky130_fd_sc_hd__a21oi_1      202
+     sky130_fd_sc_hd__a221o_1        9
+     sky130_fd_sc_hd__a221oi_1       6
+     sky130_fd_sc_hd__a22oi_1       22
+     sky130_fd_sc_hd__a311oi_1      30
+     sky130_fd_sc_hd__a31oi_1     1717
+     sky130_fd_sc_hd__a32oi_1        6
+     sky130_fd_sc_hd__and3_1         1
+     sky130_fd_sc_hd__and3b_1        8
+     sky130_fd_sc_hd__and4_1         3
+     sky130_fd_sc_hd__and4b_1        3
+     sky130_fd_sc_hd__buf_1         35
+     sky130_fd_sc_hd__buf_2         14
+     sky130_fd_sc_hd__buf_4          2
+     sky130_fd_sc_hd__clkbuf_1     523
+     sky130_fd_sc_hd__conb_1         1
+     sky130_fd_sc_hd__dfxtp_1     2618
+     sky130_fd_sc_hd__inv_1         21
+     sky130_fd_sc_hd__inv_2          5
+     sky130_fd_sc_hd__lpflow_clkbufkapwr_1   1800
+     sky130_fd_sc_hd__lpflow_inputiso0n_1      6
+     sky130_fd_sc_hd__lpflow_isobufsrc_1      8
+     sky130_fd_sc_hd__mux2i_1      218
+     sky130_fd_sc_hd__mux4_2      2050
+     sky130_fd_sc_hd__nand2_1     3763
+     sky130_fd_sc_hd__nand2b_1      12
+     sky130_fd_sc_hd__nand3_1       22
+     sky130_fd_sc_hd__nand3b_1       1
+     sky130_fd_sc_hd__nand4_1        4
+     sky130_fd_sc_hd__nor2_1      3213
+     sky130_fd_sc_hd__nor3_1       720
+     sky130_fd_sc_hd__nor3b_1        8
+     sky130_fd_sc_hd__nor4b_1        2
+     sky130_fd_sc_hd__nor4bb_1       7
+     sky130_fd_sc_hd__o211a_1        1
+     sky130_fd_sc_hd__o211ai_1      41
+     sky130_fd_sc_hd__o21a_1        46
+     sky130_fd_sc_hd__o21ai_0      516
+     sky130_fd_sc_hd__o221a_2       27
+     sky130_fd_sc_hd__o221ai_1     150
+     sky130_fd_sc_hd__o22ai_1      939
+     sky130_fd_sc_hd__o31ai_1       38
+     sky130_fd_sc_hd__o32ai_1       33
+     sky130_fd_sc_hd__or2_2         20
+     sky130_fd_sc_hd__or3_1          1
+     sky130_fd_sc_hd__or3b_2         1
+
+   Chip area for top module '\RegisterFileSynthesizable': 164071.107200
+

@@ -1,0 +1,6 @@
+module: ALUExeUnit_1
+success: True
+returncode: 0
+area: 313689.60
+elapsed: 172.7s
+reports: 8

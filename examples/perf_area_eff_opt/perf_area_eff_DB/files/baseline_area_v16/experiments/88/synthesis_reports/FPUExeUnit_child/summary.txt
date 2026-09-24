@@ -1,0 +1,6 @@
+module: FPUExeUnit
+success: True
+returncode: 0
+area: 357780.64
+elapsed: 84.7s
+reports: 8

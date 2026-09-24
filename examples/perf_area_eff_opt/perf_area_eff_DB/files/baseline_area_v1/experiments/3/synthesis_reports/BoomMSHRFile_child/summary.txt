@@ -1,0 +1,6 @@
+module: BoomMSHRFile
+success: True
+returncode: 0
+area: 248438.27
+elapsed: 43.7s
+reports: 8

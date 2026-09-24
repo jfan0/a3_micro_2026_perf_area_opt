@@ -1,0 +1,19 @@
+{
+    "vlsi.builtins.is_complete": false,
+    "synthesis.outputs.output_files": [
+        "/scratch/perf_area_eff/experiment_738e6f97/syn_obj/syn-rundir/ITLB.mapped.v"
+    ],
+    "synthesis.inputs.input_files": [
+        "/scratch/perf_area_eff/experiment_738e6f97/syn_obj/input_src/BoomFrontend.sv",
+        "/scratch/perf_area_eff/experiment_738e6f97/syn_obj/input_src/ITLB.sv",
+        "/scratch/perf_area_eff/experiment_738e6f97/syn_obj/input_src/NBDTLB.sv",
+        "/scratch/perf_area_eff/experiment_738e6f97/syn_obj/input_src/OptimizationBarrier_TLBEntryData.sv",
+        "/scratch/perf_area_eff/experiment_738e6f97/syn_obj/input_src/PMAChecker.sv",
+        "/scratch/perf_area_eff/experiment_738e6f97/syn_obj/input_src/PMPChecker_s3.sv"
+    ],
+    "synthesis.inputs.top_module": "ITLB",
+    "synthesis.outputs.sdc": "/scratch/perf_area_eff/experiment_738e6f97/syn_obj/syn-rundir/ITLB.mapped.sdc",
+    "synthesis.outputs.seq_cells": "/scratch/perf_area_eff/experiment_738e6f97/syn_obj/syn-rundir/find_regs_cells.json",
+    "synthesis.outputs.all_regs": "/scratch/perf_area_eff/experiment_738e6f97/syn_obj/syn-rundir/find_regs_paths.json",
+    "synthesis.outputs.sdf_file": ""
+}

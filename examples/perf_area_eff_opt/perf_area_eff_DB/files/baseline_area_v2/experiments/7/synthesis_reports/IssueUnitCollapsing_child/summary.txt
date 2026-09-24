@@ -1,0 +1,6 @@
+module: IssueUnitCollapsing
+success: True
+returncode: 0
+area: 357494.12
+elapsed: 81.3s
+reports: 8

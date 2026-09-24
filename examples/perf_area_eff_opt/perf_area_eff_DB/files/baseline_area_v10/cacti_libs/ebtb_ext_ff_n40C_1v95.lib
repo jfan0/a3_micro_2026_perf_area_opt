@@ -1,0 +1,1763 @@
+library (cacti_ebtb_ext) {
+  delay_model : table_lookup;
+  capacitive_load_unit (1,pf);
+  current_unit : "1mA";
+  leakage_power_unit : "1nW";
+  time_unit : "1ns";
+  voltage_unit : "1V";
+  input_threshold_pct_rise : 50;
+  input_threshold_pct_fall : 50;
+  output_threshold_pct_rise : 50;
+  output_threshold_pct_fall : 50;
+  slew_lower_threshold_pct_rise : 20;
+  slew_lower_threshold_pct_fall : 20;
+  slew_upper_threshold_pct_rise : 80;
+  slew_upper_threshold_pct_fall : 80;
+  slew_derate_from_library : 1.0;
+  nom_process : 1;
+  nom_temperature : -40;
+  nom_voltage : 1.95;
+  voltage_map (VDD, 1.95);
+  voltage_map (VSS, 0);
+  operating_conditions (PVT_1P95V_-40C) {
+    process : 1;
+    temperature : -40;
+    voltage : 1.95;
+  }
+  default_operating_conditions : PVT_1P95V_-40C;
+  bus_naming_style : "%s[%d]";
+
+  type (bus_cacti_ebtb_ext_W0_addr) {
+    base_type : array;
+    data_type : bit;
+    bit_width : 7;
+    bit_from  : 6;
+    bit_to    : 0;
+    downto    : true;
+  }
+
+  type (bus_cacti_ebtb_ext_W0_data) {
+    base_type : array;
+    data_type : bit;
+    bit_width : 40;
+    bit_from  : 39;
+    bit_to    : 0;
+    downto    : true;
+  }
+
+  type (bus_cacti_ebtb_ext_R0_addr) {
+    base_type : array;
+    data_type : bit;
+    bit_width : 7;
+    bit_from  : 6;
+    bit_to    : 0;
+    downto    : true;
+  }
+
+  type (bus_cacti_ebtb_ext_R0_data) {
+    base_type : array;
+    data_type : bit;
+    bit_width : 40;
+    bit_from  : 39;
+    bit_to    : 0;
+    downto    : true;
+  }
+
+  cell (cacti_ebtb_ext) {
+    area : 28737.972;
+    cell_leakage_power : 123585.000;
+    dont_touch : true;
+    interface_timing : true;
+    is_macro_cell : true;
+
+    pg_pin (VDD) {
+      direction : inout;
+      pg_type : primary_power;
+      voltage_name : "VDD";
+    }
+    pg_pin (VSS) {
+      direction : inout;
+      pg_type : primary_ground;
+      voltage_name : "VSS";
+    }
+
+    memory () {
+      address_width : 7;
+      type : ram;
+      word_width : 40;
+    }
+
+    pin (W0_clk) {
+      clock : true;
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.005;
+      timing () {
+        timing_type : min_pulse_width;
+        related_pin : "W0_clk";
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+    }
+
+    pin (W0_en) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    bus (W0_addr) {
+      bus_type : bus_cacti_ebtb_ext_W0_addr;
+      direction : input;
+    pin (W0_addr[6]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_addr[5]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_addr[4]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_addr[3]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_addr[2]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_addr[1]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_addr[0]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    }
+
+    bus (W0_data) {
+      bus_type : bus_cacti_ebtb_ext_W0_data;
+      direction : input;
+    pin (W0_data[39]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[38]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[37]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[36]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[35]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[34]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[33]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[32]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[31]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[30]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[29]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[28]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[27]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[26]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[25]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[24]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[23]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[22]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[21]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[20]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[19]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[18]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[17]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[16]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[15]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[14]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[13]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[12]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[11]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[10]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[9]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[8]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[7]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[6]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[5]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[4]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[3]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[2]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[1]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (W0_data[0]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "W0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    }
+
+    pin (R0_clk) {
+      clock : true;
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.005;
+      timing () {
+        timing_type : min_pulse_width;
+        related_pin : "R0_clk";
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+    }
+
+    pin (R0_en) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "R0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "R0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    bus (R0_addr) {
+      bus_type : bus_cacti_ebtb_ext_R0_addr;
+      direction : input;
+    pin (R0_addr[6]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "R0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "R0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (R0_addr[5]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "R0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "R0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (R0_addr[4]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "R0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "R0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (R0_addr[3]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "R0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "R0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (R0_addr[2]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "R0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "R0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (R0_addr[1]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "R0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "R0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    pin (R0_addr[0]) {
+      direction : input;
+      related_ground_pin : VSS;
+      related_power_pin : VDD;
+      capacitance : 0.003;
+      timing () {
+        related_pin : "R0_clk";
+        timing_type : setup_rising;
+        rise_constraint (scalar) { values ("0.5455"); }
+        fall_constraint (scalar) { values ("0.5455"); }
+      }
+      timing () {
+        related_pin : "R0_clk";
+        timing_type : hold_rising;
+        rise_constraint (scalar) { values ("0.1364"); }
+        fall_constraint (scalar) { values ("0.1364"); }
+      }
+    }
+
+    }
+
+    bus (R0_data) {
+      bus_type : bus_cacti_ebtb_ext_R0_data;
+      direction : output;
+      pin (R0_data[39]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[38]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[37]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[36]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[35]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[34]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[33]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[32]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[31]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[30]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[29]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[28]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[27]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[26]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[25]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[24]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[23]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[22]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[21]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[20]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[19]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[18]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[17]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[16]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[15]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[14]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[13]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[12]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[11]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[10]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[9]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[8]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[7]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[6]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[5]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[4]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[3]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[2]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[1]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+      pin (R0_data[0]) {
+        related_ground_pin : VSS;
+        related_power_pin : VDD;
+        max_capacitance : 0.5;
+        timing () {
+          related_pin : "R0_clk";
+          timing_sense : non_unate;
+          timing_type : rising_edge;
+          cell_rise (scalar) { values ("2.7274"); }
+          cell_fall (scalar) { values ("2.7274"); }
+          rise_transition (scalar) { values ("0.05"); }
+          fall_transition (scalar) { values ("0.05"); }
+        }
+      }
+    }
+
+  }
+}

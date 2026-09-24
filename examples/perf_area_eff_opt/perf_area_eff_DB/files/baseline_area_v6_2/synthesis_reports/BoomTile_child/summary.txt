@@ -1,0 +1,6 @@
+module: BoomTile
+success: True
+returncode: 0
+area: 5964895.82
+elapsed: 2433.6s
+reports: 8

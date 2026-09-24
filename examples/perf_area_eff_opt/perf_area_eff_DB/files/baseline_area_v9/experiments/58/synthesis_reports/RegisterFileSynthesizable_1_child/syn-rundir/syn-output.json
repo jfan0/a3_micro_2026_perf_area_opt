@@ -1,0 +1,16 @@
+{
+    "vlsi.builtins.is_complete": false,
+    "synthesis.outputs.output_files": [
+        "/scratch/perf_area_eff/experiment_b5e97de8/syn_obj/syn-rundir/RegisterFileSynthesizable_1.mapped.v"
+    ],
+    "synthesis.inputs.input_files": [
+        "/scratch/perf_area_eff/experiment_b5e97de8/syn_obj/input_src/BoomCore.sv",
+        "/scratch/perf_area_eff/experiment_b5e97de8/syn_obj/input_src/RegisterFileSynthesizable_1.sv",
+        "/scratch/perf_area_eff/experiment_b5e97de8/syn_obj/input_src/regfile_80x64.sv"
+    ],
+    "synthesis.inputs.top_module": "RegisterFileSynthesizable_1",
+    "synthesis.outputs.sdc": "/scratch/perf_area_eff/experiment_b5e97de8/syn_obj/syn-rundir/RegisterFileSynthesizable_1.mapped.sdc",
+    "synthesis.outputs.seq_cells": "/scratch/perf_area_eff/experiment_b5e97de8/syn_obj/syn-rundir/find_regs_cells.json",
+    "synthesis.outputs.all_regs": "/scratch/perf_area_eff/experiment_b5e97de8/syn_obj/syn-rundir/find_regs_paths.json",
+    "synthesis.outputs.sdf_file": ""
+}

@@ -1,0 +1,6 @@
+module: BTBBranchPredictorBank
+success: True
+returncode: 0
+area: 202403.52
+elapsed: 103.7s
+reports: 8

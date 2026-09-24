@@ -1,0 +1,162 @@
+{
+  "config": "MediumBoomV3Config",
+  "embench_mean_ipc": 1.428717,
+  "embench_speed_score_per_mhz": 2.193479,
+  "embench_tests": 19,
+  "embench_expected": 19,
+  "embench_missing_ipc": [],
+  "per_test": {
+    "tarfind": {
+      "outcome": "pass",
+      "returncode": 0,
+      "total_cycles": 1592596,
+      "roi_cycles": 753762,
+      "roi_instret": 1041392,
+      "ipc": 1.381593
+    },
+    "nettle-sha256": {
+      "outcome": "pass",
+      "returncode": 0,
+      "total_cycles": 4814436,
+      "roi_cycles": 2375029,
+      "roi_instret": 4611257,
+      "ipc": 1.941558
+    },
+    "sglib-combined": {
+      "outcome": "pass",
+      "returncode": 0,
+      "total_cycles": 5039956,
+      "roi_cycles": 2390556,
+      "roi_instret": 2574355,
+      "ipc": 1.076885
+    },
+    "crc32": {
+      "outcome": "pass",
+      "returncode": 0,
+      "total_cycles": 5070956,
+      "roi_cycles": 2496056,
+      "roi_instret": 3832011,
+      "ipc": 1.535226
+    },
+    "nsichneu": {
+      "outcome": "pass",
+      "returncode": 0,
+      "total_cycles": 6908916,
+      "roi_cycles": 3415817,
+      "roi_instret": 2248423,
+      "ipc": 0.658239
+    },
+    "aha-mont64": {
+      "outcome": "pass",
+      "returncode": 0,
+      "total_cycles": 2803286,
+      "roi_cycles": 1372950,
+      "roi_instret": 2133482,
+      "ipc": 1.55394
+    },
+    "md5sum": {
+      "outcome": "pass",
+      "returncode": 0,
+      "total_cycles": 2916596,
+      "roi_cycles": 1411214,
+      "roi_instret": 2632909,
+      "ipc": 1.865705
+    },
+    "wikisort": {
+      "outcome": "pass",
+      "returncode": 0,
+      "total_cycles": 2911076,
+      "roi_cycles": 948976,
+      "roi_instret": 1380400,
+      "ipc": 1.454621
+    },
+    "matmult-int": {
+      "outcome": "pass",
+      "returncode": 0,
+      "total_cycles": 2955656,
+      "roi_cycles": 1390221,
+      "roi_instret": 2696735,
+      "ipc": 1.939789
+    },
+    "statemate": {
+      "outcome": "pass",
+      "returncode": 0,
+      "total_cycles": 3401006,
+      "roi_cycles": 1675196,
+      "roi_instret": 1625074,
+      "ipc": 0.97008
+    },
+    "slre": {
+      "outcome": "pass",
+      "returncode": 0,
+      "total_cycles": 3550506,
+      "roi_cycles": 1732514,
+      "roi_instret": 2737520,
+      "ipc": 1.580085
+    },
+    "edn": {
+      "outcome": "pass",
+      "returncode": 0,
+      "total_cycles": 3543926,
+      "roi_cycles": 1722554,
+      "roi_instret": 3161813,
+      "ipc": 1.835538
+    },
+    "depthconv": {
+      "outcome": "pass",
+      "returncode": 0,
+      "total_cycles": 3699106,
+      "roi_cycles": 1824430,
+      "roi_instret": 3255081,
+      "ipc": 1.784163
+    },
+    "xgboost": {
+      "outcome": "pass",
+      "returncode": 0,
+      "total_cycles": 9323176,
+      "roi_cycles": 2312552,
+      "roi_instret": 1756547,
+      "ipc": 0.759571
+    },
+    "nettle-aes": {
+      "outcome": "pass",
+      "returncode": 0,
+      "total_cycles": 4932606,
+      "roi_cycles": 2402590,
+      "roi_instret": 4653364,
+      "ipc": 1.936812
+    },
+    "picojpeg": {
+      "outcome": "pass",
+      "returncode": 0,
+      "total_cycles": 4078746,
+      "roi_cycles": 1668068,
+      "roi_instret": 2840206,
+      "ipc": 1.702692
+    },
+    "ud": {
+      "outcome": "pass",
+      "returncode": 0,
+      "total_cycles": 5635936,
+      "roi_cycles": 2791650,
+      "roi_instret": 2793559,
+      "ipc": 1.000684
+    },
+    "huffbench": {
+      "outcome": "pass",
+      "returncode": 0,
+      "total_cycles": 4320956,
+      "roi_cycles": 1938449,
+      "roi_instret": 2149437,
+      "ipc": 1.108844
+    },
+    "qrduino": {
+      "outcome": "pass",
+      "returncode": 0,
+      "total_cycles": 6536416,
+      "roi_cycles": 2681257,
+      "roi_instret": 2841066,
+      "ipc": 1.059602
+    }
+  }
+}

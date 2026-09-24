@@ -1,0 +1,31 @@
+{
+    "vlsi.builtins.is_complete": false,
+    "synthesis.outputs.output_files": [
+        "/scratch/perf_area_eff/experiment_8295eca4/syn_obj/syn-rundir/ALUExeUnit_1.mapped.v"
+    ],
+    "synthesis.inputs.input_files": [
+        "/scratch/perf_area_eff/experiment_8295eca4/syn_obj/input_src/ALUExeUnit_1.sv",
+        "/scratch/perf_area_eff/experiment_8295eca4/syn_obj/input_src/ALUExeUnit_2.sv",
+        "/scratch/perf_area_eff/experiment_8295eca4/syn_obj/input_src/ALUUnit.sv",
+        "/scratch/perf_area_eff/experiment_8295eca4/syn_obj/input_src/ALUUnit_1.sv",
+        "/scratch/perf_area_eff/experiment_8295eca4/syn_obj/input_src/BoomCore.sv",
+        "/scratch/perf_area_eff/experiment_8295eca4/syn_obj/input_src/BranchKillableQueue_3.sv",
+        "/scratch/perf_area_eff/experiment_8295eca4/syn_obj/input_src/FPU.sv",
+        "/scratch/perf_area_eff/experiment_8295eca4/syn_obj/input_src/INToRecFN_i64_e11_s53.sv",
+        "/scratch/perf_area_eff/experiment_8295eca4/syn_obj/input_src/INToRecFN_i64_e8_s24.sv",
+        "/scratch/perf_area_eff/experiment_8295eca4/syn_obj/input_src/IntToFP.sv",
+        "/scratch/perf_area_eff/experiment_8295eca4/syn_obj/input_src/IntToFPUnit.sv",
+        "/scratch/perf_area_eff/experiment_8295eca4/syn_obj/input_src/PipelinedMulUnit.sv",
+        "/scratch/perf_area_eff/experiment_8295eca4/syn_obj/input_src/PipelinedMultiplier.sv",
+        "/scratch/perf_area_eff/experiment_8295eca4/syn_obj/input_src/RocketALU.sv",
+        "/scratch/perf_area_eff/experiment_8295eca4/syn_obj/input_src/RoundAnyRawFNToRecFN_ie7_is64_oe11_os53.sv",
+        "/scratch/perf_area_eff/experiment_8295eca4/syn_obj/input_src/RoundAnyRawFNToRecFN_ie7_is64_oe8_os24.sv",
+        "/scratch/perf_area_eff/experiment_8295eca4/syn_obj/input_src/UOPCodeFPUDecoder.sv",
+        "/scratch/perf_area_eff/experiment_8295eca4/syn_obj/input_src/ram_12x78.sv"
+    ],
+    "synthesis.inputs.top_module": "ALUExeUnit_1",
+    "synthesis.outputs.sdc": "/scratch/perf_area_eff/experiment_8295eca4/syn_obj/syn-rundir/ALUExeUnit_1.mapped.sdc",
+    "synthesis.outputs.seq_cells": "/scratch/perf_area_eff/experiment_8295eca4/syn_obj/syn-rundir/find_regs_cells.json",
+    "synthesis.outputs.all_regs": "/scratch/perf_area_eff/experiment_8295eca4/syn_obj/syn-rundir/find_regs_paths.json",
+    "synthesis.outputs.sdf_file": ""
+}

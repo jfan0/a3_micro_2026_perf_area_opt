@@ -1,0 +1,3007 @@
+CHIA_METRIC setup_slack
+worst slack 19.4005
+CHIA_METRIC hold_slack
+worst slack 0.4836
+CHIA_METRIC min_period
+clock period_min = 0.60 fmax = 1667.99
+CHIA_METRIC critical_paths
+Startpoint: regfile_ext/_34148_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34148_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34148_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3301    0.3301 ^ regfile_ext/_34148_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0585    0.3887 v regfile_ext/_28884_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5205 ^ regfile_ext/_28885_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5239 ^ regfile_ext/_34148_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5239   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34148_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5239   data arrival time
+-------------------------------------------------------------
+            19.4005   slack (MET)
+
+
+Startpoint: regfile_ext/_34831_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34831_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34831_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3301    0.3301 ^ regfile_ext/_34831_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0585    0.3887 v regfile_ext/_31909_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5205 ^ regfile_ext/_31910_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5239 ^ regfile_ext/_34831_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5239   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34831_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5239   data arrival time
+-------------------------------------------------------------
+            19.4005   slack (MET)
+
+
+Startpoint: regfile_ext/_34799_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34799_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34799_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3304    0.3304 ^ regfile_ext/_34799_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0586    0.3890 v regfile_ext/_31779_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1314    0.5204 ^ regfile_ext/_31780_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5239 ^ regfile_ext/_34799_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5239   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34799_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5239   data arrival time
+-------------------------------------------------------------
+            19.4005   slack (MET)
+
+
+Startpoint: regfile_ext/_33303_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33303_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33303_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3301    0.3301 ^ regfile_ext/_33303_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0585    0.3886 v regfile_ext/_25097_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5203 ^ regfile_ext/_25098_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5238 ^ regfile_ext/_33303_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5238   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33303_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5238   data arrival time
+-------------------------------------------------------------
+            19.4006   slack (MET)
+
+
+Startpoint: regfile_ext/_34246_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34246_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34246_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3301    0.3301 ^ regfile_ext/_34246_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0585    0.3886 v regfile_ext/_29348_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5203 ^ regfile_ext/_29349_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5238 ^ regfile_ext/_34246_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5238   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34246_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5238   data arrival time
+-------------------------------------------------------------
+            19.4006   slack (MET)
+
+
+Startpoint: regfile_ext/_33697_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33697_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33697_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3303    0.3303 ^ regfile_ext/_33697_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0586    0.3889 v regfile_ext/_26880_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1314    0.5203 ^ regfile_ext/_26881_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5237 ^ regfile_ext/_33697_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5237   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33697_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5237   data arrival time
+-------------------------------------------------------------
+            19.4007   slack (MET)
+
+
+Startpoint: regfile_ext/_34100_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34100_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34100_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3301    0.3301 ^ regfile_ext/_34100_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0585    0.3887 v regfile_ext/_28633_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1315    0.5202 ^ regfile_ext/_28634_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5236 ^ regfile_ext/_34100_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5236   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34100_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5236   data arrival time
+-------------------------------------------------------------
+            19.4008   slack (MET)
+
+
+Startpoint: regfile_ext/_33255_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33255_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33255_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3301    0.3301 ^ regfile_ext/_33255_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0585    0.3886 v regfile_ext/_24889_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1315    0.5201 ^ regfile_ext/_24890_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5235 ^ regfile_ext/_33255_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5235   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33255_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5235   data arrival time
+-------------------------------------------------------------
+            19.4009   slack (MET)
+
+
+Startpoint: regfile_ext/_34051_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34051_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34051_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3284    0.3284 ^ regfile_ext/_34051_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0578    0.3862 v regfile_ext/_28416_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5180 ^ regfile_ext/_28417_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5215 ^ regfile_ext/_34051_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5215   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34051_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5215   data arrival time
+-------------------------------------------------------------
+            19.4029   slack (MET)
+
+
+Startpoint: regfile_ext/_34311_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34311_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34311_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3283    0.3283 ^ regfile_ext/_34311_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0578    0.3861 v regfile_ext/_29632_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5178 ^ regfile_ext/_29633_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5213 ^ regfile_ext/_34311_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5213   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34311_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5213   data arrival time
+-------------------------------------------------------------
+            19.4031   slack (MET)
+
+
+Startpoint: regfile_ext/_33502_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33502_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33502_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3284    0.3284 ^ regfile_ext/_33502_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0578    0.3862 v regfile_ext/_25974_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1314    0.5176 ^ regfile_ext/_25975_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5211 ^ regfile_ext/_33502_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5211   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33502_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5211   data arrival time
+-------------------------------------------------------------
+            19.4033   slack (MET)
+
+
+Startpoint: regfile_ext/_34019_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34019_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34019_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3284    0.3284 ^ regfile_ext/_34019_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0578    0.3862 v regfile_ext/_28283_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1314    0.5176 ^ regfile_ext/_28284_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5211 ^ regfile_ext/_34019_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5211   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34019_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5211   data arrival time
+-------------------------------------------------------------
+            19.4033   slack (MET)
+
+
+Startpoint: regfile_ext/_33762_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33762_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33762_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3283    0.3283 ^ regfile_ext/_33762_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0578    0.3861 v regfile_ext/_27167_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1314    0.5175 ^ regfile_ext/_27168_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5210 ^ regfile_ext/_33762_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5210   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33762_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5210   data arrival time
+-------------------------------------------------------------
+            19.4034   slack (MET)
+
+
+Startpoint: regfile_ext/_34279_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34279_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34279_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3283    0.3283 ^ regfile_ext/_34279_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0578    0.3861 v regfile_ext/_29500_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1314    0.5175 ^ regfile_ext/_29501_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5210 ^ regfile_ext/_34279_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5210   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34279_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5210   data arrival time
+-------------------------------------------------------------
+            19.4034   slack (MET)
+
+
+Startpoint: regfile_ext/_33317_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33317_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33317_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3268    0.3268 ^ regfile_ext/_33317_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0572    0.3840 v regfile_ext/_25164_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5158 ^ regfile_ext/_25165_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5193 ^ regfile_ext/_33317_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5193   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33317_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5193   data arrival time
+-------------------------------------------------------------
+            19.4051   slack (MET)
+
+
+Startpoint: regfile_ext/_33333_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33333_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33333_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3268    0.3268 ^ regfile_ext/_33333_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0572    0.3840 v regfile_ext/_25228_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5158 ^ regfile_ext/_25229_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5193 ^ regfile_ext/_33333_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5193   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33333_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5193   data arrival time
+-------------------------------------------------------------
+            19.4051   slack (MET)
+
+
+Startpoint: regfile_ext/_33349_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33349_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33349_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3268    0.3268 ^ regfile_ext/_33349_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0572    0.3840 v regfile_ext/_25299_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5158 ^ regfile_ext/_25300_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5193 ^ regfile_ext/_33349_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5193   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33349_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5193   data arrival time
+-------------------------------------------------------------
+            19.4051   slack (MET)
+
+
+Startpoint: regfile_ext/_33365_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33365_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33365_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3268    0.3268 ^ regfile_ext/_33365_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0572    0.3840 v regfile_ext/_25367_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5158 ^ regfile_ext/_25368_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5193 ^ regfile_ext/_33365_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5193   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33365_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5193   data arrival time
+-------------------------------------------------------------
+            19.4051   slack (MET)
+
+
+Startpoint: regfile_ext/_33754_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33754_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33754_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3266    0.3266 ^ regfile_ext/_33754_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0572    0.3838 v regfile_ext/_27120_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1319    0.5157 ^ regfile_ext/_27121_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5191 ^ regfile_ext/_33754_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5191   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33754_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5191   data arrival time
+-------------------------------------------------------------
+            19.4053   slack (MET)
+
+
+Startpoint: regfile_ext/_33755_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33755_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33755_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3266    0.3266 ^ regfile_ext/_33755_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0572    0.3838 v regfile_ext/_27124_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1319    0.5157 ^ regfile_ext/_27125_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5191 ^ regfile_ext/_33755_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5191   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33755_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5191   data arrival time
+-------------------------------------------------------------
+            19.4053   slack (MET)
+
+
+Startpoint: regfile_ext/_33706_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33706_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33706_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3266    0.3266 ^ regfile_ext/_33706_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0572    0.3838 v regfile_ext/_26917_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5155 ^ regfile_ext/_26918_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5190 ^ regfile_ext/_33706_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5190   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33706_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5190   data arrival time
+-------------------------------------------------------------
+            19.4054   slack (MET)
+
+
+Startpoint: regfile_ext/_33707_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33707_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33707_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3266    0.3266 ^ regfile_ext/_33707_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0572    0.3838 v regfile_ext/_26921_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5155 ^ regfile_ext/_26922_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5190 ^ regfile_ext/_33707_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5190   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33707_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5190   data arrival time
+-------------------------------------------------------------
+            19.4054   slack (MET)
+
+
+Startpoint: regfile_ext/_33711_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33711_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33711_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3266    0.3266 ^ regfile_ext/_33711_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0572    0.3838 v regfile_ext/_26938_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5155 ^ regfile_ext/_26939_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5190 ^ regfile_ext/_33711_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5190   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33711_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5190   data arrival time
+-------------------------------------------------------------
+            19.4054   slack (MET)
+
+
+Startpoint: regfile_ext/_33722_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33722_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33722_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3266    0.3266 ^ regfile_ext/_33722_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0572    0.3838 v regfile_ext/_26980_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5155 ^ regfile_ext/_26981_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5190 ^ regfile_ext/_33722_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5190   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33722_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5190   data arrival time
+-------------------------------------------------------------
+            19.4054   slack (MET)
+
+
+Startpoint: regfile_ext/_33723_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33723_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33723_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3266    0.3266 ^ regfile_ext/_33723_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0572    0.3838 v regfile_ext/_26984_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5155 ^ regfile_ext/_26985_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5190 ^ regfile_ext/_33723_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5190   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33723_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5190   data arrival time
+-------------------------------------------------------------
+            19.4054   slack (MET)
+
+
+Startpoint: regfile_ext/_33727_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33727_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33727_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3266    0.3266 ^ regfile_ext/_33727_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0572    0.3838 v regfile_ext/_27003_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5155 ^ regfile_ext/_27004_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5190 ^ regfile_ext/_33727_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5190   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33727_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5190   data arrival time
+-------------------------------------------------------------
+            19.4054   slack (MET)
+
+
+Startpoint: regfile_ext/_33738_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33738_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33738_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3266    0.3266 ^ regfile_ext/_33738_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0572    0.3838 v regfile_ext/_27051_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5155 ^ regfile_ext/_27052_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5190 ^ regfile_ext/_33738_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5190   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33738_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5190   data arrival time
+-------------------------------------------------------------
+            19.4054   slack (MET)
+
+
+Startpoint: regfile_ext/_33739_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33739_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33739_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3266    0.3266 ^ regfile_ext/_33739_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0572    0.3838 v regfile_ext/_27056_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5155 ^ regfile_ext/_27057_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5190 ^ regfile_ext/_33739_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5190   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33739_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5190   data arrival time
+-------------------------------------------------------------
+            19.4054   slack (MET)
+
+
+Startpoint: regfile_ext/_33743_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33743_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33743_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3266    0.3266 ^ regfile_ext/_33743_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0572    0.3838 v regfile_ext/_27072_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5155 ^ regfile_ext/_27073_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5190 ^ regfile_ext/_33743_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5190   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33743_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5190   data arrival time
+-------------------------------------------------------------
+            19.4054   slack (MET)
+
+
+Startpoint: regfile_ext/_34826_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34826_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34826_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3265    0.3265 ^ regfile_ext/_34826_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3837 v regfile_ext/_31886_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5155 ^ regfile_ext/_31887_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5189 ^ regfile_ext/_34826_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5189   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34826_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5189   data arrival time
+-------------------------------------------------------------
+            19.4055   slack (MET)
+
+
+Startpoint: regfile_ext/_34847_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34847_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34847_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3265    0.3265 ^ regfile_ext/_34847_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3837 v regfile_ext/_31978_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5155 ^ regfile_ext/_31979_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5189 ^ regfile_ext/_34847_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5189   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34847_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5189   data arrival time
+-------------------------------------------------------------
+            19.4055   slack (MET)
+
+
+Startpoint: regfile_ext/_32653_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_32653_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_32653_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_32653_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_22562_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1319    0.5154 ^ regfile_ext/_22563_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5188 ^ regfile_ext/_32653_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5188   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_32653_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5188   data arrival time
+-------------------------------------------------------------
+            19.4056   slack (MET)
+
+
+Startpoint: regfile_ext/_34278_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34278_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34278_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_34278_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_29485_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1319    0.5154 ^ regfile_ext/_29486_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5188 ^ regfile_ext/_34278_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5188   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34278_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5188   data arrival time
+-------------------------------------------------------------
+            19.4056   slack (MET)
+
+
+Startpoint: regfile_ext/_34116_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34116_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34116_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_34116_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_28716_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5153 ^ regfile_ext/_28717_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5188 ^ regfile_ext/_34116_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5188   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34116_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5188   data arrival time
+-------------------------------------------------------------
+            19.4056   slack (MET)
+
+
+Startpoint: regfile_ext/_34138_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34138_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34138_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_34138_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_28834_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5153 ^ regfile_ext/_28835_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5188 ^ regfile_ext/_34138_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5188   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34138_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5188   data arrival time
+-------------------------------------------------------------
+            19.4056   slack (MET)
+
+
+Startpoint: regfile_ext/_32605_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_32605_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_32605_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_32605_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_22354_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5153 ^ regfile_ext/_22355_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5188 ^ regfile_ext/_32605_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5188   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_32605_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5188   data arrival time
+-------------------------------------------------------------
+            19.4056   slack (MET)
+
+
+Startpoint: regfile_ext/_34230_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34230_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34230_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_34230_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_29276_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5153 ^ regfile_ext/_29277_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5188 ^ regfile_ext/_34230_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5188   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34230_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5188   data arrival time
+-------------------------------------------------------------
+            19.4056   slack (MET)
+
+
+Startpoint: regfile_ext/_34371_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34371_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34371_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_34371_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_29905_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5153 ^ regfile_ext/_29906_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5187 ^ regfile_ext/_34371_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5187   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34371_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5187   data arrival time
+-------------------------------------------------------------
+            19.4057   slack (MET)
+
+
+Startpoint: regfile_ext/_34376_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34376_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34376_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_34376_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_29929_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5153 ^ regfile_ext/_29930_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5187 ^ regfile_ext/_34376_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5187   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34376_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5187   data arrival time
+-------------------------------------------------------------
+            19.4057   slack (MET)
+
+
+Startpoint: regfile_ext/_34392_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34392_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34392_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_34392_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_29997_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5153 ^ regfile_ext/_29998_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5187 ^ regfile_ext/_34392_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5187   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34392_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5187   data arrival time
+-------------------------------------------------------------
+            19.4057   slack (MET)
+
+
+Startpoint: regfile_ext/_34398_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34398_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34398_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_34398_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_30025_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5153 ^ regfile_ext/_30026_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5187 ^ regfile_ext/_34398_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5187   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34398_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5187   data arrival time
+-------------------------------------------------------------
+            19.4057   slack (MET)
+
+
+Startpoint: regfile_ext/_34408_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34408_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34408_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_34408_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_30065_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5153 ^ regfile_ext/_30066_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5187 ^ regfile_ext/_34408_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5187   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34408_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5187   data arrival time
+-------------------------------------------------------------
+            19.4057   slack (MET)
+
+
+Startpoint: regfile_ext/_34741_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34741_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34741_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_34741_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_31516_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5153 ^ regfile_ext/_31517_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5188 ^ regfile_ext/_34741_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5188   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34741_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5188   data arrival time
+-------------------------------------------------------------
+            19.4056   slack (MET)
+
+
+Startpoint: regfile_ext/_32643_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_32643_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_32643_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_32643_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_22521_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5152 ^ regfile_ext/_22522_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5187 ^ regfile_ext/_32643_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5187   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_32643_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5187   data arrival time
+-------------------------------------------------------------
+            19.4057   slack (MET)
+
+
+Startpoint: regfile_ext/_33261_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33261_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33261_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_33261_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_24917_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5152 ^ regfile_ext/_24918_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5187 ^ regfile_ext/_33261_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5187   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33261_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5187   data arrival time
+-------------------------------------------------------------
+            19.4057   slack (MET)
+
+
+Startpoint: regfile_ext/_33269_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33269_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33269_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_33269_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_24952_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5152 ^ regfile_ext/_24953_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5187 ^ regfile_ext/_33269_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5187   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33269_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5187   data arrival time
+-------------------------------------------------------------
+            19.4057   slack (MET)
+
+
+Startpoint: regfile_ext/_33271_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33271_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33271_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_33271_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_24961_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5152 ^ regfile_ext/_24962_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5187 ^ regfile_ext/_33271_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5187   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33271_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5187   data arrival time
+-------------------------------------------------------------
+            19.4057   slack (MET)
+
+
+Startpoint: regfile_ext/_33277_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33277_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33277_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_33277_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_24986_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5152 ^ regfile_ext/_24987_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5187 ^ regfile_ext/_33277_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5187   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33277_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5187   data arrival time
+-------------------------------------------------------------
+            19.4057   slack (MET)
+
+
+Startpoint: regfile_ext/_33282_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33282_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33282_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_33282_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_25009_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5152 ^ regfile_ext/_25010_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5187 ^ regfile_ext/_33282_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5187   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33282_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5187   data arrival time
+-------------------------------------------------------------
+            19.4057   slack (MET)
+
+
+Startpoint: regfile_ext/_33285_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33285_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33285_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_33285_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_25021_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5152 ^ regfile_ext/_25022_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5187 ^ regfile_ext/_33285_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5187   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33285_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5187   data arrival time
+-------------------------------------------------------------
+            19.4057   slack (MET)
+
+
+Startpoint: regfile_ext/_33287_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33287_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33287_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_33287_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_25030_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5152 ^ regfile_ext/_25031_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5187 ^ regfile_ext/_33287_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5187   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33287_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5187   data arrival time
+-------------------------------------------------------------
+            19.4057   slack (MET)
+
+
+Startpoint: regfile_ext/_33293_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33293_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33293_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_33293_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_25057_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5152 ^ regfile_ext/_25058_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5187 ^ regfile_ext/_33293_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5187   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33293_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5187   data arrival time
+-------------------------------------------------------------
+            19.4057   slack (MET)
+
+
+Startpoint: regfile_ext/_33298_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33298_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33298_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_33298_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_25077_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5153 ^ regfile_ext/_25078_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5187 ^ regfile_ext/_33298_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5187   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33298_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5187   data arrival time
+-------------------------------------------------------------
+            19.4057   slack (MET)
+
+
+Startpoint: regfile_ext/_33301_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33301_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33301_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_33301_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_25089_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5153 ^ regfile_ext/_25090_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5187 ^ regfile_ext/_33301_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5187   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33301_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5187   data arrival time
+-------------------------------------------------------------
+            19.4057   slack (MET)
+
+
+Startpoint: regfile_ext/_33701_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33701_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33701_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_33701_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_26899_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5152 ^ regfile_ext/_26900_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5187 ^ regfile_ext/_33701_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5187   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33701_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5187   data arrival time
+-------------------------------------------------------------
+            19.4057   slack (MET)
+
+
+Startpoint: regfile_ext/_33748_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33748_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33748_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_33748_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_27095_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5152 ^ regfile_ext/_27096_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5187 ^ regfile_ext/_33748_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5187   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33748_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5187   data arrival time
+-------------------------------------------------------------
+            19.4057   slack (MET)
+
+
+Startpoint: regfile_ext/_34241_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34241_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34241_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_34241_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_29325_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5152 ^ regfile_ext/_29326_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5187 ^ regfile_ext/_34241_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5187   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34241_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5187   data arrival time
+-------------------------------------------------------------
+            19.4057   slack (MET)
+
+
+Startpoint: regfile_ext/_34262_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34262_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34262_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_34262_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_29417_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5152 ^ regfile_ext/_29418_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5187 ^ regfile_ext/_34262_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5187   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34262_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5187   data arrival time
+-------------------------------------------------------------
+            19.4057   slack (MET)
+
+
+Startpoint: regfile_ext/_34268_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34268_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34268_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_34268_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_29444_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5152 ^ regfile_ext/_29445_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5187 ^ regfile_ext/_34268_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5187   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34268_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5187   data arrival time
+-------------------------------------------------------------
+            19.4057   slack (MET)
+
+
+Startpoint: regfile_ext/_34360_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34360_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34360_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_34360_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_29857_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1316    0.5151 ^ regfile_ext/_29858_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5185 ^ regfile_ext/_34360_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5185   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34360_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5185   data arrival time
+-------------------------------------------------------------
+            19.4059   slack (MET)
+
+
+Startpoint: regfile_ext/_33239_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33239_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33239_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_33239_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_24826_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1315    0.5150 ^ regfile_ext/_24827_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5184 ^ regfile_ext/_33239_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5184   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33239_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5184   data arrival time
+-------------------------------------------------------------
+            19.4060   slack (MET)
+
+
+Startpoint: regfile_ext/_33253_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33253_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33253_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3264    0.3264 ^ regfile_ext/_33253_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0571    0.3835 v regfile_ext/_24881_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1315    0.5150 ^ regfile_ext/_24882_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5184 ^ regfile_ext/_33253_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5184   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33253_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5184   data arrival time
+-------------------------------------------------------------
+            19.4060   slack (MET)
+
+
+Startpoint: regfile_ext/_33820_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33820_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33820_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3256    0.3256 ^ regfile_ext/_33820_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0568    0.3824 v regfile_ext/_27409_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1319    0.5143 ^ regfile_ext/_27410_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5178 ^ regfile_ext/_33820_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5178   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33820_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5178   data arrival time
+-------------------------------------------------------------
+            19.4066   slack (MET)
+
+
+Startpoint: regfile_ext/_33986_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33986_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33986_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3257    0.3257 ^ regfile_ext/_33986_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0568    0.3825 v regfile_ext/_28132_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5143 ^ regfile_ext/_28133_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5178 ^ regfile_ext/_33986_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5178   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33986_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5178   data arrival time
+-------------------------------------------------------------
+            19.4066   slack (MET)
+
+
+Startpoint: regfile_ext/_34343_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34343_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34343_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3256    0.3256 ^ regfile_ext/_34343_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0568    0.3824 v regfile_ext/_29786_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1319    0.5143 ^ regfile_ext/_29787_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5178 ^ regfile_ext/_34343_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5178   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34343_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5178   data arrival time
+-------------------------------------------------------------
+            19.4066   slack (MET)
+
+
+Startpoint: regfile_ext/_34473_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34473_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34473_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3256    0.3256 ^ regfile_ext/_34473_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0568    0.3824 v regfile_ext/_30347_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1319    0.5143 ^ regfile_ext/_30348_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5178 ^ regfile_ext/_34473_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5178   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34473_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5178   data arrival time
+-------------------------------------------------------------
+            19.4066   slack (MET)
+
+
+Startpoint: regfile_ext/_33788_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33788_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33788_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3256    0.3256 ^ regfile_ext/_33788_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0568    0.3824 v regfile_ext/_27269_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5142 ^ regfile_ext/_27270_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5176 ^ regfile_ext/_33788_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5176   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33788_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5176   data arrival time
+-------------------------------------------------------------
+            19.4068   slack (MET)
+
+
+Startpoint: regfile_ext/_33804_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33804_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33804_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3256    0.3256 ^ regfile_ext/_33804_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0568    0.3824 v regfile_ext/_27341_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5142 ^ regfile_ext/_27342_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5176 ^ regfile_ext/_33804_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5176   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33804_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5176   data arrival time
+-------------------------------------------------------------
+            19.4068   slack (MET)
+
+
+Startpoint: regfile_ext/_33813_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33813_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33813_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3256    0.3256 ^ regfile_ext/_33813_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0568    0.3824 v regfile_ext/_27380_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5142 ^ regfile_ext/_27381_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5176 ^ regfile_ext/_33813_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5176   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33813_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5176   data arrival time
+-------------------------------------------------------------
+            19.4068   slack (MET)
+
+
+Startpoint: regfile_ext/_33819_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33819_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33819_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3255    0.3255 ^ regfile_ext/_33819_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0568    0.3823 v regfile_ext/_27405_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1319    0.5142 ^ regfile_ext/_27406_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5177 ^ regfile_ext/_33819_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5177   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33819_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5177   data arrival time
+-------------------------------------------------------------
+            19.4068   slack (MET)
+
+
+Startpoint: regfile_ext/_34295_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34295_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34295_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3256    0.3256 ^ regfile_ext/_34295_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0568    0.3824 v regfile_ext/_29564_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5142 ^ regfile_ext/_29565_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5176 ^ regfile_ext/_34295_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5176   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34295_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5176   data arrival time
+-------------------------------------------------------------
+            19.4068   slack (MET)
+
+
+Startpoint: regfile_ext/_34306_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34306_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34306_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3256    0.3256 ^ regfile_ext/_34306_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0568    0.3824 v regfile_ext/_29609_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5142 ^ regfile_ext/_29610_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5176 ^ regfile_ext/_34306_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5176   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34306_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5176   data arrival time
+-------------------------------------------------------------
+            19.4068   slack (MET)
+
+
+Startpoint: regfile_ext/_34327_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34327_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34327_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3256    0.3256 ^ regfile_ext/_34327_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0568    0.3824 v regfile_ext/_29702_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5142 ^ regfile_ext/_29703_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5176 ^ regfile_ext/_34327_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5176   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34327_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5176   data arrival time
+-------------------------------------------------------------
+            19.4068   slack (MET)
+
+
+Startpoint: regfile_ext/_34333_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34333_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34333_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3256    0.3256 ^ regfile_ext/_34333_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0568    0.3824 v regfile_ext/_29735_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5142 ^ regfile_ext/_29736_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5176 ^ regfile_ext/_34333_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5176   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34333_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5176   data arrival time
+-------------------------------------------------------------
+            19.4068   slack (MET)
+
+
+Startpoint: regfile_ext/_34425_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34425_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34425_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3256    0.3256 ^ regfile_ext/_34425_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0568    0.3824 v regfile_ext/_30139_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5142 ^ regfile_ext/_30140_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5176 ^ regfile_ext/_34425_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5176   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34425_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5176   data arrival time
+-------------------------------------------------------------
+            19.4068   slack (MET)
+
+
+Startpoint: regfile_ext/_34436_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34436_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34436_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3256    0.3256 ^ regfile_ext/_34436_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0568    0.3824 v regfile_ext/_30187_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5142 ^ regfile_ext/_30188_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5176 ^ regfile_ext/_34436_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5176   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34436_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5176   data arrival time
+-------------------------------------------------------------
+            19.4068   slack (MET)
+
+
+Startpoint: regfile_ext/_34441_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34441_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34441_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3256    0.3256 ^ regfile_ext/_34441_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0568    0.3824 v regfile_ext/_30210_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5142 ^ regfile_ext/_30211_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5176 ^ regfile_ext/_34441_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5176   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34441_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5176   data arrival time
+-------------------------------------------------------------
+            19.4068   slack (MET)
+
+
+Startpoint: regfile_ext/_34457_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34457_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34457_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3256    0.3256 ^ regfile_ext/_34457_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0568    0.3824 v regfile_ext/_30279_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5142 ^ regfile_ext/_30280_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5176 ^ regfile_ext/_34457_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5176   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34457_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5176   data arrival time
+-------------------------------------------------------------
+            19.4068   slack (MET)
+
+
+Startpoint: regfile_ext/_34463_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34463_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34463_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3256    0.3256 ^ regfile_ext/_34463_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0568    0.3824 v regfile_ext/_30306_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5142 ^ regfile_ext/_30307_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5176 ^ regfile_ext/_34463_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5176   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34463_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5176   data arrival time
+-------------------------------------------------------------
+            19.4068   slack (MET)
+
+
+Startpoint: regfile_ext/_34830_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34830_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34830_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3256    0.3256 ^ regfile_ext/_34830_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0568    0.3824 v regfile_ext/_31905_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5142 ^ regfile_ext/_31906_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5176 ^ regfile_ext/_34830_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5176   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34830_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5176   data arrival time
+-------------------------------------------------------------
+            19.4068   slack (MET)
+
+
+Startpoint: regfile_ext/_33771_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33771_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33771_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3255    0.3255 ^ regfile_ext/_33771_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0568    0.3823 v regfile_ext/_27200_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5141 ^ regfile_ext/_27201_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5175 ^ regfile_ext/_33771_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5175   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33771_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5175   data arrival time
+-------------------------------------------------------------
+            19.4069   slack (MET)
+
+
+Startpoint: regfile_ext/_33776_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33776_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33776_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3255    0.3255 ^ regfile_ext/_33776_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0568    0.3823 v regfile_ext/_27217_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5141 ^ regfile_ext/_27218_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5175 ^ regfile_ext/_33776_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5175   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33776_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5175   data arrival time
+-------------------------------------------------------------
+            19.4069   slack (MET)
+
+
+Startpoint: regfile_ext/_33787_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33787_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33787_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3255    0.3255 ^ regfile_ext/_33787_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0568    0.3823 v regfile_ext/_27265_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5141 ^ regfile_ext/_27266_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5175 ^ regfile_ext/_33787_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5175   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33787_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5175   data arrival time
+-------------------------------------------------------------
+            19.4069   slack (MET)
+
+
+Startpoint: regfile_ext/_33792_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33792_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33792_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3255    0.3255 ^ regfile_ext/_33792_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0568    0.3823 v regfile_ext/_27288_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5141 ^ regfile_ext/_27289_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5175 ^ regfile_ext/_33792_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5175   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33792_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5175   data arrival time
+-------------------------------------------------------------
+            19.4069   slack (MET)
+
+
+Startpoint: regfile_ext/_33803_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33803_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33803_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3255    0.3255 ^ regfile_ext/_33803_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0568    0.3823 v regfile_ext/_27336_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5141 ^ regfile_ext/_27337_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5175 ^ regfile_ext/_33803_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5175   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33803_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5175   data arrival time
+-------------------------------------------------------------
+            19.4069   slack (MET)
+
+
+Startpoint: regfile_ext/_33808_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33808_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33808_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3255    0.3255 ^ regfile_ext/_33808_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0568    0.3823 v regfile_ext/_27357_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5141 ^ regfile_ext/_27358_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5175 ^ regfile_ext/_33808_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5175   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33808_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5175   data arrival time
+-------------------------------------------------------------
+            19.4069   slack (MET)
+
+
+Startpoint: regfile_ext/_34747_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34747_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34747_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3254    0.3254 ^ regfile_ext/_34747_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0567    0.3822 v regfile_ext/_31544_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5140 ^ regfile_ext/_31545_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5175 ^ regfile_ext/_34747_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5175   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34747_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5175   data arrival time
+-------------------------------------------------------------
+            19.4069   slack (MET)
+
+
+Startpoint: regfile_ext/_34763_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34763_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34763_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3254    0.3254 ^ regfile_ext/_34763_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0567    0.3822 v regfile_ext/_31614_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5140 ^ regfile_ext/_31615_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5175 ^ regfile_ext/_34763_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5175   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34763_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5175   data arrival time
+-------------------------------------------------------------
+            19.4069   slack (MET)
+
+
+Startpoint: regfile_ext/_34779_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34779_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34779_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3254    0.3254 ^ regfile_ext/_34779_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0567    0.3822 v regfile_ext/_31684_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5140 ^ regfile_ext/_31685_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5175 ^ regfile_ext/_34779_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5175   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34779_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5175   data arrival time
+-------------------------------------------------------------
+            19.4069   slack (MET)
+
+
+Startpoint: regfile_ext/_34795_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_34795_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_34795_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3254    0.3254 ^ regfile_ext/_34795_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0567    0.3822 v regfile_ext/_31752_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5140 ^ regfile_ext/_31753_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5175 ^ regfile_ext/_34795_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5175   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_34795_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5175   data arrival time
+-------------------------------------------------------------
+            19.4069   slack (MET)
+
+
+Startpoint: regfile_ext/_32620_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_32620_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_32620_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3254    0.3254 ^ regfile_ext/_32620_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0567    0.3822 v regfile_ext/_22421_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5139 ^ regfile_ext/_22422_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5174 ^ regfile_ext/_32620_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5174   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_32620_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5174   data arrival time
+-------------------------------------------------------------
+            19.4070   slack (MET)
+
+
+Startpoint: regfile_ext/_32936_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_32936_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_32936_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3255    0.3255 ^ regfile_ext/_32936_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0567    0.3822 v regfile_ext/_23662_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5140 ^ regfile_ext/_23663_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5174 ^ regfile_ext/_32936_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5174   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_32936_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5174   data arrival time
+-------------------------------------------------------------
+            19.4070   slack (MET)
+
+
+Startpoint: regfile_ext/_32944_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_32944_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_32944_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3255    0.3255 ^ regfile_ext/_32944_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0567    0.3822 v regfile_ext/_23697_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5140 ^ regfile_ext/_23698_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5174 ^ regfile_ext/_32944_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5174   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_32944_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5174   data arrival time
+-------------------------------------------------------------
+            19.4070   slack (MET)
+
+
+Startpoint: regfile_ext/_32952_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_32952_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_32952_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3255    0.3255 ^ regfile_ext/_32952_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0567    0.3822 v regfile_ext/_23731_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5140 ^ regfile_ext/_23732_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5174 ^ regfile_ext/_32952_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5174   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_32952_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5174   data arrival time
+-------------------------------------------------------------
+            19.4070   slack (MET)
+
+
+Startpoint: regfile_ext/_32957_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_32957_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_32957_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3255    0.3255 ^ regfile_ext/_32957_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0567    0.3822 v regfile_ext/_23754_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5140 ^ regfile_ext/_23755_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5174 ^ regfile_ext/_32957_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5174   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_32957_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5174   data arrival time
+-------------------------------------------------------------
+            19.4070   slack (MET)
+
+
+Startpoint: regfile_ext/_32960_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_32960_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_32960_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3255    0.3255 ^ regfile_ext/_32960_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0567    0.3822 v regfile_ext/_23766_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5140 ^ regfile_ext/_23767_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5174 ^ regfile_ext/_32960_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5174   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_32960_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5174   data arrival time
+-------------------------------------------------------------
+            19.4070   slack (MET)
+
+
+Startpoint: regfile_ext/_32962_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_32962_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_32962_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3255    0.3255 ^ regfile_ext/_32962_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0567    0.3822 v regfile_ext/_23775_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5140 ^ regfile_ext/_23776_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5174 ^ regfile_ext/_32962_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5174   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_32962_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5174   data arrival time
+-------------------------------------------------------------
+            19.4070   slack (MET)
+
+
+Startpoint: regfile_ext/_32973_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_32973_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_32973_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3255    0.3255 ^ regfile_ext/_32973_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0567    0.3822 v regfile_ext/_23822_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5140 ^ regfile_ext/_23823_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5174 ^ regfile_ext/_32973_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5174   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_32973_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5174   data arrival time
+-------------------------------------------------------------
+            19.4070   slack (MET)
+
+
+Startpoint: regfile_ext/_32976_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_32976_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_32976_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3255    0.3255 ^ regfile_ext/_32976_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0567    0.3822 v regfile_ext/_23834_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1318    0.5140 ^ regfile_ext/_23835_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5174 ^ regfile_ext/_32976_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5174   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_32976_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5174   data arrival time
+-------------------------------------------------------------
+            19.4070   slack (MET)
+
+
+Startpoint: regfile_ext/_33311_
+            (rising edge-triggered flip-flop clocked by clock)
+Endpoint: regfile_ext/_33311_ (rising edge-triggered flip-flop clocked by clock)
+Path Group: clock
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clock (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 ^ regfile_ext/_33311_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.3256    0.3256 ^ regfile_ext/_33311_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.0568    0.3824 v regfile_ext/_25140_/Y (sky130_fd_sc_hd__nor2_1)
+   0.1315    0.5139 ^ regfile_ext/_25141_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.0035    0.5174 ^ regfile_ext/_33311_/D (sky130_fd_sc_hd__dfxtp_1)
+             0.5174   data arrival time
+
+  20.0000   20.0000   clock clock (rise edge)
+   0.0000   20.0000   clock network delay (ideal)
+   0.0000   20.0000   clock reconvergence pessimism
+            20.0000 ^ regfile_ext/_33311_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.0756   19.9244   library setup time
+            19.9244   data required time
+-------------------------------------------------------------
+            19.9244   data required time
+            -0.5174   data arrival time
+-------------------------------------------------------------
+            19.4071   slack (MET)
+
+

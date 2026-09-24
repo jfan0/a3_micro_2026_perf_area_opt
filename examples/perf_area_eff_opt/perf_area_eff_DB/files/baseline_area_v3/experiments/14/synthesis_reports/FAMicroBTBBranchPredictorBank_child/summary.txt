@@ -1,0 +1,6 @@
+module: FAMicroBTBBranchPredictorBank
+success: True
+returncode: 0
+area: 185761.91
+elapsed: 96.2s
+reports: 8

@@ -1,0 +1,892 @@
+{
+    "vlsi.core.technology": "hammer.technology.sky130",
+    "technology.sky130.sky130A": "/home/ray/conda-sky130/share/pdk/sky130A",
+    "vlsi.core.synthesis_tool": "hammer.synthesis.yosys",
+    "synthesis.yosys.yosys_bin": "/home/ray/conda-yosys/bin/yosys",
+    "vlsi.core.max_threads": 8,
+    "vlsi.inputs.clocks": [
+        {
+            "name": "clock",
+            "period": "20ns",
+            "uncertainty": "0.5ns"
+        }
+    ],
+    "synthesis.inputs.input_files": [
+        "/scratch/perf_area_eff/experiment_e238001f/syn_obj/input_src/Arbiter3_Valid_PTWReq.sv",
+        "/scratch/perf_area_eff/experiment_e238001f/syn_obj/input_src/BoomTile.sv",
+        "/scratch/perf_area_eff/experiment_e238001f/syn_obj/input_src/ITLB.sv",
+        "/scratch/perf_area_eff/experiment_e238001f/syn_obj/input_src/NBDTLB.sv",
+        "/scratch/perf_area_eff/experiment_e238001f/syn_obj/input_src/OptimizationBarrier_PTE.sv",
+        "/scratch/perf_area_eff/experiment_e238001f/syn_obj/input_src/OptimizationBarrier_UInt.sv",
+        "/scratch/perf_area_eff/experiment_e238001f/syn_obj/input_src/PTW.sv",
+        "/scratch/perf_area_eff/experiment_e238001f/syn_obj/input_src/cacti_l2_tlb_ram_0_ext.v",
+        "/scratch/perf_area_eff/experiment_e238001f/syn_obj/input_src/chipyard.harness.TestHarness.MediumBoomV3Config.top.mems.v",
+        "/scratch/perf_area_eff/experiment_e238001f/syn_obj/input_src/extern_modules.sv",
+        "/scratch/perf_area_eff/experiment_e238001f/syn_obj/input_src/l2_tlb_ram_0.sv"
+    ],
+    "synthesis.inputs.top_module": "PTW",
+    "vlsi.technology.extra_libraries": [
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cc_dir_ext_ff_n40C_1v95.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_cc_dir_ext.lef",
+                "corner": {
+                    "nmos": "fast",
+                    "pmos": "fast",
+                    "temperature": "-40 C"
+                },
+                "supplies": {
+                    "VDD": "1.95 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cc_dir_ext_ss_100C_1v60.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_cc_dir_ext.lef",
+                "corner": {
+                    "nmos": "slow",
+                    "pmos": "slow",
+                    "temperature": "100 C"
+                },
+                "supplies": {
+                    "VDD": "1.60 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cc_dir_ext_tt_025C_1v80.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_cc_dir_ext.lef",
+                "corner": {
+                    "nmos": "typical",
+                    "pmos": "typical",
+                    "temperature": "25 C"
+                },
+                "supplies": {
+                    "VDD": "1.80 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cc_banks_0_ext_ff_n40C_1v95.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_cc_banks_0_ext.lef",
+                "corner": {
+                    "nmos": "fast",
+                    "pmos": "fast",
+                    "temperature": "-40 C"
+                },
+                "supplies": {
+                    "VDD": "1.95 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cc_banks_0_ext_ss_100C_1v60.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_cc_banks_0_ext.lef",
+                "corner": {
+                    "nmos": "slow",
+                    "pmos": "slow",
+                    "temperature": "100 C"
+                },
+                "supplies": {
+                    "VDD": "1.60 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cc_banks_0_ext_tt_025C_1v80.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_cc_banks_0_ext.lef",
+                "corner": {
+                    "nmos": "typical",
+                    "pmos": "typical",
+                    "temperature": "25 C"
+                },
+                "supplies": {
+                    "VDD": "1.80 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/tag_array_ext_ff_n40C_1v95.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_tag_array_ext.lef",
+                "corner": {
+                    "nmos": "fast",
+                    "pmos": "fast",
+                    "temperature": "-40 C"
+                },
+                "supplies": {
+                    "VDD": "1.95 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/tag_array_ext_ss_100C_1v60.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_tag_array_ext.lef",
+                "corner": {
+                    "nmos": "slow",
+                    "pmos": "slow",
+                    "temperature": "100 C"
+                },
+                "supplies": {
+                    "VDD": "1.60 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/tag_array_ext_tt_025C_1v80.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_tag_array_ext.lef",
+                "corner": {
+                    "nmos": "typical",
+                    "pmos": "typical",
+                    "temperature": "25 C"
+                },
+                "supplies": {
+                    "VDD": "1.80 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/array_0_0_ext_ff_n40C_1v95.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_array_0_0_ext.lef",
+                "corner": {
+                    "nmos": "fast",
+                    "pmos": "fast",
+                    "temperature": "-40 C"
+                },
+                "supplies": {
+                    "VDD": "1.95 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/array_0_0_ext_ss_100C_1v60.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_array_0_0_ext.lef",
+                "corner": {
+                    "nmos": "slow",
+                    "pmos": "slow",
+                    "temperature": "100 C"
+                },
+                "supplies": {
+                    "VDD": "1.60 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/array_0_0_ext_tt_025C_1v80.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_array_0_0_ext.lef",
+                "corner": {
+                    "nmos": "typical",
+                    "pmos": "typical",
+                    "temperature": "25 C"
+                },
+                "supplies": {
+                    "VDD": "1.80 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/tag_array_0_ext_ff_n40C_1v95.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_tag_array_0_ext.lef",
+                "corner": {
+                    "nmos": "fast",
+                    "pmos": "fast",
+                    "temperature": "-40 C"
+                },
+                "supplies": {
+                    "VDD": "1.95 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/tag_array_0_ext_ss_100C_1v60.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_tag_array_0_ext.lef",
+                "corner": {
+                    "nmos": "slow",
+                    "pmos": "slow",
+                    "temperature": "100 C"
+                },
+                "supplies": {
+                    "VDD": "1.60 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/tag_array_0_ext_tt_025C_1v80.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_tag_array_0_ext.lef",
+                "corner": {
+                    "nmos": "typical",
+                    "pmos": "typical",
+                    "temperature": "25 C"
+                },
+                "supplies": {
+                    "VDD": "1.80 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/dataArrayWay_0_ext_ff_n40C_1v95.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_dataArrayWay_0_ext.lef",
+                "corner": {
+                    "nmos": "fast",
+                    "pmos": "fast",
+                    "temperature": "-40 C"
+                },
+                "supplies": {
+                    "VDD": "1.95 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/dataArrayWay_0_ext_ss_100C_1v60.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_dataArrayWay_0_ext.lef",
+                "corner": {
+                    "nmos": "slow",
+                    "pmos": "slow",
+                    "temperature": "100 C"
+                },
+                "supplies": {
+                    "VDD": "1.60 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/dataArrayWay_0_ext_tt_025C_1v80.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_dataArrayWay_0_ext.lef",
+                "corner": {
+                    "nmos": "typical",
+                    "pmos": "typical",
+                    "temperature": "25 C"
+                },
+                "supplies": {
+                    "VDD": "1.80 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/tage_us_ext_ff_n40C_1v95.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_tage_us_ext.lef",
+                "corner": {
+                    "nmos": "fast",
+                    "pmos": "fast",
+                    "temperature": "-40 C"
+                },
+                "supplies": {
+                    "VDD": "1.95 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/tage_us_ext_ss_100C_1v60.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_tage_us_ext.lef",
+                "corner": {
+                    "nmos": "slow",
+                    "pmos": "slow",
+                    "temperature": "100 C"
+                },
+                "supplies": {
+                    "VDD": "1.60 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/tage_us_ext_tt_025C_1v80.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_tage_us_ext.lef",
+                "corner": {
+                    "nmos": "typical",
+                    "pmos": "typical",
+                    "temperature": "25 C"
+                },
+                "supplies": {
+                    "VDD": "1.80 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/table_ext_ff_n40C_1v95.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_table_ext.lef",
+                "corner": {
+                    "nmos": "fast",
+                    "pmos": "fast",
+                    "temperature": "-40 C"
+                },
+                "supplies": {
+                    "VDD": "1.95 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/table_ext_ss_100C_1v60.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_table_ext.lef",
+                "corner": {
+                    "nmos": "slow",
+                    "pmos": "slow",
+                    "temperature": "100 C"
+                },
+                "supplies": {
+                    "VDD": "1.60 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/table_ext_tt_025C_1v80.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_table_ext.lef",
+                "corner": {
+                    "nmos": "typical",
+                    "pmos": "typical",
+                    "temperature": "25 C"
+                },
+                "supplies": {
+                    "VDD": "1.80 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/tage_us_0_ext_ff_n40C_1v95.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_tage_us_0_ext.lef",
+                "corner": {
+                    "nmos": "fast",
+                    "pmos": "fast",
+                    "temperature": "-40 C"
+                },
+                "supplies": {
+                    "VDD": "1.95 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/tage_us_0_ext_ss_100C_1v60.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_tage_us_0_ext.lef",
+                "corner": {
+                    "nmos": "slow",
+                    "pmos": "slow",
+                    "temperature": "100 C"
+                },
+                "supplies": {
+                    "VDD": "1.60 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/tage_us_0_ext_tt_025C_1v80.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_tage_us_0_ext.lef",
+                "corner": {
+                    "nmos": "typical",
+                    "pmos": "typical",
+                    "temperature": "25 C"
+                },
+                "supplies": {
+                    "VDD": "1.80 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/table_0_ext_ff_n40C_1v95.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_table_0_ext.lef",
+                "corner": {
+                    "nmos": "fast",
+                    "pmos": "fast",
+                    "temperature": "-40 C"
+                },
+                "supplies": {
+                    "VDD": "1.95 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/table_0_ext_ss_100C_1v60.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_table_0_ext.lef",
+                "corner": {
+                    "nmos": "slow",
+                    "pmos": "slow",
+                    "temperature": "100 C"
+                },
+                "supplies": {
+                    "VDD": "1.60 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/table_0_ext_tt_025C_1v80.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_table_0_ext.lef",
+                "corner": {
+                    "nmos": "typical",
+                    "pmos": "typical",
+                    "temperature": "25 C"
+                },
+                "supplies": {
+                    "VDD": "1.80 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/table_1_ext_ff_n40C_1v95.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_table_1_ext.lef",
+                "corner": {
+                    "nmos": "fast",
+                    "pmos": "fast",
+                    "temperature": "-40 C"
+                },
+                "supplies": {
+                    "VDD": "1.95 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/table_1_ext_ss_100C_1v60.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_table_1_ext.lef",
+                "corner": {
+                    "nmos": "slow",
+                    "pmos": "slow",
+                    "temperature": "100 C"
+                },
+                "supplies": {
+                    "VDD": "1.60 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/table_1_ext_tt_025C_1v80.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_table_1_ext.lef",
+                "corner": {
+                    "nmos": "typical",
+                    "pmos": "typical",
+                    "temperature": "25 C"
+                },
+                "supplies": {
+                    "VDD": "1.80 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/btb_0_ext_ff_n40C_1v95.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_btb_0_ext.lef",
+                "corner": {
+                    "nmos": "fast",
+                    "pmos": "fast",
+                    "temperature": "-40 C"
+                },
+                "supplies": {
+                    "VDD": "1.95 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/btb_0_ext_ss_100C_1v60.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_btb_0_ext.lef",
+                "corner": {
+                    "nmos": "slow",
+                    "pmos": "slow",
+                    "temperature": "100 C"
+                },
+                "supplies": {
+                    "VDD": "1.60 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/btb_0_ext_tt_025C_1v80.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_btb_0_ext.lef",
+                "corner": {
+                    "nmos": "typical",
+                    "pmos": "typical",
+                    "temperature": "25 C"
+                },
+                "supplies": {
+                    "VDD": "1.80 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/ebtb_ext_ff_n40C_1v95.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_ebtb_ext.lef",
+                "corner": {
+                    "nmos": "fast",
+                    "pmos": "fast",
+                    "temperature": "-40 C"
+                },
+                "supplies": {
+                    "VDD": "1.95 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/ebtb_ext_ss_100C_1v60.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_ebtb_ext.lef",
+                "corner": {
+                    "nmos": "slow",
+                    "pmos": "slow",
+                    "temperature": "100 C"
+                },
+                "supplies": {
+                    "VDD": "1.60 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/ebtb_ext_tt_025C_1v80.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_ebtb_ext.lef",
+                "corner": {
+                    "nmos": "typical",
+                    "pmos": "typical",
+                    "temperature": "25 C"
+                },
+                "supplies": {
+                    "VDD": "1.80 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/data_ext_ff_n40C_1v95.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_data_ext.lef",
+                "corner": {
+                    "nmos": "fast",
+                    "pmos": "fast",
+                    "temperature": "-40 C"
+                },
+                "supplies": {
+                    "VDD": "1.95 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/data_ext_ss_100C_1v60.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_data_ext.lef",
+                "corner": {
+                    "nmos": "slow",
+                    "pmos": "slow",
+                    "temperature": "100 C"
+                },
+                "supplies": {
+                    "VDD": "1.60 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/data_ext_tt_025C_1v80.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_data_ext.lef",
+                "corner": {
+                    "nmos": "typical",
+                    "pmos": "typical",
+                    "temperature": "25 C"
+                },
+                "supplies": {
+                    "VDD": "1.80 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/meta_0_ext_ff_n40C_1v95.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_meta_0_ext.lef",
+                "corner": {
+                    "nmos": "fast",
+                    "pmos": "fast",
+                    "temperature": "-40 C"
+                },
+                "supplies": {
+                    "VDD": "1.95 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/meta_0_ext_ss_100C_1v60.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_meta_0_ext.lef",
+                "corner": {
+                    "nmos": "slow",
+                    "pmos": "slow",
+                    "temperature": "100 C"
+                },
+                "supplies": {
+                    "VDD": "1.60 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/meta_0_ext_tt_025C_1v80.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_meta_0_ext.lef",
+                "corner": {
+                    "nmos": "typical",
+                    "pmos": "typical",
+                    "temperature": "25 C"
+                },
+                "supplies": {
+                    "VDD": "1.80 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/ghist_0_ext_ff_n40C_1v95.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_ghist_0_ext.lef",
+                "corner": {
+                    "nmos": "fast",
+                    "pmos": "fast",
+                    "temperature": "-40 C"
+                },
+                "supplies": {
+                    "VDD": "1.95 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/ghist_0_ext_ss_100C_1v60.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_ghist_0_ext.lef",
+                "corner": {
+                    "nmos": "slow",
+                    "pmos": "slow",
+                    "temperature": "100 C"
+                },
+                "supplies": {
+                    "VDD": "1.60 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/ghist_0_ext_tt_025C_1v80.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_ghist_0_ext.lef",
+                "corner": {
+                    "nmos": "typical",
+                    "pmos": "typical",
+                    "temperature": "25 C"
+                },
+                "supplies": {
+                    "VDD": "1.80 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/rob_debug_inst_mem_ext_ff_n40C_1v95.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_rob_debug_inst_mem_ext.lef",
+                "corner": {
+                    "nmos": "fast",
+                    "pmos": "fast",
+                    "temperature": "-40 C"
+                },
+                "supplies": {
+                    "VDD": "1.95 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/rob_debug_inst_mem_ext_ss_100C_1v60.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_rob_debug_inst_mem_ext.lef",
+                "corner": {
+                    "nmos": "slow",
+                    "pmos": "slow",
+                    "temperature": "100 C"
+                },
+                "supplies": {
+                    "VDD": "1.60 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/rob_debug_inst_mem_ext_tt_025C_1v80.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_rob_debug_inst_mem_ext.lef",
+                "corner": {
+                    "nmos": "typical",
+                    "pmos": "typical",
+                    "temperature": "25 C"
+                },
+                "supplies": {
+                    "VDD": "1.80 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/l2_tlb_ram_0_ext_ff_n40C_1v95.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_l2_tlb_ram_0_ext.lef",
+                "corner": {
+                    "nmos": "fast",
+                    "pmos": "fast",
+                    "temperature": "-40 C"
+                },
+                "supplies": {
+                    "VDD": "1.95 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/l2_tlb_ram_0_ext_ss_100C_1v60.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_l2_tlb_ram_0_ext.lef",
+                "corner": {
+                    "nmos": "slow",
+                    "pmos": "slow",
+                    "temperature": "100 C"
+                },
+                "supplies": {
+                    "VDD": "1.60 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/l2_tlb_ram_0_ext_tt_025C_1v80.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_l2_tlb_ram_0_ext.lef",
+                "corner": {
+                    "nmos": "typical",
+                    "pmos": "typical",
+                    "temperature": "25 C"
+                },
+                "supplies": {
+                    "VDD": "1.80 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/mem_ext_ff_n40C_1v95.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_mem_ext.lef",
+                "corner": {
+                    "nmos": "fast",
+                    "pmos": "fast",
+                    "temperature": "-40 C"
+                },
+                "supplies": {
+                    "VDD": "1.95 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/mem_ext_ss_100C_1v60.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_mem_ext.lef",
+                "corner": {
+                    "nmos": "slow",
+                    "pmos": "slow",
+                    "temperature": "100 C"
+                },
+                "supplies": {
+                    "VDD": "1.60 V",
+                    "GND": "0 V"
+                }
+            }
+        },
+        {
+            "library": {
+                "nldm_liberty_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/mem_ext_tt_025C_1v80.lib",
+                "lef_file": "/tmp/hammer_sky130_open_aam3muqq/cacti_libs/cacti_mem_ext.lef",
+                "corner": {
+                    "nmos": "typical",
+                    "pmos": "typical",
+                    "temperature": "25 C"
+                },
+                "supplies": {
+                    "VDD": "1.80 V",
+                    "GND": "0 V"
+                }
+            }
+        }
+    ],
+    "synthesis.outputs.output_files": [
+        "/scratch/perf_area_eff/experiment_e238001f/syn_obj/syn-rundir/PTW.mapped.v"
+    ],
+    "synthesis.outputs.sdc": "/scratch/perf_area_eff/experiment_e238001f/syn_obj/syn-rundir/PTW.mapped.sdc",
+    "synthesis.outputs.seq_cells": "/scratch/perf_area_eff/experiment_e238001f/syn_obj/syn-rundir/find_regs_cells.json",
+    "synthesis.outputs.all_regs": "/scratch/perf_area_eff/experiment_e238001f/syn_obj/syn-rundir/find_regs_paths.json",
+    "synthesis.outputs.sdf_file": ""
+}
