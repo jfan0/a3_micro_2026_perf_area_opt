@@ -21,6 +21,10 @@ _PACKAGE_DIR = os.path.dirname(os.path.abspath(__file__))
 # one that requests 500 critical paths per view (default is 50).
 _HAMMER_DRIVER = os.path.join(_PACKAGE_DIR, "hammer_driver.py")
 
+# Custom Hammer CLI driver for the open-source flow, which repairs Yosys's
+# flip-flop mapping. See hammer_driver_open.py.
+_HAMMER_DRIVER_OPEN = os.path.join(_PACKAGE_DIR, "hammer_driver_open.py")
+
 
 def _hammer_python_interpreter() -> str:
     """Resolve the Python interpreter used by the installed ``hammer-vlsi``.
@@ -59,6 +63,10 @@ def _populate_hvl_lef_cache(obj_dir: str, tech_yml: str) -> None:
     try:
         with open(tech_yml, "r") as f:
             content = f.read()
+        # Tech YAMLs that never reference the HVL cache (tech-sky130-open.yml,
+        # which uses only what open_pdks builds) need nothing copied.
+        if "fd_sc_hvl__lef" not in content:
+            return
         # Look for the resolved basepath value
         m = re.search(r'basepath:\s*"([^"]+)"', content)
         if not m:
@@ -88,6 +96,7 @@ def hammer_syn(
     obj_dir: str = "build",
     extra_args: list[str] | None = None,
     timeout_seconds: int = 259200,
+    driver_script: str = _HAMMER_DRIVER,
 ) -> SynthesisResult:
     """Run hammer-vlsi synthesis.
 
@@ -100,6 +109,8 @@ def hammer_syn(
         obj_dir: Build output directory.
         extra_args: Additional CLI args passed to hammer-vlsi.
         timeout_seconds: Subprocess timeout.
+        driver_script: Hammer CLIDriver script to run, which selects the
+            tool-specific step hooks. Defaults to the Genus driver.
     """
     obj_dir = os.path.abspath(obj_dir)
     os.makedirs(obj_dir, exist_ok=True)
@@ -147,14 +158,14 @@ def hammer_syn(
     # worker that owns obj_dir — a local call requests no resources and does not
     # re-dispatch.
     #
-    # HammerNode.run takes a single ``hammer_bin``, but our custom 500-critical-
-    # path driver must run as ``<hammer-python> hammer_driver.py`` (it has no
-    # shebang and imports the ``hammer`` package). Bridge that two-token command
-    # with a tiny exec wrapper in obj_dir and pass it as hammer_bin.
+    # HammerNode.run takes a single ``hammer_bin``, but our custom drivers must
+    # run as ``<hammer-python> <driver_script>`` (they have no shebang and
+    # import the ``hammer`` package). Bridge that two-token command with a tiny
+    # exec wrapper in obj_dir and pass it as hammer_bin.
     wrapper = os.path.join(obj_dir, "hammer_vlsi_driver.sh")
     with open(wrapper, "w") as f:
         f.write(f'#!/bin/sh\nexec "{_hammer_python_interpreter()}" '
-                f'"{_HAMMER_DRIVER}" "$@"\n')
+                f'"{driver_script}" "$@"\n')
     os.chmod(wrapper, 0o755)
 
     # tech/tools/design (+ the inputs override, when present) go in as ordered
@@ -206,6 +217,25 @@ def _resolve_tech_yaml(tech_src: str, basepath: str) -> str:
     # Expand all ${technology.sky130.basepath} references to absolute paths
     content = content.replace("${technology.sky130.basepath}", basepath)
     return content
+
+
+def _write_substituted(src: str, dst: str, pattern: str, value: str) -> None:
+    """Copy a YAML template, replacing one quoted placeholder value.
+
+    ``pattern`` must hold exactly one capture group covering the key and its
+    separator, e.g. ``r'(sky130A:\\s*)"[^"]*"'``.
+    """
+    with open(src, "r") as f:
+        content = f.read()
+    # A lambda replacement keeps backslashes in ``value`` from being read as
+    # group references.
+    content, n = re.subn(pattern, lambda m: f'{m.group(1)}"{value}"', content)
+    if n != 1:
+        raise ValueError(
+            f"Expected exactly one match for {pattern!r} in {src}, found {n}"
+        )
+    with open(dst, "w") as f:
+        f.write(content)
 
 
 def _collect_reports(obj_dir: str) -> dict[str, str]:
@@ -268,6 +298,10 @@ class Sky130SynNode:
     copies with technology.sky130.basepath set from sky130_col_path (an input,
     since it varies per machine), and runs hammer synthesis
     """
+
+    # Hammer CLIDriver supplying this flow's step hooks. Subclasses override it
+    # to select a different tool's hooks; ``syn`` is inherited unchanged.
+    _DRIVER_SCRIPT = _HAMMER_DRIVER
 
     def __init__(
         self,
@@ -409,6 +443,71 @@ class Sky130SynNode:
                 obj_dir=self.obj_dir,
                 extra_args=extra_args or None,
                 timeout_seconds=self.timeout_seconds,
+                driver_script=self._DRIVER_SCRIPT,
             )
         finally:
             self._cleanup()
+
+
+class Sky130OpenSynNode(Sky130SynNode):
+    """Sky130 + Yosys hammer synthesis node, using only open-source tools.
+
+    Same contract as :class:`Sky130SynNode`, but parameterized on the open_pdks
+    sky130A tree and a Yosys binary instead of the Cadence sky130_scl collateral
+    and Genus. Both vary per machine, so both are inputs.
+    """
+
+    _DRIVER_SCRIPT = _HAMMER_DRIVER_OPEN
+
+    def __init__(
+        self,
+        sky130a_path: str,
+        yosys_bin: str = "yosys",
+        input_files: list[tuple[str, str]] | None = None,
+        vlsi_top: str | None = None,
+        obj_dir: str = "build",
+        extra_args: list[str] | None = None,
+        timeout_seconds: int = 259200,
+        cacti_sram_libs: list[dict[str, str]] | None = None,
+    ):
+        # sky130_col_path is unused by this flow's templates, but the inherited
+        # syn/_cleanup path expects the attribute to exist.
+        super().__init__(
+            sky130_col_path=sky130a_path,
+            input_files=input_files,
+            vlsi_top=vlsi_top,
+            obj_dir=obj_dir,
+            extra_args=extra_args,
+            timeout_seconds=timeout_seconds,
+            cacti_sram_libs=cacti_sram_libs,
+        )
+        self.sky130a_path = sky130a_path
+        self.yosys_bin = yosys_bin
+
+    def _prepare_configs(self) -> tuple[str, str, str]:
+        """Create working copies of the open-flow YAMLs with paths filled in.
+
+        Returns:
+            (tech_yml, tools_yml, design_yml) paths in a temp directory.
+        """
+        self._work_dir = tempfile.mkdtemp(prefix="hammer_sky130_open_")
+
+        # Tech YAML: point technology.sky130.sky130A at this machine's PDK.
+        tech_dst = os.path.join(self._work_dir, "tech-sky130-open.yml")
+        _write_substituted(
+            os.path.join(_PACKAGE_DIR, "tech-sky130-open.yml"), tech_dst,
+            r'(sky130A:\s*)"[^"]*"', self.sky130a_path,
+        )
+
+        # Tools YAML: point synthesis.yosys.yosys_bin at this machine's Yosys.
+        tools_dst = os.path.join(self._work_dir, "tools-openroad.yml")
+        _write_substituted(
+            os.path.join(_PACKAGE_DIR, "tools-openroad.yml"), tools_dst,
+            r'(yosys_bin:\s*)"[^"]*"', self.yosys_bin,
+        )
+
+        # Design YAML: copy from package
+        design_dst = os.path.join(self._work_dir, "design-open.yml")
+        shutil.copy2(os.path.join(_PACKAGE_DIR, "design-open.yml"), design_dst)
+
+        return tech_dst, tools_dst, design_dst

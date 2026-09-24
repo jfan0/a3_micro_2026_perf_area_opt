@@ -71,12 +71,28 @@ def build_with_debug_retry(
     # slash command installed in llm_env.
     debug_prompt_text: str = "",
     debug_aux_files: dict[str, str] | None = None,
+    make_jobs: int = 16,
+    extra_make_args: dict[str, str] | None = None,
+    debug_fn=None,
 ) -> BuildArtifact | None:
     """Build MegaBoom (non-debug). On failure, run the debugger LLM and retry.
 
     Returns the successful BuildArtifact, or None if all retries exhausted.
     ``chipyard_task_options`` pins the build to the correct placement-group
     node. A shared session_id persists the debug session across retries.
+
+    ``make_jobs`` and ``extra_make_args`` reach the underlying
+    :class:`ChiselBuildNode`; ``extra_make_args`` is merged on top of the
+    VERILATOR_THREADS this function sets, so a caller can add make variables
+    without displacing it. The open-source-synthesis flow needs
+    ``{"ENABLE_YOSYS_FLOW": "1"}`` here: without it firtool emits
+    ``wire [7:0][2:0] _GEN = '{...}`` for Chisel lookup tables, which no Yosys
+    release can read, and ~50 of MediumBoom's generated sources hit it.
+
+    ``debug_fn`` overrides the LLM debugger dispatched on build failure (default
+    :func:`common.common_nodes.debug_failure`, which is Claude-backed). Callers
+    on a Codex-credentialed cluster pass their own equivalent. It is called with
+    the same signature as ``debug_failure.chia_remote``.
     """
     prefix = f"[{label}] " if label else ""
     debug_session_id = str(uuid4())
@@ -91,8 +107,11 @@ def build_with_debug_retry(
             config=config,
             config_package=config_package,
             target=BuildTarget.VERILATOR,
-            make_jobs=16,
-            extra_make_args={"VERILATOR_THREADS": str(verilator_threads)},
+            make_jobs=make_jobs,
+            extra_make_args={
+                "VERILATOR_THREADS": str(verilator_threads),
+                **(extra_make_args or {}),
+            },
             timeout_seconds=60000,
             collect_generated_src=collect_generated_src,
             clean_sim=True,
@@ -124,7 +143,8 @@ def build_with_debug_retry(
 
         if attempt < max_retries:
             t0 = time.time()
-            dbg_cli = get(debug_failure.chia_remote(
+            _debug = debug_fn if debug_fn is not None else debug_failure
+            dbg_cli = get(_debug.chia_remote(
                 error_ctx, chipyard_bash, attempt + 1,
                 session_id=debug_session_id,
                 llm_env=llm_env,
@@ -177,12 +197,18 @@ def build_all_thread_variants(
     submodules: list[str] = ["generators/boom", "generators/rocket-chip", "generators/rocket-chip-inclusive-cache", "generators/rocket-chip-blocks", "generators/bar-fetchers"],
     debug_prompt_text: str = "",
     debug_aux_files: dict[str, str] | None = None,
+    make_jobs: int = 16,
+    extra_make_args: dict[str, str] | None = None,
+    debug_fn=None,
 ) -> dict[int, BuildArtifact] | None:
     """Build one (non-debug) MegaBoom per unique verilator_threads value.
 
     Builds are sequential (each blocks the same chipyard node). Returns a dict
     mapping thread_count → BuildArtifact, or None if any variant fails. The
     waveform-capable counterpart is :func:`build_all_thread_variants_debug`.
+
+    ``make_jobs``, ``extra_make_args`` and ``debug_fn`` are forwarded verbatim to
+    :func:`build_with_debug_retry`; see it for what they are for.
     """
     unique_threads = sorted({tb.verilator_threads for tb in test_binaries})
     artifacts: dict[int, BuildArtifact] = {}
@@ -203,6 +229,9 @@ def build_all_thread_variants(
             llm_env=llm_env, submodules=submodules,
             debug_prompt_text=debug_prompt_text,
             debug_aux_files=debug_aux_files,
+            make_jobs=make_jobs,
+            extra_make_args=extra_make_args,
+            debug_fn=debug_fn,
         )
         if artifact is None:
             return None

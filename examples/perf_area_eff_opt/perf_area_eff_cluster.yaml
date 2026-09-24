@@ -1,0 +1,257 @@
+# Ray cluster for the perf-area-efficiency flow: local head + three GCP VMs.
+# One improve_perf_area.py run at a time, with all three pools live at once.
+# 16 + 8 + 8 = 32 vCPU is exactly the CPUS_ALL_REGIONS cap -- to grow one pool,
+# shrink another. Needs env.sh (HEAD_IP, TS_AUTHKEY, GCP_PROJECT, GCP_SSH_KEY)
+# and GCP Application Default Credentials with the quota project set.
+cluster_name: perf_area_eff
+
+# Userspace tailscale on every machine. Non-default proxy port so this daemon
+# does not collide with a personally-run tailscaled (which serves 1055).
+tailnet:
+    manage_all: true
+    auth_key: ${TS_AUTHKEY}
+    # head_tailnet_ip is omitted -- discovered when CHIA joins the head.
+    socks_proxy: 127.0.0.1:1155
+
+provider:
+    head_ip: ${HEAD_IP}
+
+auth:
+    ssh_user: ${USER}
+
+gcp_nodes:
+    project: ${GCP_PROJECT}
+    zone: us-central1-a
+    # network / subnetwork default to the `default` VPC. Quota is no longer the
+    # binding constraint (C2_CPUS 500, E2_CPUS 600, CPUS 3000 in this project),
+    # so the sizes below follow the measured round instead: build ~9-30 min and
+    # synthesis ~26 min are the two long poles, and the verilator tests already
+    # finish first and wait on synthesis.
+    #
+    # c2d/n2 once came back ZONE_RESOURCE_POOL_EXHAUSTED in this zone. c2 is a
+    # different pool, but if an insert fails that way, fall back to the e2 size
+    # noted on each node -- nothing else in the flow depends on the family.
+    verilator_run_gcp:
+        # highcpu: a sim is 1 core / 17 MB, so extra RAM is dead cost. Cores set
+        # simulation wall time -- ~600M cycles take ~2.7h on 16, ~5.4h on 8.
+        # 32, not 16: simulation currently finishes ahead of synthesis and
+        # waits, but the two changes below cut synthesis, so give it headroom to
+        # stay off the critical path. Must move with verilator_run's resource
+        # count below. Fallback: e2-highcpu-16.
+        machine_type: e2-highcpu-32        # 32 vCPU / 32 GB
+        count: 1
+        image: projects/ubuntu-os-cloud/global/images/family/ubuntu-2204-lts
+        spot: false                       # PREEMPTIBLE_CPUS quota is 0 in this project
+        ssh_user: chia
+        ssh_private_key: ${GCP_SSH_KEY}
+        setup_timeout: 3600               # miniconda + docker install on a fresh VM
+        # Restate the whole disk: `disks` is extra_args and lists are replaced,
+        # not merged. Omit it and the type defaults to pd-standard, which is
+        # slower. Keep source_image and disk_type's zone in sync with the keys
+        # above. Disk size does NOT gate the image pull: pd-balanced is
+        # 140 MiB/s + 0.28 MiB/s per GB, so even the smallest disk here clears
+        # 150 MB/s, while the measured pull runs at 18-54 MB/s (network- and
+        # unpack-bound). Halving the chisel disk made its pull *faster*.
+        disks:
+            - boot: true
+              auto_delete: true
+              initialize_params:
+                  source_image: projects/ubuntu-os-cloud/global/images/family/ubuntu-2204-lts
+                  # Measured: 11G in use; sized for growth, not throughput.
+                  disk_size_gb: 80
+                  disk_type: zones/us-central1-a/diskTypes/pd-balanced
+
+    chisel_build_gcp:
+        # The build IS a long pole now: 544 s, 773 s and 1829 s on the last three
+        # rounds, against 1569 s of synthesis. sbt's compile is parallel, so
+        # doubling the cores helps it; firtool's elaboration is not, so the
+        # higher c2 clock helps that half. MAKE_JOBS in improve_perf_area.py must
+        # match this vCPU count. Fallback: e2-standard-16.
+        machine_type: c2-standard-16       # 16 vCPU / 64 GB
+        count: 1                          # >1 VM: an edit and its build land on
+                                          # different filesystems = wrong RTL
+        image: projects/ubuntu-os-cloud/global/images/family/ubuntu-2204-lts
+        spot: false
+        ssh_user: chia
+        ssh_private_key: ${GCP_SSH_KEY}
+        setup_timeout: 3600
+        disks:
+            - boot: true
+              auto_delete: true
+              initialize_params:
+                  source_image: projects/ubuntu-os-cloud/global/images/family/ubuntu-2204-lts
+                  disk_size_gb: 120       # image + chipyard + sbt; measured 52G
+                  disk_type: zones/us-central1-a/diskTypes/pd-balanced
+
+    # 32 GB: Yosys is single-threaded, and the tile synthesis that runs here
+    # peaks around 5.3 GB. The 4 concurrent runs VLSI=4 allows are the agent's
+    # sub-block A/B experiments, which are far smaller -- measured at 0.3 GB per
+    # Yosys process, 2 GB machine-wide with all four running. 32 GB is therefore
+    # generous; re-check only if BUILD_CONFIG moves to a larger core.
+    vlsi_gcp:
+        # c2, not e2: Yosys is single-threaded, so the only lever on the ~26 min
+        # tile synthesis is clock. c2 is Cascade Lake at 3.1 GHz base against
+        # e2's ~2.0-2.2 GHz effective. Same 8 vCPU / 32 GB.
+        # Fallback: e2-standard-8.
+        machine_type: c2-standard-8       # 8 vCPU / 32 GB
+        count: 1
+        image: projects/ubuntu-os-cloud/global/images/family/ubuntu-2204-lts
+        spot: false                       # PREEMPTIBLE_CPUS quota is 0 in this project
+        ssh_user: chia
+        ssh_private_key: ${GCP_SSH_KEY}
+        setup_timeout: 3600
+        disks:
+            - boot: true
+              auto_delete: true
+              initialize_params:
+                  source_image: projects/ubuntu-os-cloud/global/images/family/ubuntu-2204-lts
+                  # Measured: 21G after setup (image + conda-yosys + sky130
+                  # PDK + hammer). obj_dir is worker-local and transient, so its
+                  # peak is not in that figure — hence the headroom.
+                  disk_size_gb: 60
+                  disk_type: zones/us-central1-a/diskTypes/pd-balanced
+
+available_node_types:
+    verilator_run:
+        resources: {"verilator_run": 32}  # one per vCPU, and each sim is 1-threaded
+        num_workers: 1
+        compatible_ips:
+            # Must be SSH-reachable: tailscale cannot bootstrap over tailscale.
+            - "@verilator_run_gcp:0"
+        docker:
+            image: "ghcr.io/ucb-bar/chia-verilator-run:latest"
+            container_name: "chia-verilator-run-${USER}"
+            pull_before_run: True
+            pull_timeout: 7200            # these images are large
+            run_options:
+                - --ulimit nofile=65536:65536
+                - --shm-size=10.24gb
+
+    chisel_build:
+        # chipyard: 1 -- `make clean` here deletes the shared gen_dir and
+        # tapeout.jar, and a peer run that loses the jar does not fail: it
+        # silently reports an all-synflop area.
+        resources: {"chipyard": 1}
+        # Must stay 1. A second worker on this VM gets a tailnet port the head's
+        # relay cannot reach, yet still advertises chipyard: 1 -- Ray keeps
+        # scheduling onto it and the driver hangs. Also keeps make_jobs=8 honest.
+        num_workers: 1
+        # chipyard's env only; a failure in this one script aborts the worker.
+        worker_setup_commands: ["source /home/ray/chipyard/env.sh"]
+        compatible_ips:
+            - "@chisel_build_gcp:0"
+        docker:
+            image: "ghcr.io/ucb-bar/chia-chisel-build:latest"
+            container_name: "chia-chisel-build-${USER}"
+            pull_before_run: True         # a fresh GCP VM has no cached image
+            pull_timeout: 7200
+            run_options:
+                - --ulimit nofile=65536:65536
+                - --shm-size=10.24gb
+                # Do not add an SSH_AUTH_SOCK mount or a git-pull setup command:
+                # no agent reaches the GCP host, and the image's chipyard is
+                # already at the expected commit.
+
+    llm_1:
+        # Both agent CLIs live here; --llm picks one per run. `llm` is taken
+        # 1.0/call by the debugger, so at most four debuggers at once.
+        resources: {"llm": 4, "codex_creds": 4, "claude_creds": 4}
+        num_workers: 1
+        compatible_ips: ["${HEAD_IP}"]    # the LOCAL machine, which is also the head
+        # Both CLIs need the operator's local HTTP proxy: on this network
+        # chatgpt.com resolves to poisoned addresses (surfacing only as a 600s
+        # timeout) and api.anthropic.com answers 403. NO_PROXY must keep
+        # loopback, the tailnet and RFC1918 off the proxy, and the claude CLI
+        # matches exact hosts only -- hence the per-address loopback list.
+        worker_env_commands:
+            - 'P="${HTTPS_PROXY}"; case "$P" in http*) NP="127.0.0.0/8,100.64.0.0/10,10.0.0.0/8,192.168.0.0/16,localhost,127.200.0.1$(printf ",127.0.0.%d" $(seq 1 33))"; export HTTP_PROXY="$P" HTTPS_PROXY="$P" http_proxy="$P" https_proxy="$P" NO_PROXY="$NP" no_proxy="$NP";; esac'
+        worker_setup_commands:
+            - npm install -g @openai/codex@0.154.0
+            # Empty working directory the agent CLI chdirs into.
+            - mkdir -p /home/ray/llm_env
+        docker:
+            # No published codex image, so the codex CLI is layered onto
+            # chia-claude-code, which already ships Node 22 and claude.
+            image: "ghcr.io/ucb-bar/chia-claude-code:latest"
+            container_name: "chia-llm-${USER}"
+            pull_before_run: True
+            pull_timeout: 7200            # pulled over a home uplink
+            run_options:
+                - --ulimit nofile=65536:65536
+                - --shm-size=10.24gb
+                # root so `npm install -g` can write; HOME stays /home/ray.
+                - "--user 0:0"
+                # claude refuses --dangerously-skip-permissions as root unless
+                # told it is sandboxed.
+                - "-e IS_SANDBOX=1"
+                # Staged copies, NOT the live ~/.codex and ~/.claude: this
+                # container is root and would leave root-owned files. Populate:
+                #   mkdir -p ~/chia_codex_home && cp ~/.codex/auth.json \
+                #       ~/.codex/config.toml ~/.codex/installation_id ~/chia_codex_home/
+                #   mkdir -p ~/chia_claude_home && cp ~/.claude/.credentials.json ~/chia_claude_home/
+                - "-v ${HOME}/chia_codex_home:/home/ray/.codex"
+                - "-v ${HOME}/chia_claude_home:/home/ray/.claude"
+
+    # Synthesis worker: the loop's synthesize_and_time and the agent's sub-block
+    # A/B both run here. Yosys + sky130A + OpenSTA, so one dispatch returns area
+    # and fmax.
+    vlsi:
+        # 4 VLSI covers the peak of three concurrent runs at 5.3 GB each. cacti
+        # must be its own pool of the same size: run_cacti_characterization holds
+        # VLSI while asking for cacti, so one shared pool self-deadlocks. Syn is
+        # requested as 0 (node affinity), so its quantity only has to be nonzero.
+        resources: {"VLSI": 4, "Syn": 1, "cacti": 4}
+        # Moves as a pair with vlsi_gcp's count: num_workers <= 0 skips the type,
+        # and @vlsi_gcp:0 with no instance behind it raises ConfigError.
+        num_workers: 1
+        compatible_ips: ["@vlsi_gcp:0"]
+        # APPEND to PATH, never prepend: these dirs ship their own `python`, and
+        # shadowing the anaconda 3.10 ray and chia run under kills the worker.
+        worker_env_commands:
+            - 'export PATH="$PATH:/home/ray/hammer-venv/bin"'
+        # Layered onto chia-cacti because this project cannot push to
+        # ghcr.io/ucb-bar. The guards let a re-run of `chia up` skip the ~4 min
+        # solve; versions are the ones Hammer's own e2e setup script pins.
+        worker_setup_commands:
+            - '[ -d /home/ray/conda-yosys ] || conda create -y -p /home/ray/conda-yosys -c litex-hub yosys=0.27_4_gb58664d44'
+            - '[ -d /home/ray/conda-sky130 ] || conda create -y -p /home/ray/conda-sky130 -c litex-hub open_pdks.sky130a=1.0.457_0_g32e8f23'
+            - '[ -d /home/ray/hammer-venv ] || (python -m venv /home/ray/hammer-venv && /home/ray/hammer-venv/bin/pip install --quiet hammer-vlsi==1.2.0)'
+        docker:
+            image: "ghcr.io/ucb-bar/chia-cacti:latest"
+            container_name: "chia-vlsi-${USER}"
+            pull_before_run: True
+            pull_timeout: 7200
+            run_options:
+                - --ulimit nofile=65536:65536
+                - --shm-size=10.24gb
+
+# The head is this machine; its Ray daemons need the perf_area_eff_loop env.
+# head_env_commands (unlike head_setup_commands) also runs on `chia down`.
+head_env_commands: ["source ~/.bashrc && conda activate perf_area_eff_loop"]
+head_setup_commands: ["source ~/.bashrc && conda activate perf_area_eff_loop"]
+head_teardown_commands: []
+
+worker_setup_commands: []
+
+# Each command re-activates the env: ray-up runs each in a fresh shell. The
+# RAY_object_manager_* values are tuned for the head's ~1.3 MB/s / ~300 ms link
+# to GCP, where Ray's datacenter defaults time out mid-chunk and re-send
+# forever. RAY_JOB_STOP_WAIT_TIME_S=120 (default 3) gives improve_perf_area.py's
+# SIGTERM cleanup -- revert the diff, stop tool servers, drop the PG -- time to
+# finish.
+#
+# RAY_health_check_*: on this link the GCS declared a live worker dead
+# ("mistakenly been marked as dead ... failed to check the health of this node
+# for 5 times") minutes after a job upload saturated the uplink, and the run
+# then waited forever for a resource that no longer existed. Defaults are a
+# 10 s timeout x 5 failures at 1 s apart; these give a 60 s timeout x 10
+# failures at 10 s apart, so a node has to be unreachable for minutes -- not
+# seconds -- before it is removed.
+head_start_ray_commands:
+    - "source ~/.bashrc && conda activate perf_area_eff_loop && ray stop"
+    - "source ~/.bashrc && conda activate perf_area_eff_loop && ulimit -c unlimited && RAY_JOB_STOP_WAIT_TIME_S=120 RAY_health_check_timeout_ms=60000 RAY_health_check_period_ms=10000 RAY_health_check_failure_threshold=10 RAY_health_check_initial_delay_ms=60000 RAY_object_manager_default_chunk_size=1048576 RAY_object_manager_max_bytes_in_flight=16777216 RAY_object_manager_push_timeout_ms=120000 RAY_object_manager_pull_timeout_ms=120000 ray start --head --port=6379 --include-dashboard=True --dashboard-agent-listen-port=0"
+
+# Workers are dockerized with their own ray + chia, so no conda activation here.
+worker_start_ray_commands:
+    - ray stop
+    - RAY_health_check_timeout_ms=60000 RAY_health_check_period_ms=10000 RAY_health_check_failure_threshold=10 RAY_health_check_initial_delay_ms=60000 RAY_object_manager_default_chunk_size=1048576 RAY_object_manager_max_bytes_in_flight=16777216 RAY_object_manager_push_timeout_ms=120000 RAY_object_manager_pull_timeout_ms=120000 ray start --address=$RAY_HEAD_IP:6379 --dashboard-agent-listen-port=0

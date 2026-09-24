@@ -197,6 +197,7 @@ def remap_with_macrocompiler(
     mems_conf_content: str,
     macrocompiler_lib_json: str,
     chipyard_path: str,
+    force_synflops: list[str] | None = None,
 ) -> str | None:
     """Run MacroCompiler to remap synflop SRAMs to library macros.
 
@@ -211,6 +212,11 @@ def remap_with_macrocompiler(
         mems_conf_content: Contents of .top.mems.conf
         macrocompiler_lib_json: MDF JSON library with SRAM entries
         chipyard_path: Path to chipyard installation (for tapeout.jar)
+        force_synflops: Memories to implement as flop arrays rather than map to a
+            macro. ``compileavailable`` maps a memory to whatever library entry
+            fits without weighing the cost, so an SRAM with no macro of its own
+            gets built out of oversized ones instead: MediumBoom's 64 B
+            ``hi_us_ext`` came out as four 2 KB macros, 290,277 um2 apiece.
 
     Returns:
         Remapped .top.mems.v content, or None on failure.
@@ -251,6 +257,8 @@ def remap_with_macrocompiler(
         "--mode", "compileavailable",
         "-l", lib_path,
     ]
+    for mem in force_synflops or ():
+        cmd += ["--force-synflops", mem]
     print(f"  [macrocompiler] Running MacroCompiler remap...")
     result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
 

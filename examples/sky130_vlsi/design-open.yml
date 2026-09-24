@@ -1,0 +1,14 @@
+# General Hammer inputs for the open-source synthesis flow.
+#
+# Deliberately smaller than design.yml: the power spec is Cadence-specific and
+# the placement constraints are only read by place-and-route, so a
+# synthesis-only Yosys run needs neither.
+vlsi.core.max_threads: 8
+
+# Yosys requires a period and an uncertainty, and passes the period to ABC as
+# its delay target (`abc -D`, in ps) -- the only constraint the mapper sees.
+# 20ns = 50MHz. Keep in sync with CLOCK_PERIOD_NS in
+# perf_area_eff_opt/boom_tile_syn_open.py (OpenSTA's period).
+vlsi.inputs.clocks: [
+  {name: "clock", period: "20ns", uncertainty: "0.5ns"}
+]

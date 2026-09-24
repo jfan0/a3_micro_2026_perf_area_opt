@@ -1,0 +1,15 @@
+# Sky130 technology setup for the open-source flow.
+#
+# tech-sky130.yml targets the Cadence sky130_scl collateral; this targets only
+# what open_pdks builds, i.e. the sky130A tree and its sky130_fd_sc_hd standard
+# cells. Hammer's sky130 plugin defaults.yml already supplies
+# technology.core.stackup (sky130_fd_sc_hd), vlsi.technology.placement_site
+# (unithd), synthesis.yosys.latch_map_file and the three MMMC corners --
+# including the tt_025C_1v80 "extra" corner that the Yosys plugin requires --
+# so the PDK path is the only thing left to set.
+vlsi.core.technology: "hammer.technology.sky130"
+
+# Filled in by Sky130OpenSynNode from the sky130a_path input, since the PDK
+# location varies per machine.
+technology.sky130:
+  sky130A: "/path/to/sky130A"

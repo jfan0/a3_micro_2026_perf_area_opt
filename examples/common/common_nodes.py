@@ -282,13 +282,18 @@ def run_macrocompiler_remap(
     mems_conf_content: str,
     macrocompiler_lib_json: str,
     chipyard_path: str = "/home/ray/chipyard/",
+    force_synflops: list[str] | None = None,
 ) -> str | None:
     """Run MacroCompiler on a chipyard node to remap synflop SRAMs to cacti_* macros.
+
+    ``force_synflops`` names memories to keep as flop arrays instead.
 
     Returns the remapped .top.mems.v content, or None on failure.
     """
     from chia.vlsi.sram_cacti.sram_characterize import remap_with_macrocompiler
-    return remap_with_macrocompiler(mems_conf_content, macrocompiler_lib_json, chipyard_path)
+    return remap_with_macrocompiler(
+        mems_conf_content, macrocompiler_lib_json, chipyard_path, force_synflops,
+    )
 
 
 def run_cacti_macrocompiler_prep(
@@ -315,7 +320,7 @@ def run_cacti_macrocompiler_prep(
     # capacity); without the override Ray implicitly places the cacti task
     # inside the actor's PG and it sits in PENDING_NODE_ASSIGNMENT forever.
     # No-op from the main-flow driver path (the driver isn't in a PG).
-    gen_src, cacti_libs, _ = get(
+    gen_src, cacti_libs, cacti_names = get(
         run_cacti_characterization.options(
             scheduling_strategy="DEFAULT"
         ).chia_remote(gen_src, cacti_path)
@@ -326,10 +331,24 @@ def run_cacti_macrocompiler_prep(
         (c for n, c in gen_src if n.endswith(".top.mems.conf")), None,
     )
     if mems_conf and cacti_libs:
-        specs = parse_mems_conf(mems_conf)
+        # Only the SRAMs CACTI actually characterized can become cacti_ macros:
+        # the ones under its synflop threshold get no Liberty, so offering them
+        # here would instantiate blackboxes carrying neither area nor timing.
+        # Dropping them from the library is not enough, though -- MacroCompiler
+        # still has to implement them, and compileavailable will build a memory
+        # out of any macros that fit without weighing the cost. MediumBoom's
+        # 64 B hi_us_ext came out as four 2 KB cacti_data_ext macros at 290,277
+        # um2 each, inflating BoomTile by 3.48 mm2 (43%). --force-synflops gets
+        # the flop array the threshold exists to ask for.
+        characterized = set(cacti_names)
+        all_specs = parse_mems_conf(mems_conf)
+        specs = [s for s in all_specs if s.name in characterized]
+        synflops = [s.name for s in all_specs if s.name not in characterized]
+        if synflops:
+            print(f"  Synflop (below CACTI threshold): {', '.join(synflops)}")
         mc_lib_json = generate_cacti_macrocompiler_lib(specs)
         remapped_v = get(run_macrocompiler_remap.options(**pg_opts).chia_remote(
-            mems_conf, mc_lib_json,
+            mems_conf, mc_lib_json, force_synflops=synflops,
         ))
         if remapped_v:
             gen_src = assemble_generated_src_with_cacti(
@@ -377,6 +396,65 @@ def _parse_area_from_final_area_rpt(content: str) -> float | None:
     return None
 
 
+_YOSYS_AREA_RE = re.compile(r"Chip area for (?:top )?module '\\?([^']+)':\s*([\d.]+)")
+# The whole-design roll-up ``stat -top`` prints under `=== design hierarchy ===`.
+# Distinct from the per-module lines above, which exclude a module's children.
+_YOSYS_TOP_AREA_RE = re.compile(r"Chip area for top module '\\?([^']+)':\s*([\d.]+)")
+_YOSYS_UNKNOWN_AREA_RE = re.compile(r"Area for cell type (\S+) is unknown!")
+# ``stat`` opens one `=== <module> ===` section per module of the design. The
+# `=== design hierarchy ===` header has a space, so it never matches.
+_YOSYS_MODULE_HEADER_RE = re.compile(r"^=== (\S+) ===$", re.MULTILINE)
+# Cells with no physical area by construction, so no Liberty ever gives them
+# one: the verification-only cells firtool emits for Chisel assertions.
+_YOSYS_NONPHYSICAL_CELLS = frozenset({
+    "$assert", "$assume", "$cover", "$expect", "$fair", "$live",
+    "$check", "$print", "$initstate", "$equiv",
+})
+
+
+def _parse_area_from_yosys_stat(content: str, top: str | None = None) -> float | None:
+    """Parse chip area from Yosys ``stat -liberty`` output (the open flow).
+
+    Yosys silently omits cells the Liberty gives it no area for and only warns,
+    so a netlist that still holds unmapped cells yields an understated total
+    that is not comparable against a fully mapped one. Reject those outright
+    instead of reporting a number that looks fine.
+
+    Not every such warning means that, though: ``stat`` walks each module on its
+    own before rolling the hierarchy up, and in that per-module pass a child
+    *module* instance is itself a cell of unknown area. Those are accounted for
+    where it matters, in the ``design hierarchy`` total, so only cell types that
+    are neither a module of this design nor area-free by construction count as
+    unmapped.
+    """
+    modules = set(_YOSYS_MODULE_HEADER_RE.findall(content))
+    unmapped = sorted({
+        cell for cell in _YOSYS_UNKNOWN_AREA_RE.findall(content)
+        if cell.lstrip("\\") not in modules
+        and cell not in _YOSYS_NONPHYSICAL_CELLS
+    })
+    if unmapped:
+        print(f"  [synthesis] WARNING: Yosys reports no area for {', '.join(unmapped)}. "
+              f"The netlist has unmapped cells, so its area is understated; "
+              f"refusing to report it")
+        return None
+
+    # The roll-up is the only total that includes submodules, so prefer it.
+    areas = {module: value for module, value in _YOSYS_TOP_AREA_RE.findall(content)}
+    areas = areas or {module: value for module, value in _YOSYS_AREA_RE.findall(content)}
+    if not areas:
+        return None
+    # ``stat -top <top>`` reports the top module last, but prefer an exact name
+    # match when the report filename tells us what the top was.
+    value = areas.get(top) if top else None
+    if value is None:
+        value = list(areas.values())[-1]
+    try:
+        return float(value)
+    except ValueError:
+        return None
+
+
 def parse_area_from_reports(reports: dict[str, str]) -> float | None:
     """Search synthesis report files for total cell area.
     """
@@ -388,6 +466,19 @@ def parse_area_from_reports(reports: dict[str, str]) -> float | None:
                 print(f"  [synthesis] Parsed area={area:.2f} from report '{report_name}' "
                       f"(final_area.rpt table)")
                 return area
+
+    # Open flow: <top>.synth_stat.txt, written by the Yosys plugin's
+    # generate_reports step as `stat -top <top> -liberty <lib>`.
+    suffix = ".synth_stat.txt"
+    for report_name, report_contents in reports.items():
+        if not report_name.endswith(suffix):
+            continue
+        top = os.path.basename(report_name)[: -len(suffix)]
+        area = _parse_area_from_yosys_stat(report_contents, top)
+        if area is not None and area > 0:
+            print(f"  [synthesis] Parsed area={area:.2f} from report '{report_name}' "
+                  f"(Yosys stat)")
+            return area
 
     print("  [synthesis] WARNING: Could not parse area from any synthesis report")
     return None
